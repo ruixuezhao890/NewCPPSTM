@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="car0" targetName="car0.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="对自己所想的C++有大更改">
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseGPIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseGPIO.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="2.1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2XCx9H2yEx0BvxTNyFoMJHtFqA7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/CODE/STM32/car0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Inc" />
+      <recent name="D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODE\STM32\car0\myLib\Base_Hardware\Src" />
+      <recent name="D:\CODE\STM32\car0\myLib\Factory\Src" />
+      <recent name="D:\CODE\STM32\car0\myLib\Virtual_Hardware\Inc" />
+      <recent name="D:\CODE\STM32\car0\MCU_Hardware\Src" />
+      <recent name="D:\CODE\STM32\car0\Virtual_Hardware\Src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake 应用程序.car0.elf" />
+      <item itemvalue="OpenOCD 下载并运行.OCD car0" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="" />
+      <created>1698146710050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698146710050</updated>
+      <workItem from="1698146728688" duration="4486000" />
+      <workItem from="1698227611830" duration="2405000" />
+      <workItem from="1698237928749" duration="2618000" />
+      <workItem from="1698286918503" duration="8985000" />
+      <workItem from="1698305290270" duration="6092000" />
+      <workItem from="1698311398196" duration="2611000" />
+      <workItem from="1698390483544" duration="8775000" />
+      <workItem from="1698460115188" duration="11915000" />
+      <workItem from="1698546755611" duration="7696000" />
+      <workItem from="1698647653956" duration="5206000" />
+      <workItem from="1698760011891" duration="567000" />
+      <workItem from="1698805757185" duration="2125000" />
+      <workItem from="1698822436459" duration="10416000" />
+      <workItem from="1698912483231" duration="2679000" />
+      <workItem from="1698974759538" duration="26000" />
+      <workItem from="1699177891095" duration="771000" />
+      <workItem from="1699192056292" duration="741000" />
+      <workItem from="1699196396825" duration="209000" />
+      <workItem from="1699232379652" duration="259000" />
+      <workItem from="1699232723522" duration="17612000" />
+    </task>
+    <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
+      <option name="closed" value="true" />
+      <created>1699260430122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699260430122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="对自己所想的C++有大更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="对自己所想的C++有大更改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/stm32f4xx_it.c</url>
+          <line>200</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/gpio.c</url>
+          <line>48</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/VirtualLnterface/Inc/VirtualGPIO.h</url>
+          <line>19</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
+          <line>17</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
+          <line>23</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp</url>
+          <line>192</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
