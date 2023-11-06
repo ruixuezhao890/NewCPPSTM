@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
-                              CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj (vtable for __cxxabiv1::__class_type_info)
+                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj (vtable for __cxxabiv1::__class_type_info)
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(del_ops.o)
-                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj (operator delete(void*, unsigned int))
+                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj (operator delete(void*, unsigned int))
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_arm.o)
                               CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj (__cxa_end_cleanup)
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_exception.o)
@@ -17,11 +17,11 @@ d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-ea
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_unex_handler.o)
                               d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_terminate.o) (__cxxabiv1::__unexpected_handler)
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(new_op.o)
-                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj (operator new(unsigned int))
+                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj (operator new(unsigned int))
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(pure.o)
-                              CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj (__cxa_pure_virtual)
+                              CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj (__cxa_pure_virtual)
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(si_class_type_info.o)
-                              CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj (vtable for __cxxabiv1::__si_class_type_info)
+                              CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj (vtable for __cxxabiv1::__si_class_type_info)
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(tinfo.o)
                               d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o) (std::type_info::~type_info())
 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(vterminate.o)
@@ -857,9 +857,57 @@ Discarded input sections
                 0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
  .ARM.extab.text._ZN4GPIOD2Ev
                 0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .text._ZN7Factory11greatMyAFIOEv
+                0x00000000       0x20 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .ARM.extab.text._ZN7Factory11greatMyAFIOEv
+                0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .ARM.exidx.text._ZN7Factory11greatMyAFIOEv
+                0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .rodata._ZTS7virAFIO
+                0x00000000        0x9 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .rodata._ZTI7virAFIO
+                0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .rodata._ZTV7virAFIO
+                0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .group         0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .group         0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .text._ZN6MyAFIO9afio_initE8Pin_enum9AFIO_mode
+                0x00000000       0x36 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .ARM.extab.text._ZN6MyAFIO9afio_initE8Pin_enum9AFIO_mode
+                0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .ARM.exidx.text._ZN6MyAFIO9afio_initE8Pin_enum9AFIO_mode
+                0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .rodata._ZTS7virAFIO
+                0x00000000        0x9 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .rodata._ZTI7virAFIO
+                0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .rodata._ZTI6MyAFIO
+                0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .rodata._ZTS6MyAFIO
+                0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .rodata._ZTV6MyAFIO
+                0x00000000        0xc CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_info    0x00000000      0x6d5 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_abbrev  0x00000000      0x252 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_loc     0x00000000       0xc4 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_aranges
+                0x00000000       0x20 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_ranges  0x00000000       0x10 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_line    0x00000000      0x2b6 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_str     0x00000000      0x4da CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .comment       0x00000000       0x4a CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .debug_frame   0x00000000       0x34 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
+ .ARM.attributes
+                0x00000000       0x2e CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
@@ -891,6 +939,18 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .ARM.extab.text.EXTI15_10_IRQHandler
                 0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .debug_info    0x00000000       0x70 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .debug_abbrev  0x00000000       0x2d CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .debug_aranges
+                0x00000000       0x18 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .debug_line    0x00000000       0x1d CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .debug_str     0x00000000      0x1ca CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .comment       0x00000000       0x4a CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
+ .ARM.attributes
+                0x00000000       0x2e CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
@@ -904,6 +964,18 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
  .ARM.exidx.text._ZN7virGPIOD0Ev
                 0x00000000        0x8 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .debug_info    0x00000000       0x70 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .debug_abbrev  0x00000000       0x2d CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .debug_aranges
+                0x00000000       0x18 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .debug_line    0x00000000       0x1d CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .debug_str     0x00000000      0x1cc CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .comment       0x00000000       0x4a CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+ .ARM.attributes
+                0x00000000       0x2e CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
  .text          0x00000000        0x0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
  .data          0x00000000        0x0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
  .bss           0x00000000        0x0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
@@ -1606,9 +1678,12 @@ LOAD CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.
 LOAD CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 LOAD CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 LOAD CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
-LOAD CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+LOAD CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+LOAD CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
 LOAD CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+LOAD CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
 LOAD CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+LOAD CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
 LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a
 LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 START GROUP
@@ -1991,9 +2066,9 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
                 0x08009334       0x28 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
                 0x08009334                GPIO::GPIO(Pin_enum, GpioMode)
                 0x08009334                GPIO::GPIO(Pin_enum, GpioMode)
- .text._ZN11GPIOFactory11greatMyGPIOEv
-                0x0800935c       0x20 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
-                0x0800935c                GPIOFactory::greatMyGPIO()
+ .text._ZN7Factory11greatMyGPIOEv
+                0x0800935c       0x20 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+                0x0800935c                Factory::greatMyGPIO()
  .text._ZN6MyGPIO11gpio_deinitE8Pin_enum
                 0x0800937c       0x1e CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
                 0x0800937c                MyGPIO::gpio_deinit(Pin_enum)
@@ -2663,8 +2738,8 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
                 0x080123d8        0xc CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
  .ARM.extab.text._ZN4GPIOC2E8Pin_enum8GpioMode
                 0x080123e4       0x18 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .ARM.extab.text._ZN11GPIOFactory11greatMyGPIOEv
-                0x080123fc       0x18 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+ .ARM.extab.text._ZN7Factory11greatMyGPIOEv
+                0x080123fc       0x18 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
  .ARM.extab.text._ZN6MyGPIO11gpio_deinitE8Pin_enum
                 0x08012414        0xc CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .ARM.extab.text._ZN6MyGPIO10gpio_writeE8Pin_enumh
@@ -2719,8 +2794,8 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
                 0x08012644        0x8 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
  .ARM.exidx.text._ZN4GPIOC2E8Pin_enum8GpioMode
                 0x0801264c        0x8 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .ARM.exidx.text._ZN11GPIOFactory11greatMyGPIOEv
-                0x08012654        0x8 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+ .ARM.exidx.text._ZN7Factory11greatMyGPIOEv
+                0x08012654        0x8 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
  .ARM.exidx.text._ZN6MyGPIO11gpio_deinitE8Pin_enum
                 0x0801265c        0x8 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .ARM.exidx.text._ZN6MyGPIO10gpio_writeE8Pin_enumh
@@ -3134,7 +3209,7 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .ARM.attributes
                 0x000002f1       0x2e CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
  .ARM.attributes
-                0x0000031f       0x2e CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+                0x0000031f       0x2e CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
  .ARM.attributes
                 0x0000034d       0x2e CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .ARM.attributes
@@ -3345,28 +3420,28 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
 LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xbe67
- .debug_info    0x00000000      0x6f9 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
- .debug_info    0x000006f9      0x2c1 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x000009ba      0x59c CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00000f56      0x2a4 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x000011fa      0x12f CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x00001329      0x7af CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x00001ad8      0x174 CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00001c4c      0x37d CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x00001fc9      0x9ce CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00002997       0x22 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
- .debug_info    0x000029b9      0x9f0 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x000033a9     0x1098 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x00004441      0x7b0 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x00004bf1      0xb03 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x000056f4     0x424e CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x00009942      0x8dd CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_info    0x0000a21f      0x143 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_info    0x0000a362     0x13e7 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_info    0x0000b749      0x71e CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+.debug_info     0x00000000     0xc392
+ .debug_info    0x00000000      0x723 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
+ .debug_info    0x00000723      0x2c1 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x000009e4      0x59c CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00000f80      0x2a4 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00001224      0x12f CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00001353      0x7af CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x00001b02      0x174 CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x00001c76      0x37d CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00001ff3      0x9ce CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x000029c1       0x22 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
+ .debug_info    0x000029e3      0x9f0 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x000033d3     0x1098 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000446b      0x7b0 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x00004c1b      0xb03 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000571e     0x424e CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x0000996c      0x907 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
+ .debug_info    0x0000a273      0x61a CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_info    0x0000a88d     0x13e7 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_info    0x0000bc74      0x71e CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_abbrev   0x00000000     0x216d
+.debug_abbrev   0x00000000     0x22fb
  .debug_abbrev  0x00000000      0x1d5 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
  .debug_abbrev  0x000001d5       0xd1 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
  .debug_abbrev  0x000002a6      0x1b7 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
@@ -3383,11 +3458,11 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .debug_abbrev  0x0000129a      0x28a CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_abbrev  0x00001524      0x2fd CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_abbrev  0x00001821      0x282 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_abbrev  0x00001aa3       0xe3 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_abbrev  0x00001b86      0x3e0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_abbrev  0x00001f66      0x207 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .debug_abbrev  0x00001aa3      0x271 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_abbrev  0x00001d14      0x3e0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_abbrev  0x000020f4      0x207 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_aranges  0x00000000      0x820
+.debug_aranges  0x00000000      0x828
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
  .debug_aranges
@@ -3421,13 +3496,13 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .debug_aranges
                 0x000006b8       0x68 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
  .debug_aranges
-                0x00000720       0x20 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+                0x00000720       0x28 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
  .debug_aranges
-                0x00000740       0xb0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+                0x00000748       0xb0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .debug_aranges
-                0x000007f0       0x30 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+                0x000007f8       0x30 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_ranges   0x00000000      0x788
+.debug_ranges   0x00000000      0x790
  .debug_ranges  0x00000000       0x18 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
  .debug_ranges  0x00000018       0x10 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
  .debug_ranges  0x00000028       0x20 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
@@ -3444,69 +3519,69 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .debug_ranges  0x000003c8       0x90 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_ranges  0x00000458      0x208 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_ranges  0x00000660       0x58 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_ranges  0x000006b8       0x10 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_ranges  0x000006c8       0xa0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_ranges  0x00000768       0x20 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .debug_ranges  0x000006b8       0x18 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_ranges  0x000006d0       0xa0 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_ranges  0x00000770       0x20 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_line     0x00000000     0x8a77
- .debug_line    0x00000000      0x267 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
- .debug_line    0x00000267      0x17f CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x000003e6      0x3a3 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000789      0x186 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0000090f      0x19d CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x00000aac      0x406 CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
- .debug_line    0x00000eb2      0x1de CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x00001090      0x24f CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x000012df      0x317 CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x000015f6       0x98 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
- .debug_line    0x0000168e      0x5b7 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00001c45      0x7ca CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x0000240f      0x720 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00002b2f      0xb4f CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x0000367e     0x4640 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00007cbe      0x325 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_line    0x00007fe3       0xaa CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_line    0x0000808d      0x7aa CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_line    0x00008837      0x240 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+.debug_line     0x00000000     0x8b17
+ .debug_line    0x00000000      0x263 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
+ .debug_line    0x00000263      0x17f CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x000003e2      0x3a3 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000785      0x186 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0000090b      0x19d CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00000aa8      0x406 CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x00000eae      0x1de CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0000108c      0x24f CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x000012db      0x317 CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x000015f2       0x98 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
+ .debug_line    0x0000168a      0x5b7 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00001c41      0x7ca CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x0000240b      0x720 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00002b2b      0xb4f CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x0000367a     0x4640 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x00007cba      0x321 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
+ .debug_line    0x00007fdb      0x152 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_line    0x0000812d      0x7aa CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_line    0x000088d7      0x240 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_str      0x00000000     0x2e14
- .debug_str     0x00000000      0x3a5 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
-                                0x43a (size before relaxing)
- .debug_str     0x000003a5      0x1f2 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
+.debug_str      0x00000000     0x2f09
+ .debug_str     0x00000000      0x3c3 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
+                                0x45f (size before relaxing)
+ .debug_str     0x000003c3      0x1f2 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
                                 0x2c1 (size before relaxing)
- .debug_str     0x00000597      0x1eb CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x000005b5      0x1eb CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
                                 0x4a9 (size before relaxing)
- .debug_str     0x00000782       0x3c CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x000007a0       0x3c CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
                                 0x2cd (size before relaxing)
- .debug_str     0x000007be       0xc7 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000007dc       0xc7 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj
                                 0x241 (size before relaxing)
- .debug_str     0x00000885      0x21b CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x000008a3      0x21b CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
                                 0x40b (size before relaxing)
- .debug_str     0x00000aa0       0x85 CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00000abe       0x85 CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
                                 0x237 (size before relaxing)
- .debug_str     0x00000b25       0x97 CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00000b43       0x97 CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
                                 0x333 (size before relaxing)
- .debug_str     0x00000bbc      0x4a8 CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x00000bda      0x4a8 CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj
                                 0x80e (size before relaxing)
- .debug_str     0x00001064       0x46 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
+ .debug_str     0x00001082       0x46 CMakeFiles/car0.elf.dir/Core/Startup/startup_stm32f407zgtx.s.obj
                                  0x6b (size before relaxing)
- .debug_str     0x000010aa      0x851 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000010c8      0x851 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                 0xb6c (size before relaxing)
- .debug_str     0x000018fb      0x4b8 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x00001919      0x4b8 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                                 0xc3e (size before relaxing)
- .debug_str     0x00001db3      0x14b CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x00001dd1      0x14b CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                                 0x4f2 (size before relaxing)
- .debug_str     0x00001efe      0x1a9 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x00001f1c      0x1a9 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                                 0x718 (size before relaxing)
- .debug_str     0x000020a7      0x665 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000020c5      0x665 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                                 0xd6b (size before relaxing)
- .debug_str     0x0000270c       0x9d CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
-                                0x492 (size before relaxing)
- .debug_str     0x000027a9       0x60 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
-                                0x260 (size before relaxing)
- .debug_str     0x00002809      0x3f1 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_str     0x0000272a       0x9d CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
+                                0x4b7 (size before relaxing)
+ .debug_str     0x000027c7      0x147 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+                                0x39a (size before relaxing)
+ .debug_str     0x0000290e      0x3f1 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
                                 0xe15 (size before relaxing)
- .debug_str     0x00002bfa      0x21a CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .debug_str     0x00002cff      0x20a CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
                                 0x5b4 (size before relaxing)
 
 .comment        0x00000000       0x49
@@ -3526,11 +3601,11 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
+ .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
  .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
  .comment       0x00000049       0x4a CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 
-.debug_frame    0x00000000     0x40c0
+.debug_frame    0x00000000     0x40d8
  .debug_frame   0x00000000       0x48 CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj
  .debug_frame   0x00000048       0x28 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj
  .debug_frame   0x00000070       0x58 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj
@@ -3546,101 +3621,101 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .debug_frame   0x000007ec      0x16c CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_frame   0x00000958      0x5cc CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_frame   0x00000f24      0x100 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_frame   0x00001024       0x28 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_frame   0x0000104c      0x204 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_frame   0x00001250       0x48 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
- .debug_frame   0x00001298       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
- .debug_frame   0x00001374       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(del_ops.o)
- .debug_frame   0x00001394       0x6c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_arm.o)
- .debug_frame   0x00001400       0xf0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_exception.o)
- .debug_frame   0x000014f0       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_globals.o)
- .debug_frame   0x00001520       0xb4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_personality.o)
- .debug_frame   0x000015d4       0xb0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_terminate.o)
- .debug_frame   0x00001684       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(new_op.o)
- .debug_frame   0x000016ac       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(pure.o)
- .debug_frame   0x000016ec       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(si_class_type_info.o)
- .debug_frame   0x000017c8       0x90 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(tinfo.o)
- .debug_frame   0x00001858       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(vterminate.o)
- .debug_frame   0x00001888       0x50 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(bad_alloc.o)
- .debug_frame   0x000018d8      0x934 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(cp-demangle.o)
- .debug_frame   0x0000220c       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(del_op.o)
- .debug_frame   0x0000222c       0xd4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_alloc.o)
- .debug_frame   0x00002300       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_call.o)
- .debug_frame   0x00002360       0x94 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_catch.o)
- .debug_frame   0x000023f4       0x80 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_throw.o)
- .debug_frame   0x00002474       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_type.o)
- .debug_frame   0x0000249c       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(new_handler.o)
- .debug_frame   0x000024cc       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x000024f8       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000252c      0x2d4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(unwind-arm.o)
- .debug_frame   0x00002800      0x104 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(pr-support.o)
- .debug_frame   0x00002904       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
- .debug_frame   0x0000292c       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
- .debug_frame   0x0000294c       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputc.o)
- .debug_frame   0x00002994       0x54 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputs.o)
- .debug_frame   0x000029e8       0x64 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
- .debug_frame   0x00002a4c       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwrite.o)
- .debug_frame   0x00002aac       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002ad8       0xb0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00002b88       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
- .debug_frame   0x00002bb8       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x00002c04       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memcmp.o)
- .debug_frame   0x00002c2c       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
- .debug_frame   0x00002c6c       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x00002c98       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
- .debug_frame   0x00002cc8       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-putc.o)
- .debug_frame   0x00002d10       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-realloc.o)
- .debug_frame   0x00002d3c       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
- .debug_frame   0x00002d84       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x00002db0      0x114 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
- .debug_frame   0x00002ec4       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
- .debug_frame   0x00002f00       0x74 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sprintf.o)
- .debug_frame   0x00002f74       0x68 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strcmp.o)
- .debug_frame   0x00002fdc       0x38 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncmp.o)
- .debug_frame   0x00003014       0x44 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-svfprintf.o)
- .debug_frame   0x00003058       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-syswrite.o)
- .debug_frame   0x00003084       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
- .debug_frame   0x000030d0       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
- .debug_frame   0x000030fc       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
- .debug_frame   0x00003128       0x5c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00003184       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x000031a4       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
- .debug_frame   0x00003230       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
- .debug_frame   0x000032a0      0x154 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
- .debug_frame   0x000033f4       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x00003428       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
- .debug_frame   0x000034b4       0x54 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
- .debug_frame   0x00003508       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
- .debug_frame   0x00003548       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
- .debug_frame   0x000035b8      0x264 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
- .debug_frame   0x0000381c       0x64 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
- .debug_frame   0x00003880       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
- .debug_frame   0x000038b0       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
- .debug_frame   0x0000393c       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
- .debug_frame   0x00003968       0x78 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-svfiprintf.o)
- .debug_frame   0x000039e0       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
- .debug_frame   0x00003a14       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
- .debug_frame   0x00003a54       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
- .debug_frame   0x00003a80       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
- .debug_frame   0x00003aac       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
- .debug_frame   0x00003ae8       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
- .debug_frame   0x00003b58       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
- .debug_frame   0x00003b84       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
- .debug_frame   0x00003bb0       0x68 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
- .debug_frame   0x00003c18       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
- .debug_frame   0x00003c44       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00003c90       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
- .debug_frame   0x00003cbc       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
- .debug_frame   0x00003d98       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
- .debug_frame   0x00003dd4       0x88 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
- .debug_frame   0x00003e5c       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
- .debug_frame   0x00003ebc       0xac d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00003f68       0x50 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00003fb8       0xc4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000407c       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000409c       0x24 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00001024       0x40 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_frame   0x00001064      0x204 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_frame   0x00001268       0x48 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .debug_frame   0x000012b0       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(class_type_info.o)
+ .debug_frame   0x0000138c       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(del_ops.o)
+ .debug_frame   0x000013ac       0x6c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_arm.o)
+ .debug_frame   0x00001418       0xf0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_exception.o)
+ .debug_frame   0x00001508       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_globals.o)
+ .debug_frame   0x00001538       0xb4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_personality.o)
+ .debug_frame   0x000015ec       0xb0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_terminate.o)
+ .debug_frame   0x0000169c       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(new_op.o)
+ .debug_frame   0x000016c4       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(pure.o)
+ .debug_frame   0x00001704       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(si_class_type_info.o)
+ .debug_frame   0x000017e0       0x90 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(tinfo.o)
+ .debug_frame   0x00001870       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(vterminate.o)
+ .debug_frame   0x000018a0       0x50 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(bad_alloc.o)
+ .debug_frame   0x000018f0      0x934 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(cp-demangle.o)
+ .debug_frame   0x00002224       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(del_op.o)
+ .debug_frame   0x00002244       0xd4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_alloc.o)
+ .debug_frame   0x00002318       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_call.o)
+ .debug_frame   0x00002378       0x94 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_catch.o)
+ .debug_frame   0x0000240c       0x80 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_throw.o)
+ .debug_frame   0x0000248c       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(eh_type.o)
+ .debug_frame   0x000024b4       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++.a(new_handler.o)
+ .debug_frame   0x000024e4       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00002510       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00002544      0x2d4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00002818      0x104 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(pr-support.o)
+ .debug_frame   0x0000291c       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-abort.o)
+ .debug_frame   0x00002944       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-errno.o)
+ .debug_frame   0x00002964       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputc.o)
+ .debug_frame   0x000029ac       0x54 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputs.o)
+ .debug_frame   0x00002a00       0x64 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fvwrite.o)
+ .debug_frame   0x00002a64       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwrite.o)
+ .debug_frame   0x00002ac4       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x00002af0       0xb0 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00002ba0       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x00002bd0       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00002c1c       0x28 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memcmp.o)
+ .debug_frame   0x00002c44       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memmove.o)
+ .debug_frame   0x00002c84       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00002cb0       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00002ce0       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-putc.o)
+ .debug_frame   0x00002d28       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-realloc.o)
+ .debug_frame   0x00002d54       0x48 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reallocr.o)
+ .debug_frame   0x00002d9c       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00002dc8      0x114 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signal.o)
+ .debug_frame   0x00002edc       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-signalr.o)
+ .debug_frame   0x00002f18       0x74 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-sprintf.o)
+ .debug_frame   0x00002f8c       0x68 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strcmp.o)
+ .debug_frame   0x00002ff4       0x38 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncmp.o)
+ .debug_frame   0x0000302c       0x44 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-svfprintf.o)
+ .debug_frame   0x00003070       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-syswrite.o)
+ .debug_frame   0x0000309c       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wbuf.o)
+ .debug_frame   0x000030e8       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-writer.o)
+ .debug_frame   0x00003114       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wsetup.o)
+ .debug_frame   0x00003140       0x5c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000319c       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x000031bc       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-dtoa.o)
+ .debug_frame   0x00003248       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fflush.o)
+ .debug_frame   0x000032b8      0x154 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-findfp.o)
+ .debug_frame   0x0000340c       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00003440       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-freer.o)
+ .debug_frame   0x000034cc       0x54 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x00003520       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-localeconv.o)
+ .debug_frame   0x00003560       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-makebuf.o)
+ .debug_frame   0x000035d0      0x264 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mprec.o)
+ .debug_frame   0x00003834       0x64 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-reent.o)
+ .debug_frame   0x00003898       0x30 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-s_frexp.o)
+ .debug_frame   0x000038c8       0x8c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-stdio.o)
+ .debug_frame   0x00003954       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-strncpy.o)
+ .debug_frame   0x00003980       0x78 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-svfiprintf.o)
+ .debug_frame   0x000039f8       0x34 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00003a2c       0x40 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-assert.o)
+ .debug_frame   0x00003a6c       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-callocr.o)
+ .debug_frame   0x00003a98       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-closer.o)
+ .debug_frame   0x00003ac4       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fclose.o)
+ .debug_frame   0x00003b00       0x70 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fiprintf.o)
+ .debug_frame   0x00003b70       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fstatr.o)
+ .debug_frame   0x00003b9c       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-isattyr.o)
+ .debug_frame   0x00003bc8       0x68 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-locale.o)
+ .debug_frame   0x00003c30       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x00003c5c       0x4c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00003ca8       0x2c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-readr.o)
+ .debug_frame   0x00003cd4       0xdc d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-vfiprintf.o)
+ .debug_frame   0x00003db0       0x3c d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wctomb_r.o)
+ .debug_frame   0x00003dec       0x88 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fputwc.o)
+ .debug_frame   0x00003e74       0x60 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00003ed4       0xac d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00003f80       0x50 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00003fd0       0xc4 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00004094       0x20 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x000040b4       0x24 d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixdfsi.o)
 
-.debug_loc      0x00000000     0x6ceb
+.debug_loc      0x00000000     0x6d3a
  .debug_loc     0x00000000      0x3c5 CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj
  .debug_loc     0x000003c5       0x64 CMakeFiles/car0.elf.dir/Core/Src/sysmem.c.obj
  .debug_loc     0x00000429      0x158 CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj
@@ -3651,6 +3726,6 @@ LOAD d:/programfiles/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-no
  .debug_loc     0x000013aa      0x58c CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_loc     0x00001936     0x49ab CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_loc     0x000062e1      0x2ce CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
- .debug_loc     0x000065af       0x25 CMakeFiles/car0.elf.dir/myLib/Factory/Src/GPIOFactory.cpp.obj
- .debug_loc     0x000065d4      0x6f5 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
- .debug_loc     0x00006cc9       0x22 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
+ .debug_loc     0x000065af       0x74 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
+ .debug_loc     0x00006623      0x6f5 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
+ .debug_loc     0x00006d18       0x22 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj

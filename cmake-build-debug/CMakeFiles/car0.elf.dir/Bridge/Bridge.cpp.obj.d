@@ -2,7 +2,7 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: \
  D:\CODE\STM32\car0\Bridge\Bridge.cpp D:\CODE\STM32\car0\Bridge\Bridge.h \
  D:\CODE\STM32\car0\myLib/User.h \
  D:\CODE\STM32\car0\myLib\MCU_Hardware\Inc/headfile.h \
- D:\CODE\STM32\car0\myLib\Factory\Inc/GPIOFactory.h \
+ D:\CODE\STM32\car0\myLib\Factory\Inc/Factory.h \
  D:\CODE\STM32\car0\myLib\MCU_Hardware\Inc/MyGPIO.h \
  D:\CODE\STM32\car0\myLib\Virtual_Hardware\Inc/virGPIO.h \
  D:\CODE\STM32\car0\myLib\Virtual_Hardware\Inc/Resources.h \
@@ -40,4 +40,6 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: \
  D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
  D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
+ D:\CODE\STM32\car0\myLib\MCU_Hardware\Inc/MyAFIO.h \
+ D:\CODE\STM32\car0\myLib\Virtual_Hardware\Inc/virAFIO.h \
  D:\CODE\STM32\car0\myLib\Base_Hardware\Inc/BaseGPIO.h

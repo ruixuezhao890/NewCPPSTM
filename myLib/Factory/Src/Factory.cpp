@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : GPIOFactory.h
+* @file : Factory.cpp
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -12,14 +12,16 @@
 */
 //
 
-#ifndef CAR0_GPIOFACTORY_H
-#define CAR0_GPIOFACTORY_H
-#include "MyGPIO.h"
+#include "Factory.h"
+MyGPIO *Factory::greatMyGPIO(){
+    return  new MyGPIO();
+}
 
-class GPIOFactory {
-public:
-   MyGPIO * greatMyGPIO();
-};
-
-
-#endif //CAR0_GPIOFACTORY_H
+MyAFIO *Factory::greatMyAFIO() {
+    return new MyAFIO();
+}
+#if !Cubemx
+MySystic *Factory::greatMySystic() {
+    return new MySystic();
+}
+#endif

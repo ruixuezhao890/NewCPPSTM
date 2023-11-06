@@ -378,13 +378,28 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Factory/Src/GPIOFactory.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MySystic.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/CMakeLists.txt">

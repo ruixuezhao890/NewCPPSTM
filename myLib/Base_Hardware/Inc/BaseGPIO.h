@@ -19,7 +19,7 @@ class GPIO {
 private:
     virGPIO *virGpio;
     Pin_enum gpio_pin;
-    GPIOFactory factory;
+    Factory factory;
 public:
     GPIO();
     GPIO(Pin_enum pin);

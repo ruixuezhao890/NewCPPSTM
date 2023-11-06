@@ -15,9 +15,17 @@
 #ifndef CAR0_RESOURCES_H
 #define CAR0_RESOURCES_H
 #include "stm32f4xx.h"
+#define DEFAULT_GPIO_SPEED GpioSpeed::freq_medium //GPIO初始化默认GPIO速度 可以在Resources中找到
+void openCorrespondRCC(GPIO_TypeDef *GPIOx);
 enum class GpioGroup {
     GroupA,GroupB,GroupC,GroupD,GroupE,GroupF,GroupG,GroupH,GroupI,GroupJ,GroupK,GroupNULL
 };
+enum class AFIO_mode
+{
+    input_af  = 0x0,
+    out_pp_af = GPIO_MODE_AF_PP,
+    out_od_af = GPIO_MODE_AF_OD
+} ;
 enum class GpioMode {
     input = 0x00000000U,
     output_pp = 0x00000001U,
@@ -64,6 +72,7 @@ typedef struct
     volatile uint16_t data_size;    //缓冲区接收到的数据长度
     /* data */
 }__rec_buf;
+//#define Cubemx //代表使用了cubemx配置时钟没有这个宏代表使用VirSystic函数配置时钟
 #define STM32 1
 #define ENABLE_FERRRTOS 0
 #endif //CAR0_RESOURCES_H

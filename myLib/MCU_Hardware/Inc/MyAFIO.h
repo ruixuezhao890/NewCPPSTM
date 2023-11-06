@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : headfile.h
+* @file : MyAFIO.h
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -12,7 +12,14 @@
 */
 //
 
-#ifndef CAR0_HEADFILE_H
-#define CAR0_HEADFILE_H
-#include "Factory.h"
-#endif //CAR0_HEADFILE_H
+#ifndef CAR0_MYAFIO_H
+#define CAR0_MYAFIO_H
+#include "virAFIO.h"
+class MyAFIO: public virAFIO{
+public:
+private:
+    void afio_init(Pin_enum pin, AFIO_mode mode) override;
+};
+
+
+#endif //CAR0_MYAFIO_H

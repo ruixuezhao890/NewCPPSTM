@@ -19,7 +19,7 @@
 #include "Resources.h"
 
 using CallBack=void(*)(void);
-#define DEFAULT_GPIO_SPEED GpioSpeed::freq_medium //GPIO初始化默认GPIO速度 可以在Resources中找到
+
 class virGPIO {
 protected:
     virGPIO();

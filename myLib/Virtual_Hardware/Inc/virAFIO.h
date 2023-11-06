@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : GPIOFactory.cpp
+* @file : virAFIO.h
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -12,7 +12,13 @@
 */
 //
 
-#include "GPIOFactory.h"
-MyGPIO *GPIOFactory::greatMyGPIO(){
-    return  new MyGPIO();
-}
+#ifndef CAR0_VIRAFIO_H
+#define CAR0_VIRAFIO_H
+#include "Resources.h"
+class virAFIO {
+public:
+   virtual void afio_init(Pin_enum pin, AFIO_mode mode)=0;
+};
+
+
+#endif //CAR0_VIRAFIO_H

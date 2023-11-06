@@ -13,7 +13,6 @@
 //
 
 #include "BaseGPIO.h"
-
 GPIO::GPIO() {
     virGpio=factory.greatMyGPIO();
 }

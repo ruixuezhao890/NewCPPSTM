@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : headfile.h
+* @file : virSystic.cpp
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -12,7 +12,4 @@
 */
 //
 
-#ifndef CAR0_HEADFILE_H
-#define CAR0_HEADFILE_H
-#include "Factory.h"
-#endif //CAR0_HEADFILE_H
+#include "virSystic.h"
