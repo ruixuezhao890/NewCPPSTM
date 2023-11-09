@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : GPIO.cpp
+* @file : BaseGPIO.cpp
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -13,44 +13,46 @@
 //
 
 #include "BaseGPIO.h"
-GPIO::GPIO() {
-    virGpio=factory.greatMyGPIO();
+virGPIO *virGpio= nullptr;
+BaseGPIO::BaseGPIO() {
+    if (!virGpio)
+    virGpio=new MyGPIO();
 }
 
-GPIO::GPIO(Pin_enum pin):GPIO() {
+BaseGPIO::BaseGPIO(Pin_enum pin): BaseGPIO() {
     this->gpio_pin=pin;
 }
 
-GPIO::GPIO(Pin_enum pin, GpioMode mode): GPIO(pin) {
+BaseGPIO::BaseGPIO(Pin_enum pin, GpioMode mode): BaseGPIO(pin) {
     virGpio->gpio_init(pin,mode);
 }
 
-void GPIO::mode(GpioMode mode) {
+void BaseGPIO::mode(GpioMode mode) {
     virGpio->gpio_init(gpio_pin,mode);
 }
 
-void GPIO::write(uint8_t data) {
+void BaseGPIO::write(uint8_t data) {
     virGpio->gpio_write(gpio_pin,data);
 }
 
-void GPIO::toggle() {
+void BaseGPIO::toggle() {
     virGpio->gpio_toggle(gpio_pin);
 }
 
-uint8_t GPIO::read() {
+uint8_t BaseGPIO::read() {
     return virGpio->gpio_read(gpio_pin);
 }
 
-void GPIO::attachInterrupt(void (*callback)(void), GpioExit mode) {
+void BaseGPIO::attachInterrupt(void (*callback)(void), GpioExit mode) {
     virGpio->gpio_interrupt_init(gpio_pin,callback,mode);
 }
 
-uint16_t GPIO::adc() {
+uint16_t BaseGPIO::adc() {
     // todo 未来增加GPIO与adc的结合
     return 0;
 }
 
-GPIO::~GPIO() {
+BaseGPIO::~BaseGPIO() {
     delete virGpio;
     virGpio= nullptr;
 }

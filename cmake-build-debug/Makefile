@@ -760,6 +760,30 @@ myLib/Base_Hardware/Src/BaseGPIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.s
 .PHONY : myLib/Base_Hardware/Src/BaseGPIO.cpp.s
 
+myLib/Base_Hardware/Src/BaseSerial.obj: myLib/Base_Hardware/Src/BaseSerial.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.obj
+
+# target to build an object file
+myLib/Base_Hardware/Src/BaseSerial.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.obj
+
+myLib/Base_Hardware/Src/BaseSerial.i: myLib/Base_Hardware/Src/BaseSerial.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/Src/BaseSerial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.i
+
+myLib/Base_Hardware/Src/BaseSerial.s: myLib/Base_Hardware/Src/BaseSerial.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/Src/BaseSerial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.s
+
 myLib/Base_Hardware/Src/BaseSystic.obj: myLib/Base_Hardware/Src/BaseSystic.cpp.obj
 .PHONY : myLib/Base_Hardware/Src/BaseSystic.obj
 
@@ -783,6 +807,54 @@ myLib/Base_Hardware/Src/BaseSystic.s: myLib/Base_Hardware/Src/BaseSystic.cpp.s
 myLib/Base_Hardware/Src/BaseSystic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.s
 .PHONY : myLib/Base_Hardware/Src/BaseSystic.cpp.s
+
+myLib/DataStream/inputStream.obj: myLib/DataStream/inputStream.cpp.obj
+.PHONY : myLib/DataStream/inputStream.obj
+
+# target to build an object file
+myLib/DataStream/inputStream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj
+.PHONY : myLib/DataStream/inputStream.cpp.obj
+
+myLib/DataStream/inputStream.i: myLib/DataStream/inputStream.cpp.i
+.PHONY : myLib/DataStream/inputStream.i
+
+# target to preprocess a source file
+myLib/DataStream/inputStream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.i
+.PHONY : myLib/DataStream/inputStream.cpp.i
+
+myLib/DataStream/inputStream.s: myLib/DataStream/inputStream.cpp.s
+.PHONY : myLib/DataStream/inputStream.s
+
+# target to generate assembly for a file
+myLib/DataStream/inputStream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.s
+.PHONY : myLib/DataStream/inputStream.cpp.s
+
+myLib/DataStream/outputStream.obj: myLib/DataStream/outputStream.cpp.obj
+.PHONY : myLib/DataStream/outputStream.obj
+
+# target to build an object file
+myLib/DataStream/outputStream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj
+.PHONY : myLib/DataStream/outputStream.cpp.obj
+
+myLib/DataStream/outputStream.i: myLib/DataStream/outputStream.cpp.i
+.PHONY : myLib/DataStream/outputStream.i
+
+# target to preprocess a source file
+myLib/DataStream/outputStream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.i
+.PHONY : myLib/DataStream/outputStream.cpp.i
+
+myLib/DataStream/outputStream.s: myLib/DataStream/outputStream.cpp.s
+.PHONY : myLib/DataStream/outputStream.s
+
+# target to generate assembly for a file
+myLib/DataStream/outputStream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.s
+.PHONY : myLib/DataStream/outputStream.cpp.s
 
 myLib/Factory/Src/Factory.obj: myLib/Factory/Src/Factory.cpp.obj
 .PHONY : myLib/Factory/Src/Factory.obj
@@ -880,6 +952,30 @@ myLib/MCU_Hardware/Src/MySystic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.s
 .PHONY : myLib/MCU_Hardware/Src/MySystic.cpp.s
 
+myLib/MCU_Hardware/Src/MyUsart.obj: myLib/MCU_Hardware/Src/MyUsart.cpp.obj
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.obj
+
+# target to build an object file
+myLib/MCU_Hardware/Src/MyUsart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.obj
+
+myLib/MCU_Hardware/Src/MyUsart.i: myLib/MCU_Hardware/Src/MyUsart.cpp.i
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.i
+
+# target to preprocess a source file
+myLib/MCU_Hardware/Src/MyUsart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.i
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.i
+
+myLib/MCU_Hardware/Src/MyUsart.s: myLib/MCU_Hardware/Src/MyUsart.cpp.s
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.s
+
+# target to generate assembly for a file
+myLib/MCU_Hardware/Src/MyUsart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s
+.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.s
+
 myLib/Virtual_Hardware/Src/virAFIO.obj: myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
 .PHONY : myLib/Virtual_Hardware/Src/virAFIO.obj
 
@@ -951,6 +1047,102 @@ myLib/Virtual_Hardware/Src/virSystic.s: myLib/Virtual_Hardware/Src/virSystic.cpp
 myLib/Virtual_Hardware/Src/virSystic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.s
 .PHONY : myLib/Virtual_Hardware/Src/virSystic.cpp.s
+
+myLib/Virtual_Hardware/Src/virUsart.obj: myLib/Virtual_Hardware/Src/virUsart.cpp.obj
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.obj
+
+# target to build an object file
+myLib/Virtual_Hardware/Src/virUsart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.obj
+
+myLib/Virtual_Hardware/Src/virUsart.i: myLib/Virtual_Hardware/Src/virUsart.cpp.i
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.i
+
+# target to preprocess a source file
+myLib/Virtual_Hardware/Src/virUsart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.i
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.i
+
+myLib/Virtual_Hardware/Src/virUsart.s: myLib/Virtual_Hardware/Src/virUsart.cpp.s
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.s
+
+# target to generate assembly for a file
+myLib/Virtual_Hardware/Src/virUsart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.s
+.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.s
+
+myLib/otherLib/WString.obj: myLib/otherLib/WString.cpp.obj
+.PHONY : myLib/otherLib/WString.obj
+
+# target to build an object file
+myLib/otherLib/WString.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj
+.PHONY : myLib/otherLib/WString.cpp.obj
+
+myLib/otherLib/WString.i: myLib/otherLib/WString.cpp.i
+.PHONY : myLib/otherLib/WString.i
+
+# target to preprocess a source file
+myLib/otherLib/WString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.i
+.PHONY : myLib/otherLib/WString.cpp.i
+
+myLib/otherLib/WString.s: myLib/otherLib/WString.cpp.s
+.PHONY : myLib/otherLib/WString.s
+
+# target to generate assembly for a file
+myLib/otherLib/WString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.s
+.PHONY : myLib/otherLib/WString.cpp.s
+
+myLib/otherLib/bswap.obj: myLib/otherLib/bswap.c.obj
+.PHONY : myLib/otherLib/bswap.obj
+
+# target to build an object file
+myLib/otherLib/bswap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj
+.PHONY : myLib/otherLib/bswap.c.obj
+
+myLib/otherLib/bswap.i: myLib/otherLib/bswap.c.i
+.PHONY : myLib/otherLib/bswap.i
+
+# target to preprocess a source file
+myLib/otherLib/bswap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.i
+.PHONY : myLib/otherLib/bswap.c.i
+
+myLib/otherLib/bswap.s: myLib/otherLib/bswap.c.s
+.PHONY : myLib/otherLib/bswap.s
+
+# target to generate assembly for a file
+myLib/otherLib/bswap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.s
+.PHONY : myLib/otherLib/bswap.c.s
+
+myLib/otherLib/stdlib_noniso.obj: myLib/otherLib/stdlib_noniso.c.obj
+.PHONY : myLib/otherLib/stdlib_noniso.obj
+
+# target to build an object file
+myLib/otherLib/stdlib_noniso.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj
+.PHONY : myLib/otherLib/stdlib_noniso.c.obj
+
+myLib/otherLib/stdlib_noniso.i: myLib/otherLib/stdlib_noniso.c.i
+.PHONY : myLib/otherLib/stdlib_noniso.i
+
+# target to preprocess a source file
+myLib/otherLib/stdlib_noniso.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.i
+.PHONY : myLib/otherLib/stdlib_noniso.c.i
+
+myLib/otherLib/stdlib_noniso.s: myLib/otherLib/stdlib_noniso.c.s
+.PHONY : myLib/otherLib/stdlib_noniso.s
+
+# target to generate assembly for a file
+myLib/otherLib/stdlib_noniso.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.s
+.PHONY : myLib/otherLib/stdlib_noniso.c.s
 
 # Help Target
 help:
@@ -1040,9 +1232,18 @@ help:
 	@echo ... myLib/Base_Hardware/Src/BaseGPIO.obj
 	@echo ... myLib/Base_Hardware/Src/BaseGPIO.i
 	@echo ... myLib/Base_Hardware/Src/BaseGPIO.s
+	@echo ... myLib/Base_Hardware/Src/BaseSerial.obj
+	@echo ... myLib/Base_Hardware/Src/BaseSerial.i
+	@echo ... myLib/Base_Hardware/Src/BaseSerial.s
 	@echo ... myLib/Base_Hardware/Src/BaseSystic.obj
 	@echo ... myLib/Base_Hardware/Src/BaseSystic.i
 	@echo ... myLib/Base_Hardware/Src/BaseSystic.s
+	@echo ... myLib/DataStream/inputStream.obj
+	@echo ... myLib/DataStream/inputStream.i
+	@echo ... myLib/DataStream/inputStream.s
+	@echo ... myLib/DataStream/outputStream.obj
+	@echo ... myLib/DataStream/outputStream.i
+	@echo ... myLib/DataStream/outputStream.s
 	@echo ... myLib/Factory/Src/Factory.obj
 	@echo ... myLib/Factory/Src/Factory.i
 	@echo ... myLib/Factory/Src/Factory.s
@@ -1055,6 +1256,9 @@ help:
 	@echo ... myLib/MCU_Hardware/Src/MySystic.obj
 	@echo ... myLib/MCU_Hardware/Src/MySystic.i
 	@echo ... myLib/MCU_Hardware/Src/MySystic.s
+	@echo ... myLib/MCU_Hardware/Src/MyUsart.obj
+	@echo ... myLib/MCU_Hardware/Src/MyUsart.i
+	@echo ... myLib/MCU_Hardware/Src/MyUsart.s
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.obj
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.i
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.s
@@ -1064,6 +1268,18 @@ help:
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.obj
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.i
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.s
+	@echo ... myLib/Virtual_Hardware/Src/virUsart.obj
+	@echo ... myLib/Virtual_Hardware/Src/virUsart.i
+	@echo ... myLib/Virtual_Hardware/Src/virUsart.s
+	@echo ... myLib/otherLib/WString.obj
+	@echo ... myLib/otherLib/WString.i
+	@echo ... myLib/otherLib/WString.s
+	@echo ... myLib/otherLib/bswap.obj
+	@echo ... myLib/otherLib/bswap.i
+	@echo ... myLib/otherLib/bswap.s
+	@echo ... myLib/otherLib/stdlib_noniso.obj
+	@echo ... myLib/otherLib/stdlib_noniso.i
+	@echo ... myLib/otherLib/stdlib_noniso.s
 .PHONY : help
 
 

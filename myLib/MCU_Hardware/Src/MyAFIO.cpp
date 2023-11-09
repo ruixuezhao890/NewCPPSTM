@@ -11,7 +11,7 @@
 *********
 */
 //
-
+#if 0
 #include "MyAFIO.h"
 /**
 * @brief 函数afio_init用于实现AFIO模式下的GPIO初始化
@@ -34,3 +34,4 @@ void MyAFIO::afio_init(Pin_enum pin, AFIO_mode mode) {
     gpioInitTypeDef.Speed=(uint32_t)DEFAULT_GPIO_SPEED;
     HAL_GPIO_Init(GPIOx,&gpioInitTypeDef);
 }
+#endif

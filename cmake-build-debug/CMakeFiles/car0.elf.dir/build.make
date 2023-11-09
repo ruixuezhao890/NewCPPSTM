@@ -445,10 +445,24 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.s"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseGPIO.cpp -o CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseGPIO.cpp.s
 
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSerial.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSerial.cpp.obj -c D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseSerial.cpp
+
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseSerial.cpp > CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSerial.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseSerial.cpp -o CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSerial.cpp.s
+
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSystic.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSystic.cpp.obj -c D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseSystic.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.i: cmake_force
@@ -459,10 +473,38 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.s"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\Base_Hardware\Src\BaseSystic.cpp -o CMakeFiles\car0.elf.dir\myLib\Base_Hardware\Src\BaseSystic.cpp.s
 
+CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp
+CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\DataStream\inputStream.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\DataStream\inputStream.cpp.obj -c D:\CODE\STM32\car0\myLib\DataStream\inputStream.cpp
+
+CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\DataStream\inputStream.cpp > CMakeFiles\car0.elf.dir\myLib\DataStream\inputStream.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\DataStream\inputStream.cpp -o CMakeFiles\car0.elf.dir\myLib\DataStream\inputStream.cpp.s
+
+CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj: D:/CODE/STM32/car0/myLib/DataStream/outputStream.cpp
+CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\DataStream\outputStream.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\DataStream\outputStream.cpp.obj -c D:\CODE\STM32\car0\myLib\DataStream\outputStream.cpp
+
+CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\DataStream\outputStream.cpp > CMakeFiles\car0.elf.dir\myLib\DataStream\outputStream.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\DataStream\outputStream.cpp -o CMakeFiles\car0.elf.dir\myLib\DataStream\outputStream.cpp.s
+
 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj: D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp
 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Factory\Src\Factory.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Factory\Src\Factory.cpp.obj -c D:\CODE\STM32\car0\myLib\Factory\Src\Factory.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.i: cmake_force
@@ -476,7 +518,7 @@ CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.s: cmake_force
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyAFIO.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyAFIO.cpp.obj -c D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MyAFIO.cpp
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.i: cmake_force
@@ -490,7 +532,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.s: cmake_force
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyGPIO.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyGPIO.cpp.obj -c D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MyGPIO.cpp
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.i: cmake_force
@@ -504,7 +546,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.s: cmake_force
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MySystic.cpp
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MySystic.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MySystic.cpp.obj -c D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MySystic.cpp
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.i: cmake_force
@@ -515,10 +557,24 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.s"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MySystic.cpp -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MySystic.cpp.s
 
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyUsart.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyUsart.cpp.obj -c D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MyUsart.cpp
+
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MyUsart.cpp > CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyUsart.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\MCU_Hardware\Src\MyUsart.cpp -o CMakeFiles\car0.elf.dir\myLib\MCU_Hardware\Src\MyUsart.cpp.s
+
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virAFIO.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virAFIO.cpp.obj -c D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virAFIO.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.i: cmake_force
@@ -532,7 +588,7 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.s: cmake_force
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virGPIO.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virGPIO.cpp.obj -c D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virGPIO.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.i: cmake_force
@@ -546,7 +602,7 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.s: cmake_force
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virSystic.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virSystic.cpp.obj -c D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virSystic.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.i: cmake_force
@@ -556,6 +612,62 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.i: cmake_force
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.s"
 	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virSystic.cpp -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virSystic.cpp.s
+
+CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp
+CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virUsart.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virUsart.cpp.obj -c D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virUsart.cpp
+
+CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virUsart.cpp > CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virUsart.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src\virUsart.cpp -o CMakeFiles\car0.elf.dir\myLib\Virtual_Hardware\Src\virUsart.cpp.s
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj: D:/CODE/STM32/car0/myLib/otherLib/WString.cpp
+CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj -MF CMakeFiles\car0.elf.dir\myLib\otherLib\WString.cpp.obj.d -o CMakeFiles\car0.elf.dir\myLib\otherLib\WString.cpp.obj -c D:\CODE\STM32\car0\myLib\otherLib\WString.cpp
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CODE\STM32\car0\myLib\otherLib\WString.cpp > CMakeFiles\car0.elf.dir\myLib\otherLib\WString.cpp.i
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CODE\STM32\car0\myLib\otherLib\WString.cpp -o CMakeFiles\car0.elf.dir\myLib\otherLib\WString.cpp.s
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj: D:/CODE/STM32/car0/myLib/otherLib/bswap.c
+CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj -MF CMakeFiles\car0.elf.dir\myLib\otherLib\bswap.c.obj.d -o CMakeFiles\car0.elf.dir\myLib\otherLib\bswap.c.obj -c D:\CODE\STM32\car0\myLib\otherLib\bswap.c
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CODE\STM32\car0\myLib\otherLib\bswap.c > CMakeFiles\car0.elf.dir\myLib\otherLib\bswap.c.i
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CODE\STM32\car0\myLib\otherLib\bswap.c -o CMakeFiles\car0.elf.dir\myLib\otherLib\bswap.c.s
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj: CMakeFiles/car0.elf.dir/flags.make
+CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj: D:/CODE/STM32/car0/myLib/otherLib/stdlib_noniso.c
+CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj: CMakeFiles/car0.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj -MF CMakeFiles\car0.elf.dir\myLib\otherLib\stdlib_noniso.c.obj.d -o CMakeFiles\car0.elf.dir\myLib\otherLib\stdlib_noniso.c.obj -c D:\CODE\STM32\car0\myLib\otherLib\stdlib_noniso.c
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.i"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CODE\STM32\car0\myLib\otherLib\stdlib_noniso.c > CMakeFiles\car0.elf.dir\myLib\otherLib\stdlib_noniso.c.i
+
+CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.s"
+	"D:\ProgramFiles\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CODE\STM32\car0\myLib\otherLib\stdlib_noniso.c -o CMakeFiles\car0.elf.dir\myLib\otherLib\stdlib_noniso.c.s
 
 # Object files for target car0.elf
 car0_elf_OBJECTS = \
@@ -586,14 +698,22 @@ car0_elf_OBJECTS = \
 "CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" \
 "CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" \
 "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj" \
 "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj" \
-"CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj"
+"CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj" \
+"CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj" \
+"CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj"
 
 # External object files for target car0.elf
 car0_elf_EXTERNAL_OBJECTS =
@@ -625,17 +745,25 @@ car0.elf: CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal
 car0.elf: CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 car0.elf: CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 car0.elf: CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj
+car0.elf: CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj
 car0.elf: CMakeFiles/car0.elf.dir/build.make
 car0.elf: CMakeFiles/car0.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable car0.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CODE\STM32\car0\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable car0.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\car0.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/CODE/STM32/car0/cmake-build-debug/car0.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/CODE/STM32/car0/cmake-build-debug/car0.bin"

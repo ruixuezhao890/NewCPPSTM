@@ -15,17 +15,21 @@
 #ifndef CAR0_RESOURCES_H
 #define CAR0_RESOURCES_H
 #include "stm32f4xx.h"
+//#define Cubemx //代表使用了cubemx配置时钟没有这个宏代表使用VirSystic函数配置时钟
+#define STM32 1
+#define ENABLE_FERRRTOS 0
 #define DEFAULT_GPIO_SPEED GpioSpeed::freq_medium //GPIO初始化默认GPIO速度 可以在Resources中找到
+
 void openCorrespondRCC(GPIO_TypeDef *GPIOx);
-enum class GpioGroup {
-    GroupA,GroupB,GroupC,GroupD,GroupE,GroupF,GroupG,GroupH,GroupI,GroupJ,GroupK,GroupNULL
-};
-enum class AFIO_mode
-{
-    input_af  = 0x0,
-    out_pp_af = GPIO_MODE_AF_PP,
-    out_od_af = GPIO_MODE_AF_OD
-} ;
+//enum class GpioGroup {
+//    GroupA,GroupB,GroupC,GroupD,GroupE,GroupF,GroupG,GroupH,GroupI,GroupJ,GroupK,GroupNULL
+//};
+//enum class AFIO_mode
+//{
+//    input_af  = 0x0,
+//    out_pp_af = GPIO_MODE_AF_PP,
+//    out_od_af = GPIO_MODE_AF_OD
+//} ;
 enum class GpioMode {
     input = 0x00000000U,
     output_pp = 0x00000001U,
@@ -53,6 +57,7 @@ enum class GpioPull {
     pullup = 0x00000001U,
     pulldown = 0x00000002U
 };
+
 typedef enum
 {
     A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,
@@ -72,7 +77,56 @@ typedef struct
     volatile uint16_t data_size;    //缓冲区接收到的数据长度
     /* data */
 }__rec_buf;
-//#define Cubemx //代表使用了cubemx配置时钟没有这个宏代表使用VirSystic函数配置时钟
-#define STM32 1
-#define ENABLE_FERRRTOS 0
+#define HAVE_SERIAL1
+#define HAVE_SERIAL2
+#define HAVE_SERIAL3
+#define HAVE_SERIAL4
+#define HAVE_SERIAL5
+#define HAVE_SERIAL6
+#define HAVE_I2C1
+#define HAVE_I2C2
+#define HAVE_SPI1
+#define HAVE_SPI2
+#define HAVE_SPI3
+
+typedef enum
+{
+#ifdef HAVE_SERIAL1
+    UART_1,
+#endif
+#ifdef HAVE_SERIAL2
+    UART_2 ,
+#endif
+#ifdef HAVE_SERIAL3
+    UART_3 ,
+#endif
+#ifdef HAVE_SERIAL4
+    UART_4 ,
+#endif
+#ifdef HAVE_SERIAL5
+    UART_5 ,
+#endif
+#ifdef HAVE_SERIAL6
+    UART_6 ,
+#endif
+    UART_END // 占位符，未使用
+} UART_enum;
+#ifdef HAVE_SERIAL1
+extern __rec_buf UART1_recbuf;
+#endif
+#ifdef HAVE_SERIAL2
+extern __rec_buf UART2_recbuf;
+#endif
+#ifdef HAVE_SERIAL3
+extern __rec_buf UART3_recbuf;
+#endif
+#ifdef HAVE_SERIAL4
+extern __rec_buf UART4_recbuf;
+#endif
+#ifdef HAVE_SERIAL5
+extern __rec_buf UART5_recbuf;
+#endif
+#ifdef HAVE_SERIAL6
+extern __rec_buf UART6_recbuf;
+#endif
 #endif //CAR0_RESOURCES_H

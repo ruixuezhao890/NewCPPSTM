@@ -25,6 +25,7 @@ protected:
     virGPIO();
 public:
    virtual void gpio_init(Pin_enum pin, GpioMode mode)=0;
+   virtual void gpio_init(Pin_enum pin, GpioMode mode,uint8_t select)=0;
    virtual void gpio_deinit(Pin_enum pin)=0;
    virtual void gpio_write(Pin_enum pin, uint8_t data)=0;
    virtual void gpio_toggle(Pin_enum pin)=0;

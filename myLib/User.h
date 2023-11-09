@@ -16,4 +16,5 @@
 #define CAR0_USER_H
 #include "headfile.h"
 #include "BaseGPIO.h"
+#include "BaseSerial.h"
 #endif //CAR0_USER_H

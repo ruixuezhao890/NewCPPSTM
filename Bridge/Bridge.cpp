@@ -14,16 +14,26 @@
 
 #include "Bridge.h"
 #include "User.h"
+BaseGPIO led(F9, GpioMode::output_pp);
 void keycall(){
-    GPIO led(F9,GpioMode::output_pp);
-    led.write(0);
+
+    led.toggle();
 }
 void  MyMian(){
-    GPIO Led(F10,GpioMode::output_pp);
-    GPIO key(E4,GpioMode::input);
+
+    Baseserial.begin(115200);
+    Baseserial.println("hello world");
+    Baseserial.print(3.1415926,6);Baseserial.println();
+    BaseGPIO Led(F10, GpioMode::output_pp);
+    BaseGPIO key(E4, GpioMode::input);
+    BaseGPIO Key0(A0,GpioMode::input);
     key.attachInterrupt(keycall,GpioExit::it_falling);
+    Key0.attachInterrupt(keycall,GpioExit::it_rising);
     for (;;){
         Led.toggle();
         HAL_Delay(1000);
+        while (Baseserial.available()){
+            Baseserial.write(Baseserial.read());
+        }
     }
 }

@@ -58,6 +58,21 @@ void MyGPIO::gpio_init(Pin_enum pin, GpioMode mode) {
     HAL_GPIO_Init(GPIOx,&GPIO_InitStruct);
 }
 
+void MyGPIO::gpio_init(Pin_enum pin, GpioMode mode, uint8_t select) {
+    uint16_t gpio_pin = GPIO_PIN_0 << (pin & 0x0f);
+    uint16_t gpio_port = (pin & 0xf0) >> 4;
+    GPIO_TypeDef *GPIOx = (GPIO_TypeDef *)(GPIOA_BASE + 0x0400 * gpio_port);
+    openCorrespondRCC(GPIOx);
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Pin = gpio_pin;
+    GPIO_InitStruct.Mode = (uint32_t )mode;
+    GPIO_InitStruct.Pull =((GpioExit)mode == GpioExit::it_falling) ?
+                          (uint32_t)GpioPull::pullup : (uint32_t)GpioPull::pulldown;
+    GPIO_InitStruct.Speed = (uint32_t)DEFAULT_GPIO_SPEED;
+    GPIO_InitStruct.Alternate = select;
+    HAL_GPIO_Init(GPIOx,&GPIO_InitStruct);
+}
+
 void MyGPIO::gpio_deinit(Pin_enum pin) {
     uint16_t gpio_pin = GPIO_PIN_0 << (pin & 0x0f);
     uint16_t gpio_port = (pin & 0xf0) >> 4;
@@ -105,7 +120,7 @@ void MyGPIO::gpio_interrupt_init(Pin_enum pin, CallBack callBack, GpioExit mode)
             return;
     }
     auto exitx=get_exit_irqchannel(pin);
-    HAL_NVIC_SetPriority((IRQn_Type)exitx, 0, 2);               /* 抢占0，子优先级2 */
+    HAL_NVIC_SetPriority((IRQn_Type)exitx, 2, 2);               /* 抢2，子优先级2 */
     HAL_NVIC_EnableIRQ((IRQn_Type)exitx);                       /* 使能中断线x */
     ExitFunc[GPIO_PinSourcex]=(callBack);
 }
@@ -143,6 +158,8 @@ uint8_t MyGPIO::get_exit_irqchannel(Pin_enum pin) {
 MyGPIO::MyGPIO() {
 
 }
+
+
 
 
 void EXTI0_IRQHandler(void)
@@ -194,7 +211,7 @@ void EXTI4_IRQHandler(void)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
         ExitFunc[4]();
-        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
+       __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
     }
 }
 

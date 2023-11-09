@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : GPIO.h
+* @file : BaseGPIO.h
 * @author : zen3
 * @brief : None
 * @attention : None
@@ -15,15 +15,16 @@
 #ifndef CAR0_GPIO_H
 #define CAR0_GPIO_H
 #include "headfile.h"
-class GPIO {
+#include "Factory.h"
+
+class BaseGPIO {
 private:
-    virGPIO *virGpio;
     Pin_enum gpio_pin;
-    Factory factory;
+
 public:
-    GPIO();
-    GPIO(Pin_enum pin);
-    GPIO(Pin_enum pin, GpioMode mode);
+    BaseGPIO();
+    BaseGPIO(Pin_enum pin);
+    BaseGPIO(Pin_enum pin, GpioMode mode);
     void mode(GpioMode mode);
     void write(uint8_t data);
     void toggle();
@@ -31,7 +32,9 @@ public:
     void attachInterrupt(void (*callback)(void), GpioExit mode);
 
     uint16_t adc();
-    ~GPIO();
+    ~BaseGPIO();
+protected:
+
 };
 
 

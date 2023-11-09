@@ -51,12 +51,13 @@ endif ()
 
 include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F4xx/Include Drivers/CMSIS/Include
         Bridge myLib/Virtual_Hardware/Inc myLib/MCU_Hardware/Inc myLib/Factory/Inc
-        myLib/Base_Hardware/Inc myLib)
+        myLib/Base_Hardware/Inc myLib myLib/otherLib myLib/DataStream myLib/PinConfig)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "myLib/Virtual_Hardware/Src/*.*" "myLib/MCU_Hardware/Src/*.*"
-        "Bridge/*.*" "myLib/Factory/Src/*.*" "myLib/Base_Hardware/Src/*.*")
+        "Bridge/*.*" "myLib/Factory/Src/*.*" "myLib/Base_Hardware/Src/*.*" "myLib/otherLib/*.*"
+        "myLib/DataStream/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407ZGTX_FLASH.ld)
 
