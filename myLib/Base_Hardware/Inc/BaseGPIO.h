@@ -29,7 +29,7 @@ public:
     void write(uint8_t data);
     void toggle();
     uint8_t read();
-    void attachInterrupt(void (*callback)(void), GpioExit mode);
+    void attachInterrupt(void (*callback)(void), GpioExit mode,uint8_t PreemptPriority,uint8_t SubPriority);
 
     uint16_t adc();
     ~BaseGPIO();

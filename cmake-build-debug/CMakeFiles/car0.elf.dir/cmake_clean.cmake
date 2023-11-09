@@ -76,6 +76,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj.d"
+  "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj"
+  "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj"

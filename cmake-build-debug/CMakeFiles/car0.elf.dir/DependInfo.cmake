@@ -30,11 +30,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"
   "D:/CODE/STM32/car0/myLib/Factory/Inc"
+  "D:/CODE/STM32/car0/myLib/PinConfig"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Inc"
   "D:/CODE/STM32/car0/myLib"
   "D:/CODE/STM32/car0/myLib/otherLib"
   "D:/CODE/STM32/car0/myLib/DataStream"
-  "D:/CODE/STM32/car0/myLib/PinConfig"
   )
 
 # The set of dependency files which are needed:
@@ -79,6 +79,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/otherLib/WString.cpp" "CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj.d"
   )

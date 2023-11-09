@@ -29,7 +29,8 @@ public:
 
     void gpio_toggle(Pin_enum pin) override;
 
-    void gpio_interrupt_init(Pin_enum pin, CallBack callBack, GpioExit mode) override;
+    void gpio_interrupt_init(Pin_enum pin, CallBack callBack, GpioExit mode,
+                             uint8_t PreemptPriority,uint8_t SubPriority) override;
 
     void gpio_interrupt_deinit(Pin_enum pin) override;
 

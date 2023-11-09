@@ -36,11 +36,11 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/PinConfig"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/PinConfig"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -74,11 +74,11 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/PinConfig"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/PinConfig"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -424,6 +424,9 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp">

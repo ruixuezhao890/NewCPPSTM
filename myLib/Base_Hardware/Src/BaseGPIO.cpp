@@ -43,8 +43,9 @@ uint8_t BaseGPIO::read() {
     return virGpio->gpio_read(gpio_pin);
 }
 
-void BaseGPIO::attachInterrupt(void (*callback)(void), GpioExit mode) {
-    virGpio->gpio_interrupt_init(gpio_pin,callback,mode);
+void BaseGPIO::attachInterrupt(void (*callback)(void), GpioExit mode,
+                               uint8_t PreemptPriority,uint8_t SubPriority) {
+    virGpio->gpio_interrupt_init(gpio_pin,callback,mode,PreemptPriority,SubPriority);
 }
 
 uint16_t BaseGPIO::adc() {

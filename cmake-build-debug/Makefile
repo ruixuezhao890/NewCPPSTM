@@ -1048,6 +1048,30 @@ myLib/Virtual_Hardware/Src/virSystic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.s
 .PHONY : myLib/Virtual_Hardware/Src/virSystic.cpp.s
 
+myLib/Virtual_Hardware/Src/virTime.obj: myLib/Virtual_Hardware/Src/virTime.cpp.obj
+.PHONY : myLib/Virtual_Hardware/Src/virTime.obj
+
+# target to build an object file
+myLib/Virtual_Hardware/Src/virTime.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj
+.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.obj
+
+myLib/Virtual_Hardware/Src/virTime.i: myLib/Virtual_Hardware/Src/virTime.cpp.i
+.PHONY : myLib/Virtual_Hardware/Src/virTime.i
+
+# target to preprocess a source file
+myLib/Virtual_Hardware/Src/virTime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.i
+.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.i
+
+myLib/Virtual_Hardware/Src/virTime.s: myLib/Virtual_Hardware/Src/virTime.cpp.s
+.PHONY : myLib/Virtual_Hardware/Src/virTime.s
+
+# target to generate assembly for a file
+myLib/Virtual_Hardware/Src/virTime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.s
+.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.s
+
 myLib/Virtual_Hardware/Src/virUsart.obj: myLib/Virtual_Hardware/Src/virUsart.cpp.obj
 .PHONY : myLib/Virtual_Hardware/Src/virUsart.obj
 
@@ -1268,6 +1292,9 @@ help:
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.obj
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.i
 	@echo ... myLib/Virtual_Hardware/Src/virSystic.s
+	@echo ... myLib/Virtual_Hardware/Src/virTime.obj
+	@echo ... myLib/Virtual_Hardware/Src/virTime.i
+	@echo ... myLib/Virtual_Hardware/Src/virTime.s
 	@echo ... myLib/Virtual_Hardware/Src/virUsart.obj
 	@echo ... myLib/Virtual_Hardware/Src/virUsart.i
 	@echo ... myLib/Virtual_Hardware/Src/virUsart.s

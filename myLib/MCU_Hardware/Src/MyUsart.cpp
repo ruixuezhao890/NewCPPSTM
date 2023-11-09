@@ -138,7 +138,7 @@ void MyUsart::uart_dma_init(UART_enum uart) {
 }
 
 void MyUsart::uart_dma_write_buffer(UART_enum uart, const uint8_t *buf, int len) {
-    HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],buf,len);
+//    HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],buf,len);
 }
 
 __rec_buf *MyUsart::selectBuff(UART_enum uart) {
