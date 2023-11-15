@@ -13,3 +13,7 @@
 //
 
 #include "virTime.h"
+
+virTime::virTime() {
+
+}

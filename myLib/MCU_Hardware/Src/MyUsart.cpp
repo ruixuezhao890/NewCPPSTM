@@ -32,6 +32,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
     {
 #ifdef HAVE_SERIAL1
         case UART_1:
+            __HAL_RCC_USART1_CLK_ENABLE();
             uartInfo.UsartList[uart].Instance=USART1;
             Alternate=GPIO_AF7_USART1;
             uart_tx = (Pin_enum)UART1_TX, uart_rx = (Pin_enum)UART1_RX;
@@ -41,6 +42,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 #endif
 #ifdef HAVE_SERIAL2
         case UART_2:
+            __HAL_RCC_USART2_CLK_ENABLE();
             uartInfo.UsartList[uart].Instance=USART2;
             Alternate=GPIO_AF7_USART2;
             uart_tx = (Pin_enum)UART2_TX, uart_rx = (Pin_enum)UART2_RX;
@@ -50,6 +52,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 #endif
 #ifdef HAVE_SERIAL3
         case UART_3:
+            __HAL_RCC_USART3_CLK_ENABLE();
             uartInfo. UsartList[uart].Instance=USART3;
             Alternate=GPIO_AF7_USART3;
             uart_tx = (Pin_enum)UART3_TX, uart_rx = (Pin_enum)UART3_RX;
@@ -59,6 +62,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 #endif
 #ifdef HAVE_SERIAL4
         case UART_4:
+            __HAL_RCC_UART4_CLK_DISABLE();
             uartInfo.UsartList[uart].Instance=UART4;
             Alternate=GPIO_AF8_UART4;
             uart_tx = (Pin_enum)UART4_TX, uart_rx = (Pin_enum)UART4_RX;
@@ -68,6 +72,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 #endif
 #ifdef HAVE_SERIAL5
         case UART_5:
+            __HAL_RCC_UART5_CLK_ENABLE();
             uartInfo. UsartList[uart].Instance=UART5;
             Alternate=GPIO_AF8_UART5;
             uart_tx = (Pin_enum)UART5_TX, uart_rx = (Pin_enum)UART5_RX;
@@ -77,6 +82,7 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 #endif
 #ifdef HAVE_SERIAL6
         case UART_6:
+            __HAL_RCC_USART6_CLK_ENABLE();
             uartInfo.UsartList[uart].Instance=USART6;
             Alternate=GPIO_AF8_USART6;
             uart_tx = (Pin_enum)UART6_TX, uart_rx = (Pin_enum)UART6_RX;

@@ -18,30 +18,39 @@ CallBack ExitFunc[16];
 void openCorrespondRCC(GPIO_TypeDef *GPIOx) {
     if (GPIOx == GPIOA) {
         __HAL_RCC_GPIOA_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOB) {
         __HAL_RCC_GPIOB_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOC) {
         __HAL_RCC_GPIOC_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOD) {
         __HAL_RCC_GPIOD_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOE) {
         __HAL_RCC_GPIOE_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOF) {
         __HAL_RCC_GPIOF_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOG) {
         __HAL_RCC_GPIOG_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOH) {
         __HAL_RCC_GPIOH_CLK_ENABLE();
+        return;
     }
     if (GPIOx == GPIOI) {
         __HAL_RCC_GPIOI_CLK_ENABLE();
+        return;
     }
 }
 void MyGPIO::gpio_init(Pin_enum pin, GpioMode mode) {
@@ -126,8 +135,9 @@ void MyGPIO::gpio_interrupt_init(Pin_enum pin, CallBack callBack, GpioExit mode,
 
 void MyGPIO::gpio_interrupt_deinit(Pin_enum pin) {
     uint16_t GPIO_PinSourcex =(pin & 0x0f);
-    auto exitx=get_exit_irqchannel(pin);
-    HAL_NVIC_DisableIRQ((IRQn_Type)exitx);
+    //不关掉中断 只把中断函数置为空指针
+//    auto exitx=get_exit_irqchannel(pin);
+//    HAL_NVIC_DisableIRQ((IRQn_Type)exitx);
     ExitFunc[GPIO_PinSourcex]= nullptr;
 }
 
@@ -160,14 +170,12 @@ MyGPIO::MyGPIO() {
 
 }
 
-
-
-
 void EXTI0_IRQHandler(void)
 {
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_0) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
+        if ( ExitFunc[0])
         ExitFunc[0]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
     }
@@ -179,6 +187,7 @@ void EXTI1_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_1);
+        if ( ExitFunc[1])
         ExitFunc[1]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_1);
     }
@@ -190,6 +199,7 @@ void EXTI2_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_2);
+        if ( ExitFunc[2])
         ExitFunc[2]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_2);
     }
@@ -201,6 +211,7 @@ void EXTI3_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_3);
+        if ( ExitFunc[3])
         ExitFunc[3]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_3);
     }
@@ -211,6 +222,7 @@ void EXTI4_IRQHandler(void)
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_4) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
+        if ( ExitFunc[4])
         ExitFunc[4]();
        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4);
     }
@@ -222,6 +234,7 @@ void EXTI9_5_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
+        if ( ExitFunc[5])
         ExitFunc[5]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_5);
     }
@@ -229,6 +242,7 @@ void EXTI9_5_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_6);
+        if ( ExitFunc[6])
         ExitFunc[6]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_6);
     }
@@ -236,6 +250,7 @@ void EXTI9_5_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
+        if ( ExitFunc[7])
         ExitFunc[7]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_7);
     }
@@ -243,6 +258,7 @@ void EXTI9_5_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_8);
+        if ( ExitFunc[8])
         ExitFunc[8]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_8);
     }
@@ -250,6 +266,7 @@ void EXTI9_5_IRQHandler(void)
     {
 
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_9);
+        if ( ExitFunc[9])
         ExitFunc[9]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_9);
     }
@@ -260,36 +277,42 @@ void EXTI15_10_IRQHandler(){
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_10) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_10);
+        if ( ExitFunc[10])
         ExitFunc[10]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_10);
     }
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_11) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_11);
+        if ( ExitFunc[11])
         ExitFunc[11]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_11);
     }
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_12) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);
+        if ( ExitFunc[12])
         ExitFunc[12]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_12);
     }
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_13) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_13);
+        if ( ExitFunc[13])
         ExitFunc[13]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_13);
     }
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_14) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_14);
+        if ( ExitFunc[14])
         ExitFunc[14]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_14);
     }
     if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_15) != RESET)
     {
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_15);
+        if ( ExitFunc[15])
         ExitFunc[15]();
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_15);
     }

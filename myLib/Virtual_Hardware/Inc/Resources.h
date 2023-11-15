@@ -19,7 +19,7 @@
 #define STM32 1
 #define ENABLE_FERRRTOS 0
 #define DEFAULT_GPIO_SPEED GpioSpeed::freq_medium //GPIO初始化默认GPIO速度 可以在Resources中找到
-
+using AlternateIO=uint8_t;
 void openCorrespondRCC(GPIO_TypeDef *GPIOx);
 //enum class GpioGroup {
 //    GroupA,GroupB,GroupC,GroupD,GroupE,GroupF,GroupG,GroupH,GroupI,GroupJ,GroupK,GroupNULL
@@ -128,46 +128,46 @@ typedef enum
 typedef enum
 {
 #ifdef HAVE_TIMER1
-
+    TIMER_1,
 #endif
 #ifdef HAVE_TIMER2
-
+    TIMER_2,
 #endif
 #ifdef HAVE_TIMER3
-
+    TIMER_3,
 #endif
 #ifdef HAVE_TIMER4
-
+    TIMER_4,
 #endif
 #ifdef HAVE_TIMER5
-
+    TIMER_5,
 #endif
 #ifdef HAVE_TIMER6
-
+    TIMER_6,
 #endif
 #ifdef HAVE_TIMER7
-
+    TIMER_7,
 #endif
 #ifdef HAVE_TIMER8
-
+    TIMER_8,
 #endif
 #ifdef HAVE_TIMER9
-
+    TIMER_9,
 #endif
 #ifdef HAVE_TIMER10
-
+    TIMER_10,
 #endif
 #ifdef HAVE_TIMER11
-
+    TIMER_11,
 #endif
 #ifdef HAVE_TIMER12
-
+    TIMER_12,
 #endif
 #ifdef HAVE_TIMER13
-
+    TIMER_13,
 #endif
 #ifdef HAVE_TIMER14
-
+    TIMER_14,
 #endif
     TIMER_END // 占位符，未使用
 } Timer_enum;
@@ -189,4 +189,16 @@ extern __rec_buf UART5_recbuf;
 #ifdef HAVE_SERIAL6
 extern __rec_buf UART6_recbuf;
 #endif
+enum class GenericMode{
+    TIME_PWM,
+    TIME_Capture,
+    TIME_PulseCounting
+};
+enum class AdvancedMode{
+    TIME_SpecifyPWM,
+    TIME_Compare,
+    TIME_DeadZoneControl,
+    TIME_InputMode
+};
+
 #endif //CAR0_RESOURCES_H

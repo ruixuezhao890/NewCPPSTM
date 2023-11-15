@@ -16,4 +16,5 @@
 #define CAR0_HEADFILE_H
 #include "MyGPIO.h"
 #include "MyUsart.h"
+#include "MyTime.h"
 #endif //CAR0_HEADFILE_H
