@@ -81,7 +81,19 @@ void MyGPIO::gpio_init(Pin_enum pin, GpioMode mode, uint8_t select) {
     GPIO_InitStruct.Alternate = select;
     HAL_GPIO_Init(GPIOx,&GPIO_InitStruct);
 }
-
+void MyGPIO::gpio_init(Pin_enum pin, GpioMode mode, GpioPull pull, uint8_t select) {
+    uint16_t gpio_pin = GPIO_PIN_0 << (pin & 0x0f);
+    uint16_t gpio_port = (pin & 0xf0) >> 4;
+    GPIO_TypeDef *GPIOx = (GPIO_TypeDef *)(GPIOA_BASE + 0x0400 * gpio_port);
+    openCorrespondRCC(GPIOx);
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Pin = gpio_pin;
+    GPIO_InitStruct.Mode = (uint32_t )mode;
+    GPIO_InitStruct.Pull =(uint32_t)pull;
+    GPIO_InitStruct.Speed = (uint32_t)DEFAULT_GPIO_SPEED;
+    GPIO_InitStruct.Alternate = select;
+    HAL_GPIO_Init(GPIOx,&GPIO_InitStruct);
+}
 void MyGPIO::gpio_deinit(Pin_enum pin) {
     uint16_t gpio_pin = GPIO_PIN_0 << (pin & 0x0f);
     uint16_t gpio_port = (pin & 0xf0) >> 4;
@@ -169,6 +181,8 @@ uint8_t MyGPIO::get_exit_irqchannel(Pin_enum pin) {
 MyGPIO::MyGPIO() {
 
 }
+
+
 
 void EXTI0_IRQHandler(void)
 {

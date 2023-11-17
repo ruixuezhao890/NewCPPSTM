@@ -18,8 +18,11 @@
 struct GenericTIMMode{
     GenericMode genericMode;
     Pin_enum pwmChannelIO;
-    AlternateIO alternateIO;
+    Pin_enum CaptureChannelIO;
+    Pin_enum CounterChannelIO;
+    AlternateIO alternateMode;
     uint8_t Tim_Channel;
+    uint8_t Tim_CaptureChannel;
 };
 struct  AdvancedTIMMode{
     AdvancedMode advancedMode;
@@ -131,7 +134,7 @@ public:
      * @param timer 选择的定时器。
      * @return PWM信号的当前频率。
      */
-    virtual uint32_t pwm_getFrequency(Timer_enum timer, GenericTIMMode genericMode) const = 0;
+    virtual uint32_t pwm_getFrequency(Timer_enum timer) const = 0;
 
 /**
  * @brief 获取指定定时器上PWM信号的当前占空比。
@@ -140,7 +143,7 @@ public:
  * @param genericMode 泛型定时器模式。
  * @return PWM信号的当前占空比。
  */
-    virtual float pwm_getDutyCycle(Timer_enum timer, uint16_t setData, GenericTIMMode genericMode) const = 0;
+    virtual float pwm_getDutyCycle(Timer_enum timer, GenericTIMMode genericMode) const = 0;
 
 /**
  * @brief 设置指定定时器上PWM信号的相位。
@@ -188,5 +191,6 @@ public:
  */
     virtual void pwm_setInterruptCallback(Timer_enum timer, void (*callback)(void), GenericTIMMode genericMode) = 0;
 
+    virtual uint32_t CaptureHighLevelTime();
 };
 #endif

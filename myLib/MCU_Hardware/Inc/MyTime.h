@@ -43,9 +43,9 @@ public:
 
     void timer_clear_callback(Timer_enum timer) override;
 
-    uint32_t pwm_getFrequency(Timer_enum timer, GenericTIMMode genericMode) const override;
+    uint32_t pwm_getFrequency(Timer_enum timer) const override;
 
-    float pwm_getDutyCycle(Timer_enum timer, uint16_t setData, GenericTIMMode genericMode) const override;
+    float pwm_getDutyCycle(Timer_enum timer, GenericTIMMode genericMode) const override;
 
     void pwm_setPhase(Timer_enum timer, float phase, GenericTIMMode genericMode) override;
 
@@ -59,6 +59,8 @@ public:
 
     void pwm_setInterruptCallback(Timer_enum timer, void (*callback)(void), GenericTIMMode genericMode) override;
 
+    uint32_t CaptureHighLevelTime() override;
+
 protected:
     void OpenRccTime(Timer_enum timer);
     uint8_t getTIMEx_IRQn(Timer_enum timer);
@@ -66,6 +68,9 @@ protected:
     void timer_PWMCHYInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode genericMode);
 //    void InitAllTime(Timer_enum timer);
 
+    void timer_CaptureCHInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode mode);
+
+    void timer_CounterPluseInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode mode);
 };
 extern "C"{
 void TIM1_BRK_TIM9_IRQHandler(void);

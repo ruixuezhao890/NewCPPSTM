@@ -45,11 +45,23 @@ int beginAdvancedTime(uint32_t arr, uint32_t psc);
 int TimeStart();
 int TimeStop();
 int TimeReset();
+uint32_t TimeGetCurrentFrequency();
 uint32_t TimeGetCurrentValue();
 uint32_t TimeGetRemainingTime();
 void TimeSetCallBack(CallBack callBack);
 void TimeClearCallBack();
-void TimePWMSetDutyCycle(uint16_t duty);
+//Pwm相关
+    uint32_t TimePWM_getFrequency() const;
+    float TimePWM_getDutyCycle() const;
+    void TimePWM_setPhase(float phase);
+    void TimePWM_setPulseWidth(uint32_t pulse_width);
+    void TimePWM_start();
+    void TimePWM_stop();
+    void TimePWM_set_duty_cycle(uint16_t duty_cycle);
+    uint32_t TimeCaputerHigihLevel();
+
+
+
 };
 
 

@@ -46,6 +46,8 @@ public:
      */
     virtual void gpio_init(Pin_enum pin, GpioMode mode, uint8_t select) = 0;
 
+    virtual void gpio_init(Pin_enum pin, GpioMode mode,GpioPull pull, uint8_t select) = 0;
+
     /**
      * @brief 复位GPIO引脚的配置。
      * @param pin 选择的GPIO引脚。

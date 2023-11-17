@@ -23,6 +23,8 @@ public:
 
     void gpio_init(Pin_enum pin, GpioMode mode, uint8_t select) override;
 
+    void gpio_init(Pin_enum pin, GpioMode mode, GpioPull pull, uint8_t select) override;
+
     void gpio_deinit(Pin_enum pin) override;
 
     void gpio_write(Pin_enum pin, uint8_t data) override;

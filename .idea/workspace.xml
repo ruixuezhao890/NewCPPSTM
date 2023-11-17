@@ -20,45 +20,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="优化代码 ，增加hal库所有文件">
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加定时器">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseGPIO.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseGPIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseGPIO.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/headfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/headfile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyGPIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/User.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/Resources.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/Resources.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,26 +77,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/CODE/STM32/car0/myLib/DataStream",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "structure.view.defaults.are.configured": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CODE/STM32/car0/myLib/DataStream&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CODE\STM32\car0\myLib\DataStream" />
@@ -193,7 +169,10 @@
       <workItem from="1699773742927" duration="3457000" />
       <workItem from="1699796347484" duration="418000" />
       <workItem from="1699964407679" duration="5609000" />
-      <workItem from="1700013818875" duration="496000" />
+      <workItem from="1700013818875" duration="17266000" />
+      <workItem from="1700106436120" duration="5568000" />
+      <workItem from="1700214579708" duration="16000" />
+      <workItem from="1700235737541" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -235,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699537624985</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加定时器">
+      <option name="closed" value="true" />
+      <created>1700014643687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700014643687</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +250,8 @@
     <MESSAGE value="增加afio和使用代码进行初始化" />
     <MESSAGE value="将AFIO与GPIO融合在一起，增加串口类" />
     <MESSAGE value="优化代码 ，增加hal库所有文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化代码 ，增加hal库所有文件" />
+    <MESSAGE value="增加定时器" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加定时器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -284,19 +272,14 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
-          <line>59</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp</url>
           <line>228</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
-          <line>29</line>
-          <option name="timeStamp" value="68" />
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp</url>
+          <line>536</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

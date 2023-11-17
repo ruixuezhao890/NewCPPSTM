@@ -17,12 +17,18 @@
 using CallBack = void(*)(void);
 MyGPIO myGPIOTime;
 
+uint8_t SaveTime[MAXTIMNUM]={0};
+uint32_t g_timxchy_cnt_ofcnt = 0 ;              /* 计数溢出次数 */
 struct TimeInfo{
     TIM_HandleTypeDef TIMEList[MAXTIMNUM];//全局定时器句柄
     TIM_HandleTypeDef PWMTIMList[MAXTIMNUM];
+    TIM_HandleTypeDef CaptureTIMList[MAXTIMNUM];
+    TIM_HandleTypeDef CounterTimList[MAXTIMNUM];
+    uint8_t TIMExPWM_Channel[MAXTIMNUM];
+    uint8_t TIMExCapture_Channel[MAXTIMNUM];
     uint8_t TIMEx_IRQn[MAXTIMNUM];
-};
-static TimeInfo timeInfo={0};
+}timeInfo;
+//static TimeInfo timeInfo={0};
 static CallBack TimeExit[MAXTIMNUM];
 void MyTime::timer_BasicTimerInit(Timer_enum timer, uint32_t arr, uint32_t psc) {
     OpenRccTime(timer);
@@ -44,8 +50,10 @@ void MyTime::timer_GenericTimerInit(Timer_enum timer, uint32_t arr, uint32_t psc
             timer_PWMCHYInit(timer,arr,psc,genericMode);
             break;
         case GenericMode::TIME_Capture:
+            timer_CaptureCHInit(timer,arr,psc,genericMode);
             break;
         case GenericMode::TIME_PulseCounting:
+            timer_CounterPluseInit(timer,arr,psc,genericMode);
             break;
         default:
             break;
@@ -501,7 +509,7 @@ uint32_t MyTime::getTimeInstance(Timer_enum timer) {
 }
 
 void MyTime::timer_PWMCHYInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode genericMode) {
-    myGPIOTime.gpio_init(genericMode.pwmChannelIO,GpioMode::af_pp,genericMode.alternateIO);
+    myGPIOTime.gpio_init(genericMode.pwmChannelIO,GpioMode::af_pp,GpioPull::pullup,genericMode.alternateMode);
     timeInfo.PWMTIMList[timer].Instance= (TIM_TypeDef*)getTimeInstance(timer);
     timeInfo.PWMTIMList[timer].Init.Prescaler=psc;
     timeInfo.PWMTIMList[timer].Init.CounterMode=TIM_COUNTERMODE_UP;
@@ -515,28 +523,41 @@ void MyTime::timer_PWMCHYInit(Timer_enum timer, uint32_t arr, uint32_t psc, Gene
     HAL_TIM_PWM_Start(&timeInfo.PWMTIMList[timer],genericMode.Tim_Channel);
 }
 
-uint32_t MyTime::pwm_getFrequency(Timer_enum timer, GenericTIMMode genericMode) const {
-    return 0;
+uint32_t MyTime::pwm_getFrequency(Timer_enum timer) const {
+
+    uint32_t getPclk1Freq=HAL_RCC_GetPCLK2Freq()/(timeInfo.PWMTIMList[timer].Init.Prescaler+1)/
+            (timeInfo.PWMTIMList[timer].Init.Period+1);
+    return getPclk1Freq;
 }
 
-float MyTime::pwm_getDutyCycle(Timer_enum timer, uint16_t setData, GenericTIMMode genericMode) const {
-    return 0;
+float MyTime::pwm_getDutyCycle(Timer_enum timer, GenericTIMMode genericMode) const {
+
+    float periodValue= __HAL_TIM_GET_AUTORELOAD(&timeInfo.PWMTIMList[timer]);
+    float PulseValue=timeInfo.PWMTIMList[timer].Instance->CCR1;
+    auto dutyCycle=(float)(PulseValue/periodValue)*100;
+    return dutyCycle;
 }
 
 void MyTime::pwm_setPhase(Timer_enum timer, float phase, GenericTIMMode genericMode) {
+    // 获取定时器的自动重装载寄存器值
+    uint32_t periodValue = __HAL_TIM_GET_AUTORELOAD(&timeInfo.PWMTIMList[timer]);
+
+    // 计算相位对应的比较值
+    uint32_t phaseValue = (uint32_t)((phase / 360.0) * periodValue);
+    __HAL_TIM_SET_COMPARE(&timeInfo.PWMTIMList[timer],genericMode.Tim_Channel,phaseValue);
 
 }
 
 void MyTime::pwm_setPulseWidth(Timer_enum timer, uint32_t pulse_width, GenericTIMMode genericMode) {
-
+    this->pwm_set_duty_cycle(timer,pulse_width,genericMode);
 }
 
 void MyTime::pwm_start(Timer_enum timer, GenericTIMMode genericMode) {
-
+    HAL_TIM_PWM_Start(&timeInfo.PWMTIMList[timer],genericMode.Tim_Channel);
 }
 
 void MyTime::pwm_stop(Timer_enum timer, GenericTIMMode genericMode) {
-
+    HAL_TIM_PWM_Stop(&timeInfo.PWMTIMList[timer],genericMode.Tim_Channel);
 }
 
 void MyTime::pwm_set_duty_cycle(Timer_enum timer, uint16_t duty_cycle, GenericTIMMode genericMode) {
@@ -546,6 +567,125 @@ void MyTime::pwm_set_duty_cycle(Timer_enum timer, uint16_t duty_cycle, GenericTI
 void MyTime::pwm_setInterruptCallback(Timer_enum timer, void (*callback)(void), GenericTIMMode genericMode) {
 
 }
+void Timer_input_capture_interrupt_handling_callback_function();
+void MyTime::timer_CaptureCHInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode mode) {
+    TIM_IC_InitTypeDef timIcInitTypeDef;
+    myGPIOTime.gpio_init(mode.CaptureChannelIO,GpioMode::af_pp,GpioPull::pulldown,mode.alternateMode);
+    uint8_t IC_IRQn= getTIMEx_IRQn(timer);
+    HAL_NVIC_SetPriority((IRQn_Type)IC_IRQn, 1, 3);         /* 抢占1，子优先级3 */
+    HAL_NVIC_EnableIRQ((IRQn_Type)IC_IRQn);                 /* 开启ITMx中断 */
+    timeInfo.CaptureTIMList[timer].Instance = (TIM_TypeDef*)getTimeInstance(timer);
+    timeInfo.CaptureTIMList[timer].Init.Prescaler = psc;
+    timeInfo.CaptureTIMList[timer].Init.CounterMode = TIM_COUNTERMODE_UP;
+    timeInfo.CaptureTIMList[timer].Init.Period = arr;
+    HAL_TIM_IC_Init(&timeInfo.CaptureTIMList[timer]);
+    timIcInitTypeDef.ICPolarity = TIM_ICPOLARITY_RISING;
+    timIcInitTypeDef.ICSelection = TIM_ICSELECTION_DIRECTTI;
+    timIcInitTypeDef.ICPrescaler=TIM_ICPSC_DIV1;
+    timIcInitTypeDef.ICFilter=0;
+    this->timer_set_callback(timer,Timer_input_capture_interrupt_handling_callback_function);
+    timeInfo.TIMExCapture_Channel[timer]=mode.Tim_CaptureChannel;
+    SaveTime[timer]=(uint8_t)timer;
+    HAL_TIM_IC_ConfigChannel(&timeInfo.CaptureTIMList[timer],&timIcInitTypeDef,(uint32_t)mode.Tim_CaptureChannel);
+    __HAL_TIM_ENABLE_IT(&timeInfo.CaptureTIMList[timer], TIM_IT_UPDATE);         /* 使能更新中断 */
+    HAL_TIM_IC_Start_IT(&timeInfo.CaptureTIMList[timer], mode.Tim_CaptureChannel);     /* 开始捕获TIM5的通道1 */
+
+}
+uint8_t g_timxchy_cap_sta = 0;    /* 输入捕获状态 */
+uint16_t g_timxchy_cap_val = 0;   /* 输入捕获值 */
+uint32_t MyTime::CaptureHighLevelTime() {
+    uint32_t temp=0;
+    if (g_timxchy_cap_sta & 0x80)           /* 成功捕获到了一次高电平 */
+    {
+        temp = g_timxchy_cap_sta & 0x3F;
+        temp *= 0xFFFF;                     /* 溢出时间总和 */
+        temp += g_timxchy_cap_val;          /* 得到总的高电平时间 */
+        g_timxchy_cap_sta = 0;              /* 开启下一次捕获 */
+    }
+    return temp;
+}
+
+void MyTime::timer_CounterPluseInit(Timer_enum timer, uint32_t arr, uint32_t psc, GenericTIMMode mode) {
+    myGPIOTime.gpio_init(mode.CounterChannelIO,GpioMode::af_pp,GpioPull::pulldown,mode.alternateMode);
+    timeInfo.CounterTimList[timer]
+    TIM_SlaveConfigTypeDef tim_slave_config = {0};
+
+}
+
+/**
+ * @brief       定时器输入捕获中断处理回调函数
+ * @param       htim:定时器句柄指针
+ * @note        该函数在HAL_TIM_IRQHandler中会被调用
+ * @retval      无
+ */
+
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+{
+    for (unsigned char i : SaveTime) {
+        if (i!=0) {
+
+            if ((g_timxchy_cap_sta & 0x80) == 0)    /* 还未成功捕获 */
+            {
+                if (g_timxchy_cap_sta & 0x40)       /* 捕获到一个下降沿 */
+                {
+                    g_timxchy_cap_sta |= 0x80;      /* 标记成功捕获到一次高电平脉宽 */
+                    g_timxchy_cap_val = HAL_TIM_ReadCapturedValue(&timeInfo.CaptureTIMList[i],
+                                                                  timeInfo.TIMExCapture_Channel[i]);  /* 获取当前的捕获值 */
+                    TIM_RESET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[i],
+                                              timeInfo.TIMExCapture_Channel[i]);                      /* 一定要先清除原来的设置 */
+                    TIM_SET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[i],
+                                            timeInfo.TIMExCapture_Channel[i],
+                                            TIM_ICPOLARITY_RISING); /* 配置TIM5通道1上升沿捕获 */
+                } else                                            /* 还未开始,第一次捕获上升沿 */
+                {
+                    g_timxchy_cap_sta = 0;                      /* 清空 */
+                    g_timxchy_cap_val = 0;
+                    g_timxchy_cap_sta |= 0x40;                  /* 标记捕获到了上升沿 */
+                    __HAL_TIM_DISABLE(&timeInfo.CaptureTIMList[i]);  /* 关闭定时器5 */
+                    __HAL_TIM_SET_COUNTER(&timeInfo.CaptureTIMList[i], 0);  /* 定时器5计数器清零 */
+                    TIM_RESET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[i],
+                                              timeInfo.TIMExCapture_Channel[i]);                       /* 一定要先清除原来的设置！！ */
+                    TIM_SET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[i],
+                                            timeInfo.TIMExCapture_Channel[i],
+                                            TIM_ICPOLARITY_FALLING); /* 定时器5通道1设置为下降沿捕获 */
+                    __HAL_TIM_ENABLE(&timeInfo.CaptureTIMList[i]);                                                   /* 使能定时器5 */
+                }
+            }
+        }
+    }
+}
 
 
-
+void Timer_input_capture_interrupt_handling_callback_function() {
+    for (unsigned char i: SaveTime) {
+        if (i != 0) {
+            if ((g_timxchy_cap_sta & 0x80) == 0)    /* 还未成功捕获 */
+            {
+                if (g_timxchy_cap_sta & 0x40)       /* 捕获到一个下降沿 */
+                {
+                    g_timxchy_cap_sta |= 0x80;      /* 标记成功捕获到一次高电平脉宽 */
+                    g_timxchy_cap_val = HAL_TIM_ReadCapturedValue(&timeInfo.CaptureTIMList[SaveTime[i]],
+                                                                  timeInfo.TIMExCapture_Channel[SaveTime[i]]);  /* 获取当前的捕获值 */
+                    TIM_RESET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[SaveTime[i]],
+                                              timeInfo.TIMExCapture_Channel[SaveTime[i]]);                      /* 一定要先清除原来的设置 */
+                    TIM_SET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[SaveTime[i]],
+                                            timeInfo.TIMExCapture_Channel[SaveTime[i]],
+                                            TIM_ICPOLARITY_RISING); /* 配置TIM5通道1上升沿捕获 */
+                } else                                            /* 还未开始,第一次捕获上升沿 */
+                {
+                    g_timxchy_cap_sta = 0;                      /* 清空 */
+                    g_timxchy_cap_val = 0;
+                    g_timxchy_cap_sta |= 0x40;                  /* 标记捕获到了上升沿 */
+                    __HAL_TIM_DISABLE(&timeInfo.CaptureTIMList[SaveTime[i]]);  /* 关闭定时器5 */
+                    __HAL_TIM_SET_COUNTER(&timeInfo.CaptureTIMList[SaveTime[i]], 0);  /* 定时器5计数器清零 */
+                    TIM_RESET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[SaveTime[i]],
+                                              timeInfo.TIMExCapture_Channel[SaveTime[i]]);                       /* 一定要先清除原来的设置！！ */
+                    TIM_SET_CAPTUREPOLARITY(&timeInfo.CaptureTIMList[SaveTime[i]],
+                                            timeInfo.TIMExCapture_Channel[SaveTime[i]],
+                                            TIM_ICPOLARITY_FALLING); /* 定时器5通道1设置为下降沿捕获 */
+                    __HAL_TIM_ENABLE(&timeInfo.CaptureTIMList[SaveTime[i]]);                                                   /* 使能定时器5 */
+                }
+            }
+        }
+    }
+}

@@ -26,6 +26,7 @@ int BaseTime::beginBaseTime(uint32_t arr, uint32_t psc) {
 }
 
 int BaseTime::beginGenericTime(uint32_t arr, uint32_t psc,GenericTIMMode genericMode) {
+    this->m_genericMode=genericMode;
     virTime->timer_GenericTimerInit(time_x,arr,psc,genericMode);
     return 1;
 }
@@ -45,15 +46,18 @@ int BaseTime::TimeStop() {
 }
 
 int BaseTime::TimeReset() {
-    return 0;
+    virTime->timer_reset(time_x);
+    return 1;
 }
 
 uint32_t BaseTime::TimeGetCurrentValue() {
-    return 0;
+    virTime->timer_getCurrentValue(time_x);
+    return 1;
 }
 
 uint32_t BaseTime::TimeGetRemainingTime() {
-    return 0;
+    virTime->timer_getRemainingTime(time_x);
+    return 1;
 }
 
 void BaseTime::TimeSetCallBack(CallBack callBack) {
@@ -64,6 +68,45 @@ void BaseTime::TimeClearCallBack() {
     virTime->timer_clear_callback(time_x);
 }
 
-void BaseTime::TimePWMSetDutyCycle(uint16_t duty) {
-    virTime->pwm_set_duty_cycle(time_x,duty,m_genericMode);
+uint32_t BaseTime::TimePWM_getFrequency() const {
+    return virTime->pwm_getFrequency(time_x);
 }
+
+float BaseTime::TimePWM_getDutyCycle() const {
+    return virTime->pwm_getDutyCycle(time_x, m_genericMode);
+}
+
+void BaseTime::TimePWM_setPhase(float phase) {
+    virTime->pwm_setPhase(time_x,phase,m_genericMode);
+}
+
+void BaseTime::TimePWM_setPulseWidth(uint32_t pulse_width) {
+    virTime->pwm_setPulseWidth(time_x,pulse_width,m_genericMode);
+}
+
+void BaseTime::TimePWM_start() {
+    virTime->pwm_start(time_x,m_genericMode);
+}
+
+void BaseTime::TimePWM_stop() {
+    virTime->pwm_stop(time_x,m_genericMode);
+
+}
+
+void BaseTime::TimePWM_set_duty_cycle(uint16_t duty_cycle) {
+    virTime->pwm_set_duty_cycle(time_x,duty_cycle,m_genericMode);
+}
+
+uint32_t BaseTime::TimeGetCurrentFrequency() {
+    //计算方式都一致直接使用PWM的函数进行计算
+    return virTime->pwm_getFrequency(time_x);
+}
+
+uint32_t BaseTime::TimeCaputerHigihLevel() {
+    return virTime->CaptureHighLevelTime();
+}
+
+
+
+
+
