@@ -19,7 +19,8 @@ BaseTime::BaseTime() {
 
 }
 
-BaseTime::BaseTime(Timer_enum timerEnum):_timer(timerEnum) {
+BaseTime::BaseTime(Timer_enum timerEnum, uint8_t PreemptPriority, uint8_t SubPriority) :
+_timer(timerEnum),PreemptPriority(PreemptPriority),SubPriority(SubPriority){
     if (BasevirTime == nullptr){
         BasevirTime= new MyBaseTime();
     }
@@ -96,7 +97,7 @@ void BaseTime::_attach_ms(uint32_t milliseconds, bool repeat, callback_with_arg_
         BasevirTime->timerStop(_timer);
         BasevirTime->timerDelete(_timer);
     }
-  BasevirTime->timerGreatPsc(_timer,milliseconds);
+    BasevirTime->timerGreatPsc(_timer, milliseconds, PreemptPriority, SubPriority);
     if (repeat){
         BasevirTime->timerStartPeriodic(_timer);
     }else{

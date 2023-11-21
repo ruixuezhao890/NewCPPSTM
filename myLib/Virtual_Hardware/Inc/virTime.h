@@ -34,7 +34,8 @@ extern virTimeValue UniversalTimeValue;
 extern virTimeValue AdvancedTimeValue;
 class virTime {
 public:
-    virtual void timerGreatPsc(Timer_enum timer, uint32_t arr) =0;
+    virtual void timerGreatPsc(Timer_enum timer, uint32_t arr,
+                               uint8_t PreemptPriority, uint8_t SubPriority) =0;
     virtual void timerStartOnce(Timer_enum timer)=0;
     virtual void timerStartPeriodic(Timer_enum timer)=0;
     virtual void timerStop(Timer_enum timer)=0;

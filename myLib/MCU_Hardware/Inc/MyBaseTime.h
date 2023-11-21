@@ -20,7 +20,8 @@
 class MyBaseTime: public virTime{
 public:
 
-    void timerGreatPsc(Timer_enum timer, uint32_t arr) override;
+    void timerGreatPsc(Timer_enum timer, uint32_t arr,
+                       uint8_t PreemptPriority, uint8_t SubPriority) override;
 
     void timerStartOnce(Timer_enum timer) override;
 

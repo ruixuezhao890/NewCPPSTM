@@ -24,7 +24,7 @@ class BaseTime
 public:
     // 构造函数
     BaseTime();
-    BaseTime(Timer_enum timerEnum);
+    BaseTime(Timer_enum timerEnum, uint8_t PreemptPriority=1, uint8_t SubPriority=3);
     // 析构函数
     ~BaseTime();
     static virTime* BasevirTime;
@@ -72,7 +72,8 @@ protected:
 protected:
     // 定时器的句柄
     Timer_enum _timer=Timer_enum::TIMER_END;
-
+    uint8_t PreemptPriority;
+    uint8_t SubPriority;
 };
 
 
