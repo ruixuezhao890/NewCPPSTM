@@ -14,6 +14,4 @@
 
 #include "virTime.h"
 virTimeValue BaseTimeValue;
-virTimeValue UniversalTimeValue;
-virTimeValue AdvancedTimeValue;
 TimeExitValue ExitValue;

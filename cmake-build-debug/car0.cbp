@@ -824,6 +824,9 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -842,9 +845,6 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyBaseTime.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -852,6 +852,12 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/timeIT.cpp">

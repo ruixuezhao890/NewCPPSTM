@@ -14,16 +14,13 @@
 
 #include "BaseTime.h"
 #include "MyBaseTime.h"
-virTime* BaseTime::BasevirTime= nullptr;
 BaseTime::BaseTime() {
 
 }
 
 BaseTime::BaseTime(Timer_enum timerEnum, uint8_t PreemptPriority, uint8_t SubPriority) :
 _timer(timerEnum),PreemptPriority(PreemptPriority),SubPriority(SubPriority){
-    if (BasevirTime == nullptr){
-        BasevirTime= new MyBaseTime();
-    }
+
 }
 
 BaseTime::~BaseTime() {
@@ -79,8 +76,8 @@ void BaseTime::once_ms(uint32_t milliseconds, void (*callback)(TArg), TArg arg) 
 
 void BaseTime::detach() {
     if (_timer){
-        BasevirTime->timerStop(_timer);
-        BasevirTime->timerDelete(_timer);
+        timerStop(_timer);
+        timerDelete(_timer);
         ExitValue.TimeExit[_timer]= nullptr;
     }
 }
@@ -94,14 +91,14 @@ void BaseTime::_attach_ms(uint32_t milliseconds, bool repeat, callback_with_arg_
     ExitValue.arg[_timer]=reinterpret_cast<void*>(arg);
     ExitValue.TimeExit[_timer]=callback;
     if(_timer){
-        BasevirTime->timerStop(_timer);
-        BasevirTime->timerDelete(_timer);
+        timerStop(_timer);
+        timerDelete(_timer);
     }
-    BasevirTime->timerGreatPsc(_timer, milliseconds, PreemptPriority, SubPriority);
+    timerGreatPsc(_timer, milliseconds, PreemptPriority, SubPriority);
     if (repeat){
-        BasevirTime->timerStartPeriodic(_timer);
+       timerStartPeriodic(_timer);
     }else{
-        BasevirTime->timerStartOnce(_timer);
+        timerStartOnce(_timer);
     }
 }
 

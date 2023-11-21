@@ -20,17 +20,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构基础定时器 但是分频计算不正确 需要修改分频计算方法">
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构基础定时器 现在定时器的时间是自动进行计算 经过测试 时间正确">
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseUniversalTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyBaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyBaseTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyBaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,14 +115,19 @@
       <recent name="D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Timer\Src" />
       <recent name="D:\CODE\STM32\car0\myLib\Base_Hardware\Src" />
+      <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Timer\Src" />
+      <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Timer\Inc" />
       <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Inc" />
       <recent name="D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src" />
-      <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Src" />
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -176,7 +195,7 @@
       <workItem from="1700449175516" duration="66000" />
       <workItem from="1700449275876" duration="19313000" />
       <workItem from="1700481447543" duration="4309000" />
-      <workItem from="1700553720285" duration="5331000" />
+      <workItem from="1700553720285" duration="14282000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -242,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700554054664</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="重构基础定时器 现在定时器的时间是自动进行计算 经过测试 时间正确">
+      <option name="closed" value="true" />
+      <created>1700559265753</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700559265753</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +300,8 @@
     <MESSAGE value="增加定时器" />
     <MESSAGE value="重构定时器前的备份" />
     <MESSAGE value="重构基础定时器 但是分频计算不正确 需要修改分频计算方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构基础定时器 但是分频计算不正确 需要修改分频计算方法" />
+    <MESSAGE value="重构基础定时器 现在定时器的时间是自动进行计算 经过测试 时间正确" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构基础定时器 现在定时器的时间是自动进行计算 经过测试 时间正确" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,9 +327,19 @@
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp</url>
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp</url>
           <line>31</line>
           <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
+          <line>34</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

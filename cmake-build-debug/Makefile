@@ -2608,6 +2608,30 @@ myLib/Base_Hardware/Src/BaseTime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.s
 .PHONY : myLib/Base_Hardware/Src/BaseTime.cpp.s
 
+myLib/Base_Hardware/Src/BaseUniversalTimer.obj: myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.obj
+
+# target to build an object file
+myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.obj
+
+myLib/Base_Hardware/Src/BaseUniversalTimer.i: myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.i
+
+myLib/Base_Hardware/Src/BaseUniversalTimer.s: myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.s
+
 myLib/DataStream/inputStream.obj: myLib/DataStream/inputStream.cpp.obj
 .PHONY : myLib/DataStream/inputStream.obj
 
@@ -2704,30 +2728,6 @@ myLib/MCU_Hardware/Src/MyAFIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.s
 .PHONY : myLib/MCU_Hardware/Src/MyAFIO.cpp.s
 
-myLib/MCU_Hardware/Src/MyBaseTime.obj: myLib/MCU_Hardware/Src/MyBaseTime.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyBaseTime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyBaseTime.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.cpp.obj
-
-myLib/MCU_Hardware/Src/MyBaseTime.i: myLib/MCU_Hardware/Src/MyBaseTime.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyBaseTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyBaseTime.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.cpp.i
-
-myLib/MCU_Hardware/Src/MyBaseTime.s: myLib/MCU_Hardware/Src/MyBaseTime.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyBaseTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyBaseTime.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyBaseTime.cpp.s
-
 myLib/MCU_Hardware/Src/MyGPIO.obj: myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
 .PHONY : myLib/MCU_Hardware/Src/MyGPIO.obj
 
@@ -2799,6 +2799,54 @@ myLib/MCU_Hardware/Src/MyUsart.s: myLib/MCU_Hardware/Src/MyUsart.cpp.s
 myLib/MCU_Hardware/Src/MyUsart.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s
 .PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.s
+
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
+
+# target to build an object file
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
+
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.i: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.i
+
+# target to preprocess a source file
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
+
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.s: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.s
+
+# target to generate assembly for a file
+myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
+
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj
+
+# target to build an object file
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
+
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i
+
+# target to preprocess a source file
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
+
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s
+
+# target to generate assembly for a file
+myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
 
 myLib/MCU_Hardware/Timer/Src/timeIT.obj: myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj
 .PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.obj
@@ -3359,6 +3407,9 @@ help:
 	@echo ... myLib/Base_Hardware/Src/BaseTime.obj
 	@echo ... myLib/Base_Hardware/Src/BaseTime.i
 	@echo ... myLib/Base_Hardware/Src/BaseTime.s
+	@echo ... myLib/Base_Hardware/Src/BaseUniversalTimer.obj
+	@echo ... myLib/Base_Hardware/Src/BaseUniversalTimer.i
+	@echo ... myLib/Base_Hardware/Src/BaseUniversalTimer.s
 	@echo ... myLib/DataStream/inputStream.obj
 	@echo ... myLib/DataStream/inputStream.i
 	@echo ... myLib/DataStream/inputStream.s
@@ -3371,9 +3422,6 @@ help:
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.obj
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.i
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.s
-	@echo ... myLib/MCU_Hardware/Src/MyBaseTime.obj
-	@echo ... myLib/MCU_Hardware/Src/MyBaseTime.i
-	@echo ... myLib/MCU_Hardware/Src/MyBaseTime.s
 	@echo ... myLib/MCU_Hardware/Src/MyGPIO.obj
 	@echo ... myLib/MCU_Hardware/Src/MyGPIO.i
 	@echo ... myLib/MCU_Hardware/Src/MyGPIO.s
@@ -3383,6 +3431,12 @@ help:
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.obj
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.i
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.s
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.i
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.s
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i
+	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s
 	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.obj
 	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.i
 	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.s

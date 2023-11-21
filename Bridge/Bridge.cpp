@@ -32,7 +32,7 @@ void  MyMian(){
 
     Baseserial.begin(115200);
     Baseserial<<"hello"<<endl;
-    time.attach(5.0,time12);
+    time.once(5.0,time12);
 
     for (;;){
         while (Baseserial.available()){

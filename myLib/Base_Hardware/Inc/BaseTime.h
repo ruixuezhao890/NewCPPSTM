@@ -17,9 +17,9 @@
 // BaseTime.h
 
 
-#include "virTime.h"
+#include "MyBaseTime.h"
 
-class BaseTime
+class BaseTime:public MyBaseTime
 {
 public:
     // 构造函数
@@ -27,7 +27,6 @@ public:
     BaseTime(Timer_enum timerEnum, uint8_t PreemptPriority=1, uint8_t SubPriority=3);
     // 析构函数
     ~BaseTime();
-    static virTime* BasevirTime;
     // 回调函数类型，无参数
 
 

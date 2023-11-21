@@ -18,10 +18,10 @@
 #include "virTime.h"
 
 class MyBaseTime: public virTime{
-public:
+protected:
 
-    void timerGreatPsc(Timer_enum timer, uint32_t arr,
-                       uint8_t PreemptPriority, uint8_t SubPriority) override;
+    uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr,
+                           uint8_t PreemptPriority, uint8_t SubPriority) override;
 
     void timerStartOnce(Timer_enum timer) override;
 
@@ -31,7 +31,7 @@ public:
 
     void timerDelete(Timer_enum timer) override;
 
-protected:
+
 
 };
 
