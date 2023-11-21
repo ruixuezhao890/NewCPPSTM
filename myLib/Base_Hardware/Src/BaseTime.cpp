@@ -13,97 +13,95 @@
 //
 
 #include "BaseTime.h"
-virTime* virTime= nullptr;
-
-BaseTime::BaseTime(Timer_enum timer) {
-    this->time_x=timer;
-    if (!virTime)virTime=new MyTime();
-}
-
-int BaseTime::beginBaseTime(uint32_t arr, uint32_t psc) {
-    virTime->timer_BasicTimerInit(time_x,arr,psc);
-    return 1;
-}
-
-int BaseTime::beginGenericTime(uint32_t arr, uint32_t psc,GenericTIMMode genericMode) {
-    this->m_genericMode=genericMode;
-    virTime->timer_GenericTimerInit(time_x,arr,psc,genericMode);
-    return 1;
-}
-
-int BaseTime::beginAdvancedTime(uint32_t arr, uint32_t psc) {
-    return 0;
-}
-
-int BaseTime::TimeStart() {
-    virTime->timer_start(time_x);
-    return 1;
-}
-
-int BaseTime::TimeStop() {
-     virTime->timer_stop(time_x);
-    return 1;
-}
-
-int BaseTime::TimeReset() {
-    virTime->timer_reset(time_x);
-    return 1;
-}
-
-uint32_t BaseTime::TimeGetCurrentValue() {
-    virTime->timer_getCurrentValue(time_x);
-    return 1;
-}
-
-uint32_t BaseTime::TimeGetRemainingTime() {
-    virTime->timer_getRemainingTime(time_x);
-    return 1;
-}
-
-void BaseTime::TimeSetCallBack(CallBack callBack) {
-    virTime->timer_set_callback(time_x,callBack);
-}
-
-void BaseTime::TimeClearCallBack() {
-    virTime->timer_clear_callback(time_x);
-}
-
-uint32_t BaseTime::TimePWM_getFrequency() const {
-    return virTime->pwm_getFrequency(time_x);
-}
-
-float BaseTime::TimePWM_getDutyCycle() const {
-    return virTime->pwm_getDutyCycle(time_x, m_genericMode);
-}
-
-void BaseTime::TimePWM_setPhase(float phase) {
-    virTime->pwm_setPhase(time_x,phase,m_genericMode);
-}
-
-void BaseTime::TimePWM_setPulseWidth(uint32_t pulse_width) {
-    virTime->pwm_setPulseWidth(time_x,pulse_width,m_genericMode);
-}
-
-void BaseTime::TimePWM_start() {
-    virTime->pwm_start(time_x,m_genericMode);
-}
-
-void BaseTime::TimePWM_stop() {
-    virTime->pwm_stop(time_x,m_genericMode);
+#include "MyBaseTime.h"
+virTime* BaseTime::BasevirTime= nullptr;
+BaseTime::BaseTime() {
 
 }
 
-void BaseTime::TimePWM_set_duty_cycle(uint16_t duty_cycle) {
-    virTime->pwm_set_duty_cycle(time_x,duty_cycle,m_genericMode);
+BaseTime::BaseTime(Timer_enum timerEnum):_timer(timerEnum) {
+    if (BasevirTime == nullptr){
+        BasevirTime= new MyBaseTime();
+    }
 }
 
-uint32_t BaseTime::TimeGetCurrentFrequency() {
-    //计算方式都一致直接使用PWM的函数进行计算
-    return virTime->pwm_getFrequency(time_x);
+BaseTime::~BaseTime() {
+
 }
 
-uint32_t BaseTime::TimeCaputerHigihLevel() {
-    return virTime->CaptureHighLevelTime();
+void BaseTime::attach(float seconds, callback_t callback) {
+    _attach_ms(seconds * 1000, true, reinterpret_cast<callback_with_arg_t>(callback), 0);
+}
+
+void BaseTime::attach_ms(uint32_t milliseconds, callback_t callback) {
+    _attach_ms(milliseconds, true, reinterpret_cast<callback_with_arg_t>(callback), 0);
+}
+
+template<typename TArg>
+void BaseTime::attach(float seconds, void (*callback)(TArg), TArg arg) {
+    static_assert(sizeof(TArg) <= sizeof(uint32_t), "attach() callback argument size must be <= 4 bytes");
+    // C-cast serves two purposes:
+    // static_cast for smaller integer types,
+    // reinterpret_cast + const_cast for pointer types
+    uint32_t arg32 = (uint32_t)arg;
+    _attach_ms(seconds * 1000, true, reinterpret_cast<callback_with_arg_t>(callback), arg32);
+}
+
+template<typename TArg>
+void BaseTime::attach_ms(uint32_t milliseconds, void (*callback)(TArg), TArg arg) {
+    static_assert(sizeof(TArg) <= sizeof(uint32_t), "attach_ms() callback argument size must be <= 4 bytes");
+    uint32_t arg32 = (uint32_t)arg;
+    _attach_ms(milliseconds, true, reinterpret_cast<callback_with_arg_t>(callback), arg32);
+}
+
+void BaseTime::once(float seconds, callback_t callback) {
+    _attach_ms(seconds * 1000, false, reinterpret_cast<callback_with_arg_t>(callback), 0);
+}
+
+void BaseTime::once_ms(uint32_t milliseconds, callback_t callback) {
+    _attach_ms(milliseconds, false, reinterpret_cast<callback_with_arg_t>(callback), 0);
+}
+
+template<typename TArg>
+void BaseTime::once(float seconds, void (*callback)(TArg), TArg arg) {
+    static_assert(sizeof(TArg) <= sizeof(uint32_t), "attach() callback argument size must be <= 4 bytes");
+    uint32_t arg32 = (uint32_t)(arg);
+    _attach_ms(seconds * 1000, false, reinterpret_cast<callback_with_arg_t>(callback), arg32);
+}
+
+template<typename TArg>
+void BaseTime::once_ms(uint32_t milliseconds, void (*callback)(TArg), TArg arg) {
+    static_assert(sizeof(TArg) <= sizeof(uint32_t), "attach_ms() callback argument size must be <= 4 bytes");
+    uint32_t arg32 = (uint32_t)(arg);
+    _attach_ms(milliseconds, false, reinterpret_cast<callback_with_arg_t>(callback), arg32);
+}
+
+void BaseTime::detach() {
+    if (_timer){
+        BasevirTime->timerStop(_timer);
+        BasevirTime->timerDelete(_timer);
+        ExitValue.TimeExit[_timer]= nullptr;
+    }
+}
+
+bool BaseTime::active() {
+    return false;
+}
+
+void BaseTime::_attach_ms(uint32_t milliseconds, bool repeat, callback_with_arg_t callback, uint32_t arg) {
+   if(_timer==Timer_enum::TIMER_END)return;
+    ExitValue.arg[_timer]=reinterpret_cast<void*>(arg);
+    ExitValue.TimeExit[_timer]=callback;
+    if(_timer){
+        BasevirTime->timerStop(_timer);
+        BasevirTime->timerDelete(_timer);
+    }
+  BasevirTime->timerGreatPsc(_timer,milliseconds);
+    if (repeat){
+        BasevirTime->timerStartPeriodic(_timer);
+    }else{
+        BasevirTime->timerStartOnce(_timer);
+    }
 }
 
 

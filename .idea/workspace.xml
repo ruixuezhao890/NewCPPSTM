@@ -20,21 +20,37 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加定时器">
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构定时器前的备份">
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyBaseTime.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyGPIO.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyTime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/headfile.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/headfile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/PinConfig/PinConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherConfig/PinConfig.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +102,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CODE/STM32/car0/myLib/DataStream&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CODE/STM32/car0&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -105,11 +121,11 @@
       <recent name="D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Timer\Src" />
       <recent name="D:\CODE\STM32\car0\myLib\Base_Hardware\Src" />
       <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Inc" />
       <recent name="D:\CODE\STM32\car0\myLib\Virtual_Hardware\Src" />
       <recent name="D:\CODE\STM32\car0\myLib\MCU_Hardware\Src" />
-      <recent name="D:\CODE\STM32\car0\myLib\Factory\Src" />
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
@@ -172,7 +188,15 @@
       <workItem from="1700013818875" duration="17266000" />
       <workItem from="1700106436120" duration="5568000" />
       <workItem from="1700214579708" duration="16000" />
-      <workItem from="1700235737541" duration="2000" />
+      <workItem from="1700235737541" duration="1221000" />
+      <workItem from="1700394888192" duration="1206000" />
+      <workItem from="1700397090205" duration="1892000" />
+      <workItem from="1700448829032" duration="4000" />
+      <workItem from="1700448843458" duration="73000" />
+      <workItem from="1700449175516" duration="66000" />
+      <workItem from="1700449275876" duration="19313000" />
+      <workItem from="1700481447543" duration="4309000" />
+      <workItem from="1700553720285" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -222,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700014643687</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="重构定时器前的备份">
+      <option name="closed" value="true" />
+      <created>1700235772024</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700235772024</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +283,8 @@
     <MESSAGE value="将AFIO与GPIO融合在一起，增加串口类" />
     <MESSAGE value="优化代码 ，增加hal库所有文件" />
     <MESSAGE value="增加定时器" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加定时器" />
+    <MESSAGE value="重构定时器前的备份" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构定时器前的备份" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,9 +310,14 @@
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyTime.cpp</url>
-          <line>536</line>
-          <option name="timeStamp" value="72" />
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyBaseTime.cpp</url>
+          <line>30</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -287,6 +325,7 @@
       <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
         <watch expression="this-&gt;uart_x" />
         <watch expression="uartInfo.UsartList[uart]" />
+        <watch expression="timeValue" />
       </configuration>
     </watches-manager>
   </component>

@@ -2,7 +2,7 @@
 *********************************************************************
 *********
 * @project_name :car0
-* @file : PinConfig.h
+* @file : otherConfig.h
 * @author : zen3
 * @brief : None
 * @attention : None
