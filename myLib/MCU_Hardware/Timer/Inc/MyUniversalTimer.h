@@ -19,7 +19,11 @@
 class MyUniversalTimer: public MyBaseTime{
 protected:
     uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
-    void timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, uint8_t dutyCycle);
+
+    TIM_HandleTypeDef
+    timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
+protected:
+    void timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, float dutyCycle);
 
     void timerPWMMultiplexPin(Pin_enum pin,uint8_t Alternate);
     // 启动周期性的PWM
@@ -30,10 +34,23 @@ protected:
 
     void setPWMDutyCycle(uint32_t dutyCycle, Timer_enum timer, uint8_t TIMExPWM_Channel);
     // 删除定时器
-    void deleteTimer(Timer_enum timer,uint8_t TIMExPWM_Channel);
+    void deletePWMTimer(Timer_enum timer, uint8_t TIMExPWM_Channel);
+
+
+
+    /*输入捕获相关代码*/
+    void timerCaptureGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority);
+    void timerCaptureMultiplexPin(Pin_enum pin,uint8_t Alternate);
+    // 启动周期性的PWM
+    void startCapturePeriodic(Timer_enum timer, uint8_t TIMExPWM_Channel);
+
+    // 停止PWM
+    void stopCapture(Timer_enum timer,uint8_t TIMExPWM_Channel);
+    void deleteCaptureTimer(Timer_enum timer, uint8_t TIMExPWM_Channel);
+
 private:
     uint32_t m_arr;
-    MyGPIO PWMAFIO;
+    MyGPIO UniversalAFIO;
 };
 
 

@@ -59,3 +59,17 @@ void MyBaseTime::timerStartPeriodic(Timer_enum timer) {
 
 }
 
+TIM_HandleTypeDef
+MyBaseTime::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) {
+    OpenRccTime(timer);
+    timeValue->TIMEx_IRQn[timer]= getTIMEx_IRQn(timer);
+    timeValue->TIMEList[timer].Instance=( TIM_TypeDef*)getTimeInstance(timer);
+    timeValue->TIMEList[timer].Init.Prescaler=psc-1;
+    timeValue->TIMEList[timer].Init.CounterMode=TIM_COUNTERMODE_UP;
+    timeValue->TIMEList[timer].Init.Period=arr-1;
+    HAL_TIM_Base_Init(&timeValue->TIMEList[timer]);
+    HAL_NVIC_SetPriority((IRQn_Type)timeValue->TIMEx_IRQn[timer], PreemptPriority, SubPriority);
+    HAL_NVIC_EnableIRQ((IRQn_Type)timeValue->TIMEx_IRQn[timer]);
+    return timeValue->TIMEList[timer];
+}
+

@@ -94,7 +94,11 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: D:/CODE/STM32/car0/Bridge/Bridge.
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/sched.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/types.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stdio.h \
-  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseTime.h
+  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseTime.h \
+  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BasePWMTimer.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h
 
 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj: D:/CODE/STM32/car0/Core/Src/gpio.c \
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
@@ -3261,6 +3265,51 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj: D:/CODE/STM32/
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/Factory/Inc/Factory.h
 
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePWMTimer.cpp \
+  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BasePWMTimer.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/Resources.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/CODE/STM32/car0/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
+
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp \
   D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseSerial.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/headfile.h \
@@ -3354,49 +3403,6 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj: D:/CODE/STM3
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp
 
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp \
-  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseTime.h \
-  D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/Resources.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_version.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_gcc.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  D:/CODE/STM32/car0/Core/Inc/stm32f4xx_hal_conf.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-
-CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp \
-  D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseUniversalTimer.h \
   D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseTime.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
@@ -4505,6 +4511,10 @@ D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseTime.h:
 
+D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BasePWMTimer.h:
+
+D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h:
+
 D:/CODE/STM32/car0/Core/Src/gpio.c:
 
 D:/CODE/STM32/car0/Core/Inc/gpio.h:
@@ -4725,15 +4735,13 @@ D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h:
 
+D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePWMTimer.cpp:
+
 D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp:
-
-D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp:
-
-D:/CODE/STM32/car0/myLib/Base_Hardware/Inc/BaseUniversalTimer.h:
 
 D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp:
 
@@ -4800,8 +4808,6 @@ D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp:
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virSystic.h:
 
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp:
-
-D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp:
 

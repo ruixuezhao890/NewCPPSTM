@@ -812,7 +812,13 @@
 		<Unit filename="D:/CODE/STM32/car0/STM32F407ZGTX_FLASH.ld">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseGPIO.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePWMTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp">
@@ -822,9 +828,6 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseUniversalTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp">
