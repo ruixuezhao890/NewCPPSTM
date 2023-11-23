@@ -204,6 +204,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj.d"
+  "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj"
+  "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj"

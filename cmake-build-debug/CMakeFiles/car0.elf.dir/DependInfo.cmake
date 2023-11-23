@@ -144,6 +144,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseGPIO.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePWMTimer.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.obj.d"

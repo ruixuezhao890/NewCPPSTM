@@ -19,6 +19,7 @@ uint8_t g_timxchy_cap_sta = 0;    /* 输入捕获状态 */
 uint16_t g_timxchy_cap_val = 0;   /* 输入捕获值 */
 uint8_t CurrentCaptureTimer=0;           /*当前输入捕获定时器的标志*/
 uint8_t CurrentCaptureTimerChannel=0; /*当前输入捕获定时器选择的通道*/
+uint32_t g_timxchy_cnt_ofcnt=0;     /* 计数溢出次数 */
 void TIM1_BRK_TIM9_IRQHandler(void) { HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[0]);
     HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[8]);}
 void TIM1_UP_TIM10_IRQHandler(void) { HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[9]); }
@@ -196,4 +197,7 @@ void CaptureStatusSwitch(){
             }
         }
     }
+}
+void CounterPulseNum(){
+    g_timxchy_cnt_ofcnt++;
 }

@@ -2584,6 +2584,30 @@ myLib/Base_Hardware/Src/BasePWMTimer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.s
 .PHONY : myLib/Base_Hardware/Src/BasePWMTimer.cpp.s
 
+myLib/Base_Hardware/Src/BasePulseCounterTimer.obj: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.obj
+
+# target to build an object file
+myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
+
+myLib/Base_Hardware/Src/BasePulseCounterTimer.i: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
+
+myLib/Base_Hardware/Src/BasePulseCounterTimer.s: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
+.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
+
 myLib/Base_Hardware/Src/BaseSerial.obj: myLib/Base_Hardware/Src/BaseSerial.cpp.obj
 .PHONY : myLib/Base_Hardware/Src/BaseSerial.obj
 
@@ -3428,6 +3452,9 @@ help:
 	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.obj
 	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.i
 	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.s
+	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.obj
+	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.i
+	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.s
 	@echo ... myLib/Base_Hardware/Src/BaseSerial.obj
 	@echo ... myLib/Base_Hardware/Src/BaseSerial.i
 	@echo ... myLib/Base_Hardware/Src/BaseSerial.s

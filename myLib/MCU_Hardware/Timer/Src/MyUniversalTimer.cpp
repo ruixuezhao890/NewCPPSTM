@@ -21,7 +21,7 @@ uint32_t MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t
 }
 TIM_HandleTypeDef MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                                   uint8_t SubPriority) {
-   auto temp=MyBaseTime::timerGreatPsc(timer, psc, arr, PreemptPriority, SubPriority);
+    auto temp=MyBaseTime::timerGreatPsc(timer, psc, arr, PreemptPriority, SubPriority);
     return temp ;
 }
 void MyUniversalTimer::timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, float dutyCycle) {
@@ -56,6 +56,7 @@ void MyUniversalTimer::setPWMDutyCycle(uint32_t dutyCycle, Timer_enum timer, uin
     __HAL_TIM_SetCompare(&BaseTimeValue.TIMEList[timer],TIMExPWM_Channel,dutyCycle);
 }
 
+/*Capture相关的函数接口*/
 void MyUniversalTimer::timerCaptureGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                          uint8_t SubPriority) {
 
@@ -100,6 +101,51 @@ uint32_t MyUniversalTimer::getCaptureHighLevel() {
         g_timxchy_cap_sta = 0;              /* 开启下一次捕获 */
     }
     return temp;
+}
+/*脉冲计数相关代码*/
+void MyUniversalTimer::timerPulseCounterGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
+                                              uint8_t SubPriority) {
+   auto ret=MyBaseTime::timerGreatPsc(timer,psc,arr,PreemptPriority,SubPriority);
+    HAL_TIM_IC_Init(&ret);
+}
+
+void MyUniversalTimer::timerPulseCounterMultiplexPin(Pin_enum pin, uint8_t Alternate) {
+    UniversalAFIO.gpio_init(pin,GpioMode::af_pp,GpioPull::pulldown,Alternate);
+}
+
+void MyUniversalTimer::timerPulseCounterStart(Timer_enum timer, uint8_t TIMExPWM_Channel) {
+    TIM_SlaveConfigTypeDef tim_slave_config = {0};
+    tim_slave_config.SlaveMode = TIM_SLAVEMODE_EXTERNAL1;                  /* 从模式：外部触发模式1 */
+    tim_slave_config.InputTrigger = TIM_TS_TI1FP1;                         /* 输入触发：选择 TI1FP1(TIMX_CH1) 作为输入源 */
+    tim_slave_config.TriggerPolarity = TIM_TRIGGERPOLARITY_RISING;         /* 触发极性：上升沿 */
+    tim_slave_config.TriggerPrescaler = TIM_TRIGGERPRESCALER_DIV1;         /* 触发预分频：无 */
+    tim_slave_config.TriggerFilter = 0x0;                                  /* 滤波：本例中不需要任何滤波 */
+    HAL_TIM_SlaveConfigSynchronization(&BaseTimeValue.TIMEList[timer], &tim_slave_config);
+    __HAL_TIM_ENABLE_IT(&BaseTimeValue.TIMEList[timer],TIM_IT_UPDATE);
+    HAL_TIM_IC_Start(&BaseTimeValue.TIMEList[timer], TIMExPWM_Channel);
+}
+
+void MyUniversalTimer::timerPulseCounterStop(Timer_enum timer, uint8_t TIMExPWM_Channel) {
+
+}
+
+void MyUniversalTimer::timerPulseCounterDelete(Timer_enum timer, uint8_t TIMExPWM_Channel) {
+
+}
+
+void MyUniversalTimer::timerPulseCounterRestart(Timer_enum timer) {
+    __HAL_TIM_DISABLE(&BaseTimeValue.TIMEList[timer]);          /* 关闭定时器TIMX */
+    g_timxchy_cnt_ofcnt = 0;                            /* 累加器清零 */
+    __HAL_TIM_SET_COUNTER(&BaseTimeValue.TIMEList[timer], 0);   /* 计数器清零 */
+    __HAL_TIM_ENABLE(&BaseTimeValue.TIMEList[timer]);           /* 使能定时器TIMX */
+}
+
+uint32_t MyUniversalTimer::timerPulseCounterCount(Timer_enum timer) {
+    uint32_t count = 0;
+    count = g_timxchy_cnt_ofcnt * 65536;                    /* 计算溢出次数对应的计数值 */
+    count += __HAL_TIM_GET_COUNTER(&BaseTimeValue.TIMEList[timer]); /* 加上当前CNT的值 */
+//    printf("gtim_timx count %d \r\n", count);
+    return count;
 }
 
 

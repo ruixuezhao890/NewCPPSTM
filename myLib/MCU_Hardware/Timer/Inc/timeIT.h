@@ -19,9 +19,10 @@ extern uint8_t g_timxchy_cap_sta;
 extern uint16_t g_timxchy_cap_val;
 extern uint8_t CurrentCaptureTimer;
 extern uint8_t CurrentCaptureTimerChannel;
-
+extern uint32_t g_timxchy_cnt_ofcnt;
 
 void CaptureStatusSwitch();
+void CounterPulseNum();
 extern "C"{
 void TIM1_BRK_TIM9_IRQHandler(void);
 void TIM1_UP_TIM10_IRQHandler(void);

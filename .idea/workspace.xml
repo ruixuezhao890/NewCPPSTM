@@ -20,25 +20,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构通用定时器增加PWM波形生成的类 正在增加输入捕获的类">
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构通用定时器增加输入捕获相关的类">
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BasePulseCounterTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseCaptureTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseCaptureTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BasePWMTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BasePWMTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BasePWMTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BasePWMTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/User.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +115,11 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -187,7 +190,8 @@
       <workItem from="1700553720285" duration="14344000" />
       <workItem from="1700622835081" duration="9680000" />
       <workItem from="1700719899610" duration="5144000" />
-      <workItem from="1700726099064" duration="2000" />
+      <workItem from="1700726099064" duration="4094000" />
+      <workItem from="1700745642226" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -277,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700658523164</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="重构通用定时器增加输入捕获相关的类">
+      <option name="closed" value="true" />
+      <created>1700726134639</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700726134639</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +323,8 @@
     <MESSAGE value="重构基础定时器 现在定时器的时间是自动进行计算 经过测试 时间正确" />
     <MESSAGE value="重构基础定时器 新增pwm定时器类 还在进行代码编写" />
     <MESSAGE value="重构通用定时器增加PWM波形生成的类 正在增加输入捕获的类" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构通用定时器增加PWM波形生成的类 正在增加输入捕获的类" />
+    <MESSAGE value="重构通用定时器增加输入捕获相关的类" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构通用定时器增加输入捕获相关的类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
