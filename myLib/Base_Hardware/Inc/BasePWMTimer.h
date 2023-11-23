@@ -32,6 +32,8 @@ public:
     // 停止PWM
     void stopPWM();
 
+    void deletePWM();
+
     void setPWMDutyCycle(uint32_t DutyCycle);
 protected:
     void ConfigPWM( float DutyCycle);

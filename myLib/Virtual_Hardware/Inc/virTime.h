@@ -20,7 +20,7 @@ typedef void (*callback_t)(void);
 typedef void (*callback_with_arg_t)(void*);
 struct TimeExitValue{
     callback_with_arg_t TimeExit[MAXTIMNUM];
-    callback_with_arg_t TimePWMExit[MAXTIMNUM];
+    callback_with_arg_t TimeCaptureExit[MAXTIMNUM];
     void* arg[MAXTIMNUM];
 };
 struct virTimeValue{
@@ -31,8 +31,6 @@ struct virTimeValue{
 extern uint8_t OnceFlag[MAXTIMNUM];
 extern TimeExitValue ExitValue;
 extern virTimeValue BaseTimeValue;
-//extern virTimeValue UniversalTimeValue;
-//extern virTimeValue AdvancedTimeValue;
 class virTime {
 public:
     virtual uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr,

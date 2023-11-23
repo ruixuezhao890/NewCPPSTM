@@ -41,12 +41,15 @@ protected:
     /*输入捕获相关代码*/
     void timerCaptureGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority);
     void timerCaptureMultiplexPin(Pin_enum pin,uint8_t Alternate);
-    // 启动周期性的PWM
+    // 启动周期性的Capture
     void startCapturePeriodic(Timer_enum timer, uint8_t TIMExPWM_Channel);
 
-    // 停止PWM
+    // 停止Capture
     void stopCapture(Timer_enum timer,uint8_t TIMExPWM_Channel);
+    //删除Capture
     void deleteCaptureTimer(Timer_enum timer, uint8_t TIMExPWM_Channel);
+
+    virtual uint32_t getCaptureHighLevel();
 
 private:
     uint32_t m_arr;

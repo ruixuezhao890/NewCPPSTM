@@ -19,4 +19,5 @@
 #include "BaseSerial.h"
 #include "BaseTime.h"
 #include "BasePWMTimer.h"
+#include "BaseCaptureTimer.h"
 #endif //CAR0_USER_H

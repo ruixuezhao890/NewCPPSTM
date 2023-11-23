@@ -13,6 +13,7 @@
 //
 
 #include "MyUniversalTimer.h"
+#include "timeIT.h"
 
 uint32_t MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) {
     m_arr=MyBaseTime::timerGreatPsc(timer, arr, PreemptPriority, SubPriority);
@@ -87,6 +88,18 @@ void MyUniversalTimer::deleteCaptureTimer(Timer_enum timer, uint8_t TIMExPWM_Cha
         return;
     }
     HAL_TIM_IC_DeInit(&BaseTimeValue.TIMEList[timer]);
+}
+
+uint32_t MyUniversalTimer::getCaptureHighLevel() {
+    uint32_t temp=0;
+    if (g_timxchy_cap_sta & 0x80)           /* 成功捕获到了一次高电平 */
+    {
+        temp = g_timxchy_cap_sta & 0x3F;
+        temp *= 0xFFFF;                     /* 溢出时间总和 */
+        temp += g_timxchy_cap_val;          /* 得到总的高电平时间 */
+        g_timxchy_cap_sta = 0;              /* 开启下一次捕获 */
+    }
+    return temp;
 }
 
 

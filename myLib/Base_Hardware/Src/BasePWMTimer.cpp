@@ -54,6 +54,10 @@ void BasePWMTimer::setPWMDutyCycle(uint32_t DutyCycle) {
     MyUniversalTimer::setPWMDutyCycle(DutyCycle,_timer,m_TIMExPWM_Channel);
 }
 
+void BasePWMTimer::deletePWM() {
+    MyUniversalTimer::deletePWMTimer(_timer,m_TIMExPWM_Channel);
+}
+
 
 
 
