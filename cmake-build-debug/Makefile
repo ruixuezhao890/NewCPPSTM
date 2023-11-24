@@ -2608,6 +2608,30 @@ myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
 .PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
 
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj
+
+# target to build an object file
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
+
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
+
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
+
 myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
 .PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
 
@@ -3503,6 +3527,9 @@ help:
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i
 	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s

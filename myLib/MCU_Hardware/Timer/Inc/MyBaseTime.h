@@ -22,7 +22,7 @@ protected:
 
     uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr,
                            uint8_t PreemptPriority, uint8_t SubPriority) override;
-    TIM_HandleTypeDef
+    TIM_HandleTypeDef *
     timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
 
 protected:

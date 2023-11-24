@@ -19,11 +19,11 @@ uint32_t MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t
     m_arr=MyBaseTime::timerGreatPsc(timer, arr, PreemptPriority, SubPriority);
     return m_arr;
 }
-TIM_HandleTypeDef MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
-                                                  uint8_t SubPriority) {
+TIM_HandleTypeDef * MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
+                                                    uint8_t SubPriority) {
 
     auto temp=MyBaseTime::timerGreatPsc(timer, psc, arr, PreemptPriority, SubPriority);
-    m_arr=temp.Init.Period;
+    m_arr=temp->Init.Period;
     return   temp;
 
 }
@@ -65,7 +65,7 @@ void MyUniversalTimer::timerCaptureGreat(Timer_enum timer, uint32_t psc, uint32_
                                          uint8_t SubPriority) {
 
    auto ret=MyBaseTime::timerGreatPsc(timer,psc,arr,PreemptPriority,SubPriority);
-    HAL_TIM_IC_Init(&ret);
+    HAL_TIM_IC_Init(ret);
 
 }
 
@@ -110,7 +110,7 @@ uint32_t MyUniversalTimer::getCaptureHighLevel() {
 void MyUniversalTimer::timerPulseCounterGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                               uint8_t SubPriority) {
    auto ret=MyBaseTime::timerGreatPsc(timer,psc,arr,PreemptPriority,SubPriority);
-    HAL_TIM_IC_Init(&ret);
+    HAL_TIM_IC_Init(ret);
 }
 
 void MyUniversalTimer::timerPulseCounterMultiplexPin(Pin_enum pin, uint8_t Alternate) {
@@ -148,7 +148,6 @@ uint32_t MyUniversalTimer::timerPulseCounterCount(Timer_enum timer) {
     uint32_t count = 0;
     count = g_timxchy_cnt_ofcnt * 65536;                    /* 计算溢出次数对应的计数值 */
     count += __HAL_TIM_GET_COUNTER(&BaseTimeValue.TIMEList[timer]); /* 加上当前CNT的值 */
-//    printf("gtim_timx count %d \r\n", count);
     return count;
 }
 

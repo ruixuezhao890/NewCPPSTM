@@ -20,20 +20,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构通用定时器增加脉冲计数相关的类">
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp" afterDir="false" />
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构通用定时器增加输出指定数目的PWM的类，优化目录结构">
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCompareOutTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
@@ -41,27 +35,14 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseCaptureTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCaptureTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Inc/BaseGPIO.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BasePWMTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BasePWMTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BasePulseCounterTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BasePulseCounterTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseSerial.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseSystic.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Inc/BaseSystic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Inc/BaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseGPIO.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BasePWMTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseSerial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseSystic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/Src/BaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/User.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +198,7 @@
       <workItem from="1700719899610" duration="5144000" />
       <workItem from="1700726099064" duration="4094000" />
       <workItem from="1700745642226" duration="1570000" />
-      <workItem from="1700808055623" duration="5785000" />
+      <workItem from="1700808055623" duration="12730000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -323,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700746236133</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="重构通用定时器增加输出指定数目的PWM的类，优化目录结构">
+      <option name="closed" value="true" />
+      <created>1700814691611</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700814691611</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +348,8 @@
     <MESSAGE value="重构通用定时器增加PWM波形生成的类 正在增加输入捕获的类" />
     <MESSAGE value="重构通用定时器增加输入捕获相关的类" />
     <MESSAGE value="重构通用定时器增加脉冲计数相关的类" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构通用定时器增加脉冲计数相关的类" />
+    <MESSAGE value="重构通用定时器增加输出指定数目的PWM的类，优化目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构通用定时器增加输出指定数目的PWM的类，优化目录结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

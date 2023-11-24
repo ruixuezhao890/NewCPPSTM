@@ -20,7 +20,7 @@ class BaseOutputCountTimer: public AdvancedTimer{
 public:
     BaseOutputCountTimer();
     BaseOutputCountTimer(Timer_enum timerEnum, uint8_t PreemptPriority , uint8_t SubPriority);
-    BaseOutputCountTimer(Timer_enum timerEnum, Pin_enum pin, uint8_t AFMode, uint8_t PreemptPriority = 3,
+    BaseOutputCountTimer(Timer_enum timerEnum, Pin_enum pin, uint8_t AFMode, uint8_t PreemptPriority = 1,
             uint8_t SubPriority = 3);
     // 析构函数
     ~BaseOutputCountTimer();
