@@ -21,15 +21,19 @@ uint32_t MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t
 }
 TIM_HandleTypeDef MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                                   uint8_t SubPriority) {
+
     auto temp=MyBaseTime::timerGreatPsc(timer, psc, arr, PreemptPriority, SubPriority);
-    return temp ;
+    m_arr=temp.Init.Period;
+    return   temp;
+
 }
 void MyUniversalTimer::timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, float dutyCycle) {
     if (dutyCycle>1) return;
     TIM_OC_InitTypeDef timx_oc_pwm_chy = {0};                       /* 定时器输出句柄 */
     timx_oc_pwm_chy.OCMode = TIM_OCMODE_PWM1;                       /* 模式选择PWM1 */
-    timx_oc_pwm_chy.Pulse = uint32_t ((float )m_arr *dutyCycle);                                /* 设置比较值,此值用来确定占空比 */
-    timx_oc_pwm_chy.OCPolarity = TIM_OCPOLARITY_LOW;
+    timx_oc_pwm_chy.Pulse = uint32_t ((float )m_arr *dutyCycle);/* 设置比较值,此值用来确定占空比 */
+    if (HighLeveFlag)timx_oc_pwm_chy.OCPolarity = TIM_OCPOLARITY_HIGH;
+    else timx_oc_pwm_chy.OCPolarity = TIM_OCPOLARITY_LOW;
     HAL_TIM_PWM_ConfigChannel(&BaseTimeValue.TIMEList[timer],&timx_oc_pwm_chy,TIMExPWM_Channel);
 }
 
@@ -41,7 +45,7 @@ void MyUniversalTimer::stopPWM(Timer_enum timer, uint8_t TIMExPWM_Channel) {
     HAL_TIM_PWM_Stop(&BaseTimeValue.TIMEList[timer],TIMExPWM_Channel);
 }
 
-void MyUniversalTimer::deletePWMTimer(Timer_enum timer, uint8_t TIMExPWM_Channel) {
+void MyUniversalTimer::deletePWMTimer(Timer_enum timer) {
     if (!BaseTimeValue.TIMEList[timer].Instance){
         return;
     }
@@ -146,6 +150,10 @@ uint32_t MyUniversalTimer::timerPulseCounterCount(Timer_enum timer) {
     count += __HAL_TIM_GET_COUNTER(&BaseTimeValue.TIMEList[timer]); /* 加上当前CNT的值 */
 //    printf("gtim_timx count %d \r\n", count);
     return count;
+}
+
+void MyUniversalTimer::setHighLeveFlag(uint8_t flag) {
+    HighLeveFlag=flag;
 }
 
 

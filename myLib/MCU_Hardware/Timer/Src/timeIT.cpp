@@ -18,8 +18,10 @@
 uint8_t g_timxchy_cap_sta = 0;    /* 输入捕获状态 */
 uint16_t g_timxchy_cap_val = 0;   /* 输入捕获值 */
 uint8_t CurrentCaptureTimer=0;           /*当前输入捕获定时器的标志*/
+uint8_t CurrentCounterTimer=0;
 uint8_t CurrentCaptureTimerChannel=0; /*当前输入捕获定时器选择的通道*/
 uint32_t g_timxchy_cnt_ofcnt=0;     /* 计数溢出次数 */
+uint32_t g_npwm_remain = 0;
 void TIM1_BRK_TIM9_IRQHandler(void) { HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[0]);
     HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[8]);}
 void TIM1_UP_TIM10_IRQHandler(void) { HAL_TIM_IRQHandler(&BaseTimeValue.TIMEList[9]); }
@@ -200,4 +202,29 @@ void CaptureStatusSwitch(){
 }
 void CounterPulseNum(){
     g_timxchy_cnt_ofcnt++;
+}
+
+void OutputCounterNUm(){
+    uint16_t npwm = 0;
+    if (g_npwm_remain >= 256)           /* 还有大于256个脉冲需要发送 */
+    {
+        g_npwm_remain = g_npwm_remain - 256;
+        npwm = 256;
+    }
+    else if (g_npwm_remain % 256)       /* 还有位数（不到256）个脉冲要发送 */
+    {
+        npwm = g_npwm_remain % 256;
+        g_npwm_remain = 0;              /* 没有脉冲了 */
+    }
+
+    if (npwm) /* 有脉冲要发送 */
+    {
+        BaseTimeValue.TIMEList[CurrentCounterTimer].Instance->RCR = npwm - 1;                                         /* 设置重复计数寄存器值为npwm-1, 即npwm个脉冲 */
+        HAL_TIM_GenerateEvent(&BaseTimeValue.TIMEList[CurrentCaptureTimer], TIM_EVENTSOURCE_UPDATE); /* 产生一次更新事件,在中断里面处理脉冲输出 */
+        __HAL_TIM_ENABLE(&BaseTimeValue.TIMEList[CurrentCaptureTimer]);                              /* 使能定时器TIMX */
+    }
+    else
+    {
+        BaseTimeValue.TIMEList[CurrentCounterTimer].Instance->CR1 &= ~(1 << 0); /* 关闭定时器TIMX，使用HAL Disable会清除PWM通道信息，此处不用 */
+    }
 }

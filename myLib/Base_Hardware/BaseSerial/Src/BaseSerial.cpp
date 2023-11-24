@@ -12,7 +12,7 @@
 */
 //
 
-#include "BaseSerial.h"
+#include "Base_Hardware/BaseSerial/Inc/BaseSerial.h"
 virUsart *virUsart= nullptr;
 BaseSerial Baseserial(UART_1);
 void BaseSerial::set_buf_ptr() {

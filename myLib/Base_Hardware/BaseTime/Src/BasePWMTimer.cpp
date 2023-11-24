@@ -12,7 +12,7 @@
 */
 //
 
-#include "BasePWMTimer.h"
+#include "Base_Hardware/BaseTime/Inc/BasePWMTimer.h"
 
 BasePWMTimer::BasePWMTimer() {
 
@@ -55,7 +55,7 @@ void BasePWMTimer::setPWMDutyCycle(uint32_t DutyCycle) {
 }
 
 void BasePWMTimer::deletePWM() {
-    MyUniversalTimer::deletePWMTimer(_timer,m_TIMExPWM_Channel);
+    MyUniversalTimer::deletePWMTimer(_timer);
 }
 
 

@@ -34,7 +34,7 @@ protected:
 
     void setPWMDutyCycle(uint32_t dutyCycle, Timer_enum timer, uint8_t TIMExPWM_Channel);
     // 删除定时器
-    void deletePWMTimer(Timer_enum timer, uint8_t TIMExPWM_Channel);
+    void deletePWMTimer(Timer_enum timer);
 
 
 
@@ -60,7 +60,10 @@ protected:
     void timerPulseCounterDelete(Timer_enum timer, uint8_t TIMExPWM_Channel);
     void timerPulseCounterRestart(Timer_enum timer);
     uint32_t timerPulseCounterCount(Timer_enum timer);
+
+    void setHighLeveFlag(uint8_t flag);
 private:
+    uint8_t HighLeveFlag=0;
     uint32_t m_arr;
     MyGPIO UniversalAFIO;
 };

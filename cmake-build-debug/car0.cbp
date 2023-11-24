@@ -37,11 +37,13 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherConfig"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -76,11 +78,13 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherConfig"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/Inc"/>
 					<Add directory="D:/CODE/STM32/car0/myLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -812,25 +816,28 @@
 		<Unit filename="D:/CODE/STM32/car0/STM32F407ZGTX_FLASH.ld">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseGPIO.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePWMTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSerial.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseSystic.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/Src/BaseTime.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp">
@@ -858,6 +865,9 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp">

@@ -13,7 +13,6 @@
 //
 
 #include "MyBaseTime.h"
-#include "BaseSerial.h"
 #include "TimeAuxiliaryfunction.h"
 virTimeValue *timeValue=&BaseTimeValue;
 uint8_t OnceFlag[MAXTIMNUM]={0};

@@ -51,12 +51,20 @@ endif ()
 
 include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F4xx/Include Drivers/CMSIS/Include
         Bridge myLib/Virtual_Hardware/Inc myLib/MCU_Hardware/Inc myLib/Factory/Inc myLib/otherConfig
-        myLib/Base_Hardware/Inc myLib myLib/otherLib myLib/DataStream myLib/MCU_Hardware/Timer/Inc)
+        myLib myLib/otherLib myLib/DataStream myLib/MCU_Hardware/Timer/Inc
+        myLib/Base_Hardware/BaseSerial
+        myLib/Base_Hardware/BaseTimer
+        myLib/Base_Hardware/BaseSys
+)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "myLib/Virtual_Hardware/Src/*.*" "myLib/MCU_Hardware/Src/*.*" "myLib/otherConfig/*.*"
-  "myLib/MCU_Hardware/Timer/Src/*.*"      "Bridge/*.*" "myLib/Factory/Src/*.*" "myLib/Base_Hardware/Src/*.*" "myLib/otherLib/*.*" "myLib/DataStream/*.*")
+  "myLib/MCU_Hardware/Timer/Src/*.*"      "Bridge/*.*" "myLib/Factory/Src/*.*"  "myLib/otherLib/*.*" "myLib/DataStream/*.*"
+        "myLib/Base_Hardware/BaseSerial/Src/*.*"
+        "myLib/Base_Hardware/BaseTime/Src/*.*"
+        "myLib/Base_Hardware/BaseSys/Src/*.*"
+)
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407ZGTX_FLASH.ld)
 

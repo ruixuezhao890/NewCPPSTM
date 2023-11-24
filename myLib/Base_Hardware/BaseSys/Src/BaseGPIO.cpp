@@ -12,7 +12,7 @@
 */
 //
 
-#include "BaseGPIO.h"
+#include "Base_Hardware/BaseSys/Inc/BaseGPIO.h"
 virGPIO *virGpio= nullptr;
 BaseGPIO::BaseGPIO() {
     if (!virGpio)

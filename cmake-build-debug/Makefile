@@ -2512,173 +2512,197 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 
-myLib/Base_Hardware/Src/BaseCaptureTimer.obj: myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.obj
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.obj
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
 
-myLib/Base_Hardware/Src/BaseCaptureTimer.i: myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.i
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.i
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
 
-myLib/Base_Hardware/Src/BaseCaptureTimer.s: myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.s
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseCaptureTimer.cpp.s
+myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
 
-myLib/Base_Hardware/Src/BaseGPIO.obj: myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.obj
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BaseGPIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.cpp.obj
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
 
-myLib/Base_Hardware/Src/BaseGPIO.i: myLib/Base_Hardware/Src/BaseGPIO.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.i
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BaseGPIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.cpp.i
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
 
-myLib/Base_Hardware/Src/BaseGPIO.s: myLib/Base_Hardware/Src/BaseGPIO.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.s
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BaseGPIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseGPIO.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseGPIO.cpp.s
+myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
 
-myLib/Base_Hardware/Src/BasePWMTimer.obj: myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.obj
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.cpp.obj
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
 
-myLib/Base_Hardware/Src/BasePWMTimer.i: myLib/Base_Hardware/Src/BasePWMTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.i
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.i: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BasePWMTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.cpp.i
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
 
-myLib/Base_Hardware/Src/BasePWMTimer.s: myLib/Base_Hardware/Src/BasePWMTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.s
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.s: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BasePWMTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePWMTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BasePWMTimer.cpp.s
+myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
+.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
 
-myLib/Base_Hardware/Src/BasePulseCounterTimer.obj: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.obj
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.obj
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
 
-myLib/Base_Hardware/Src/BasePulseCounterTimer.i: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.i
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.i
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
 
-myLib/Base_Hardware/Src/BasePulseCounterTimer.s: myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.s
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BasePulseCounterTimer.cpp.s
+myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
 
-myLib/Base_Hardware/Src/BaseSerial.obj: myLib/Base_Hardware/Src/BaseSerial.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.obj
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BaseSerial.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.obj
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
 
-myLib/Base_Hardware/Src/BaseSerial.i: myLib/Base_Hardware/Src/BaseSerial.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.i
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BaseSerial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.i
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
 
-myLib/Base_Hardware/Src/BaseSerial.s: myLib/Base_Hardware/Src/BaseSerial.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.s
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BaseSerial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSerial.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseSerial.cpp.s
+myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
 
-myLib/Base_Hardware/Src/BaseSystic.obj: myLib/Base_Hardware/Src/BaseSystic.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.obj
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BaseSystic.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.cpp.obj
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
 
-myLib/Base_Hardware/Src/BaseSystic.i: myLib/Base_Hardware/Src/BaseSystic.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.i
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BaseSystic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.cpp.i
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
 
-myLib/Base_Hardware/Src/BaseSystic.s: myLib/Base_Hardware/Src/BaseSystic.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.s
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BaseSystic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseSystic.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseSystic.cpp.s
+myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
 
-myLib/Base_Hardware/Src/BaseTime.obj: myLib/Base_Hardware/Src/BaseTime.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseTime.obj
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj
 
 # target to build an object file
-myLib/Base_Hardware/Src/BaseTime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.obj
-.PHONY : myLib/Base_Hardware/Src/BaseTime.cpp.obj
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
 
-myLib/Base_Hardware/Src/BaseTime.i: myLib/Base_Hardware/Src/BaseTime.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseTime.i
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i
 
 # target to preprocess a source file
-myLib/Base_Hardware/Src/BaseTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.i
-.PHONY : myLib/Base_Hardware/Src/BaseTime.cpp.i
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
 
-myLib/Base_Hardware/Src/BaseTime.s: myLib/Base_Hardware/Src/BaseTime.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseTime.s
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s
 
 # target to generate assembly for a file
-myLib/Base_Hardware/Src/BaseTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/Src/BaseTime.cpp.s
-.PHONY : myLib/Base_Hardware/Src/BaseTime.cpp.s
+myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
+
+myLib/Base_Hardware/BaseTime/Src/BaseTime.obj: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.obj
+
+# target to build an object file
+myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
+
+myLib/Base_Hardware/BaseTime/Src/BaseTime.i: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
+
+myLib/Base_Hardware/BaseTime/Src/BaseTime.s: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
+.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
 
 myLib/DataStream/inputStream.obj: myLib/DataStream/inputStream.cpp.obj
 .PHONY : myLib/DataStream/inputStream.obj
@@ -2847,6 +2871,30 @@ myLib/MCU_Hardware/Src/MyUsart.s: myLib/MCU_Hardware/Src/MyUsart.cpp.s
 myLib/MCU_Hardware/Src/MyUsart.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s
 .PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.s
+
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj
+
+# target to build an object file
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
+
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i
+
+# target to preprocess a source file
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
+
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s
+
+# target to generate assembly for a file
+myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
+.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
 
 myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
 .PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
@@ -3443,27 +3491,30 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s
-	@echo ... myLib/Base_Hardware/Src/BaseCaptureTimer.obj
-	@echo ... myLib/Base_Hardware/Src/BaseCaptureTimer.i
-	@echo ... myLib/Base_Hardware/Src/BaseCaptureTimer.s
-	@echo ... myLib/Base_Hardware/Src/BaseGPIO.obj
-	@echo ... myLib/Base_Hardware/Src/BaseGPIO.i
-	@echo ... myLib/Base_Hardware/Src/BaseGPIO.s
-	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.obj
-	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.i
-	@echo ... myLib/Base_Hardware/Src/BasePWMTimer.s
-	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.obj
-	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.i
-	@echo ... myLib/Base_Hardware/Src/BasePulseCounterTimer.s
-	@echo ... myLib/Base_Hardware/Src/BaseSerial.obj
-	@echo ... myLib/Base_Hardware/Src/BaseSerial.i
-	@echo ... myLib/Base_Hardware/Src/BaseSerial.s
-	@echo ... myLib/Base_Hardware/Src/BaseSystic.obj
-	@echo ... myLib/Base_Hardware/Src/BaseSystic.i
-	@echo ... myLib/Base_Hardware/Src/BaseSystic.s
-	@echo ... myLib/Base_Hardware/Src/BaseTime.obj
-	@echo ... myLib/Base_Hardware/Src/BaseTime.i
-	@echo ... myLib/Base_Hardware/Src/BaseTime.s
+	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
+	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i
+	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.i
+	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.obj
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.i
+	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.s
 	@echo ... myLib/DataStream/inputStream.obj
 	@echo ... myLib/DataStream/inputStream.i
 	@echo ... myLib/DataStream/inputStream.s
@@ -3485,6 +3536,9 @@ help:
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.obj
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.i
 	@echo ... myLib/MCU_Hardware/Src/MyUsart.s
+	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj
+	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i
+	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s
 	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
 	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.i
 	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.s
