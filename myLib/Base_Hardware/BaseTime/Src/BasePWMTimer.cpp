@@ -45,7 +45,7 @@ void BasePWMTimer::stopPWM() {
 
 
 void BasePWMTimer::ConfigPWM(float DutyCycle) {
-    MyUniversalTimer::timerGreatPsc(_timer,m_psc,m_arr,PreemptPriority,SubPriority);
+    MyUniversalTimer::timerGreatPscNoInit(_timer, m_psc, m_arr, PreemptPriority, SubPriority);
     MyUniversalTimer::timerPWMGreat(_timer,m_TIMExPWM_Channel,DutyCycle);
     startPWMPeriodic(_timer,m_TIMExPWM_Channel);
 }

@@ -43,11 +43,14 @@ BaseCompareOutTimer::BaseCompareOutTimer(Timer_enum timerEnum, std::vector<Pin_e
 }
 
 void BaseCompareOutTimer::stopCompareOut() {
+    for (int i = 0; i < m_TIMExCompareOut_Channel.size(); ++i) {
+        AdvancedTimer::stopOutputCompare(_timer,(m_TIMExCompareOut_Channel[i]));
+    }
 
 }
 
 void BaseCompareOutTimer::deletCompareOut() {
-
+    AdvancedTimer::deleteOutputCompare(_timer);
 }
 
 
@@ -57,7 +60,7 @@ void BaseCompareOutTimer::ConfigCompareOut() {
 
 void BaseCompareOutTimer::startCompareOut(uint32_t arr, uint32_t psc, std::vector<uint16_t> &PulseNum,
                                           std::vector<uint8_t> &TIMExCapture_Channel) {
-    m_arr=arr;m_psc=psc;m_TIMExCompareOut_Channel=&TIMExCapture_Channel;
+    m_arr=arr;m_psc=psc;m_TIMExCompareOut_Channel=TIMExCapture_Channel;
     ConfigCompareOut();
     for(size_t i=0;i<TIMExCapture_Channel.size();i++){
         AdvancedTimer::startOutputCompare(_timer,PulseNum[i],TIMExCapture_Channel[i]);

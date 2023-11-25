@@ -59,7 +59,7 @@ void MyBaseTime::timerStartPeriodic(Timer_enum timer) {
 }
 
 TIM_HandleTypeDef *
-MyBaseTime::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) {
+MyBaseTime::timerGreatPscNoInit(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) {
     OpenRccTime(timer);
     timeValue->TIMEx_IRQn[timer]= getTIMEx_IRQn(timer);
     timeValue->TIMEList[timer].Instance=( TIM_TypeDef*)getTimeInstance(timer);

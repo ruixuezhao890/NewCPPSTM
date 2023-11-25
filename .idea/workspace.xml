@@ -20,10 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="重构通用定时器增加输出指定数目的PWM的类，优化目录结构">
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCompareOutTimer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp" afterDir="false" />
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加高级定时相关类">
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseDeadZoneTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
@@ -35,7 +36,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCompareOutTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCompareOutTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" afterDir="false" />
@@ -121,9 +125,9 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
@@ -198,7 +202,8 @@
       <workItem from="1700719899610" duration="5144000" />
       <workItem from="1700726099064" duration="4094000" />
       <workItem from="1700745642226" duration="1570000" />
-      <workItem from="1700808055623" duration="12730000" />
+      <workItem from="1700808055623" duration="12910000" />
+      <workItem from="1700911498099" duration="5328000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -312,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700814691611</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="增加高级定时相关类">
+      <option name="closed" value="true" />
+      <created>1700833963618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700833963618</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +362,8 @@
     <MESSAGE value="重构通用定时器增加输入捕获相关的类" />
     <MESSAGE value="重构通用定时器增加脉冲计数相关的类" />
     <MESSAGE value="重构通用定时器增加输出指定数目的PWM的类，优化目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构通用定时器增加输出指定数目的PWM的类，优化目录结构" />
+    <MESSAGE value="增加高级定时相关类" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加高级定时相关类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -378,11 +392,6 @@
           <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp</url>
           <line>36</line>
           <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp</url>
-          <line>18</line>
-          <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h</url>

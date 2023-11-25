@@ -208,6 +208,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj.d"
+  "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj"
+  "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj.d"
   "CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj"

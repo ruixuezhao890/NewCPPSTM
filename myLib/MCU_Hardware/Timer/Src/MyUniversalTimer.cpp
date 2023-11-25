@@ -19,12 +19,12 @@ uint32_t MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t
     m_arr=MyBaseTime::timerGreatPsc(timer, arr, PreemptPriority, SubPriority);
     return m_arr;
 }
-TIM_HandleTypeDef * MyUniversalTimer::timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
-                                                    uint8_t SubPriority) {
+TIM_HandleTypeDef * MyUniversalTimer::timerGreatPscNoInit(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
+                                                          uint8_t SubPriority) {
 
-    auto temp=MyBaseTime::timerGreatPsc(timer, psc, arr, PreemptPriority, SubPriority);
+    auto temp= MyBaseTime::timerGreatPscNoInit(timer, psc, arr, PreemptPriority, SubPriority);
     m_arr=temp->Init.Period;
-    return   temp;
+    return  temp;
 
 }
 void MyUniversalTimer::timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, float dutyCycle) {
@@ -35,9 +35,11 @@ void MyUniversalTimer::timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel,
     if (HighLeveFlag)timx_oc_pwm_chy.OCPolarity = TIM_OCPOLARITY_HIGH;
     else timx_oc_pwm_chy.OCPolarity = TIM_OCPOLARITY_LOW;
     HAL_TIM_PWM_ConfigChannel(&BaseTimeValue.TIMEList[timer],&timx_oc_pwm_chy,TIMExPWM_Channel);
+    HAL_TIM_Base_Init(&BaseTimeValue.TIMEList[timer]);
 }
 
 void MyUniversalTimer::startPWMPeriodic(Timer_enum timer, uint8_t TIMExPWM_Channel) {
+
     HAL_TIM_PWM_Start(&BaseTimeValue.TIMEList[timer],TIMExPWM_Channel);
 }
 
@@ -64,7 +66,8 @@ void MyUniversalTimer::setPWMDutyCycle(uint32_t dutyCycle, Timer_enum timer, uin
 void MyUniversalTimer::timerCaptureGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                          uint8_t SubPriority) {
 
-   auto ret=MyBaseTime::timerGreatPsc(timer,psc,arr,PreemptPriority,SubPriority);
+   auto ret= MyBaseTime::timerGreatPscNoInit(timer, psc, arr, PreemptPriority, SubPriority);
+    HAL_TIM_Base_Init(ret);
     HAL_TIM_IC_Init(ret);
 
 }
@@ -109,8 +112,9 @@ uint32_t MyUniversalTimer::getCaptureHighLevel() {
 /*脉冲计数相关代码*/
 void MyUniversalTimer::timerPulseCounterGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority,
                                               uint8_t SubPriority) {
-   auto ret=MyBaseTime::timerGreatPsc(timer,psc,arr,PreemptPriority,SubPriority);
-    HAL_TIM_IC_Init(ret);
+   auto ret= MyBaseTime::timerGreatPscNoInit(timer, psc, arr, PreemptPriority, SubPriority);
+   HAL_TIM_Base_Init(ret);
+   HAL_TIM_IC_Init(ret);
 }
 
 void MyUniversalTimer::timerPulseCounterMultiplexPin(Pin_enum pin, uint8_t Alternate) {
@@ -130,11 +134,11 @@ void MyUniversalTimer::timerPulseCounterStart(Timer_enum timer, uint8_t TIMExPWM
 }
 
 void MyUniversalTimer::timerPulseCounterStop(Timer_enum timer, uint8_t TIMExPWM_Channel) {
-
+    HAL_TIM_IC_Stop(&BaseTimeValue.TIMEList[timer], TIMExPWM_Channel);
 }
 
-void MyUniversalTimer::timerPulseCounterDelete(Timer_enum timer, uint8_t TIMExPWM_Channel) {
-
+void MyUniversalTimer::timerPulseCounterDelete(Timer_enum timer) {
+    HAL_TIM_IC_DeInit(&BaseTimeValue.TIMEList[timer]);
 }
 
 void MyUniversalTimer::timerPulseCounterRestart(Timer_enum timer) {

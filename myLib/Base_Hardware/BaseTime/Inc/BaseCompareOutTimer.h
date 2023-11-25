@@ -44,7 +44,7 @@ private:
     Timer_enum _timer=Timer_enum::TIMER_END;
     uint32_t m_psc;
     uint32_t m_arr;
-    std::vector<uint8_t>* m_TIMExCompareOut_Channel;
+    std::vector<uint8_t> m_TIMExCompareOut_Channel;
     uint8_t PreemptPriority;
     uint8_t SubPriority;
 };

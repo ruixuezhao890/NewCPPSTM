@@ -831,6 +831,9 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp">
 			<Option target="car0.elf"/>
 		</Unit>

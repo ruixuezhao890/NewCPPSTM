@@ -48,7 +48,7 @@ void BasePulseCounterTimer::stopPulseCounter() {
 }
 
 void BasePulseCounterTimer::deletePulseCounter() {
-    timerPulseCounterDelete(_timer,m_TIMExPulseCounter_Channel);
+    timerPulseCounterDelete(_timer);
 }
 
 uint32_t BasePulseCounterTimer::getPulseCounterCount() {

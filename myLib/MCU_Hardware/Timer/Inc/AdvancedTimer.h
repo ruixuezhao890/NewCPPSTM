@@ -36,9 +36,18 @@ protected:
     void stopOutputCompare(Timer_enum timer,uint8_t TIMExPWM_Channel);
     void deleteOutputCompare(Timer_enum timer);
 
+
+    /*互补输出带死区控制相关代码*/
+    void deadZoneGreat(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority);
+    void deadZoneMultiplexPin(Pin_enum pin, uint8_t Alternate);
+    void startdeadZone(Timer_enum timer, uint8_t TIMExPWM_Channel);
+    void stopdeadZone(Timer_enum timer,uint8_t TIMExPWM_Channel);
+    void deletedeadZone(Timer_enum timer);
+    void setPWMdeadZone(Timer_enum timer,uint16_t ccr, uint8_t dtg);
 protected:
     uint32_t m_arr;
     MyGPIO UniversalAFIO;
+    TIM_BreakDeadTimeConfigTypeDef g_sbreak_dead_time_config = {0};
 };
 
 

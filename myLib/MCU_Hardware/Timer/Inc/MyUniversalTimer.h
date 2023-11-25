@@ -21,7 +21,7 @@ protected:
     uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
 
     TIM_HandleTypeDef *
-    timerGreatPsc(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
+    timerGreatPscNoInit(Timer_enum timer, uint32_t psc, uint32_t arr, uint8_t PreemptPriority, uint8_t SubPriority) override;
 protected:
     void timerPWMGreat(Timer_enum timer, uint8_t TIMExPWM_Channel, float dutyCycle);
 
@@ -57,7 +57,7 @@ protected:
     void timerPulseCounterMultiplexPin(Pin_enum pin,uint8_t Alternate);
     void timerPulseCounterStart(Timer_enum timer, uint8_t TIMExPWM_Channel);
     void timerPulseCounterStop(Timer_enum timer, uint8_t TIMExPWM_Channel);
-    void timerPulseCounterDelete(Timer_enum timer, uint8_t TIMExPWM_Channel);
+    void timerPulseCounterDelete(Timer_enum timer);
     void timerPulseCounterRestart(Timer_enum timer);
     uint32_t timerPulseCounterCount(Timer_enum timer);
 
