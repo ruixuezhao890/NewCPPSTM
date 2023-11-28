@@ -2,7 +2,7 @@
 #define __INPUT_STREAM_H
 
 #include "WString.h"
-#include "Resources.h"
+#include "UsartResources.h"
 
 class inputStream
 {

@@ -55,6 +55,7 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
         myLib/Base_Hardware/BaseSerial
         myLib/Base_Hardware/BaseTimer
         myLib/Base_Hardware/BaseSys
+        myLib/otherResources
 )
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx)
@@ -64,6 +65,7 @@ file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "myLib/Virtual_Hardware/Src/*
         "myLib/Base_Hardware/BaseSerial/Src/*.*"
         "myLib/Base_Hardware/BaseTime/Src/*.*"
         "myLib/Base_Hardware/BaseSys/Src/*.*"
+        "myLib/otherResources/*.*"
 )
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407ZGTX_FLASH.ld)

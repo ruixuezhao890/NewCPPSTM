@@ -16,9 +16,13 @@
 #include "MyUsart.h"
 #include "MyGPIO.h"
 #include "PinConfig.h"
+#include "MyDMA.h"
 #define MAXWait 0xffff
 #define MAXUart 6
 uint8_t BufferArray;
+uint8_t openDMATransmit;
+MyDMA myDma;
+
 struct uartInfo{
     UART_HandleTypeDef UsartList[MAXUart]={0};//全局串口句柄
     uint8_t USARTx_IRQn[MAXUart]={0};
@@ -96,15 +100,24 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
     myGpio.gpio_init(uart_rx, GpioMode::af_pp,Alternate);
     myGpio.gpio_init(uart_tx, GpioMode::af_pp,Alternate);
     HAL_NVIC_EnableIRQ(IRQn_Type(USARTx_IRQn));                      /* 使能USART中断通道 */
-    HAL_NVIC_SetPriority((IRQn_Type)USARTx_IRQn, 3, 3);              /* 抢占优先级3，子优先级3 */
+    HAL_NVIC_SetPriority((IRQn_Type)USARTx_IRQn, 0, 0);              /* 抢占优先级3，子优先级3 */
       uartInfo. UsartList[uart].Init.BaudRate = baudrate;                    /* 波特率 */
       uartInfo. UsartList[uart].Init.WordLength = UART_WORDLENGTH_8B;        /* 字长为8位数据格式 */
       uartInfo. UsartList[uart].Init.StopBits = UART_STOPBITS_1;             /* 一个停止位 */
       uartInfo. UsartList[uart].Init.Parity = UART_PARITY_NONE;              /* 无奇偶校验位 */
       uartInfo. UsartList[uart].Init.HwFlowCtl = UART_HWCONTROL_NONE;        /* 无硬件流控 */
       uartInfo. UsartList[uart].Init.Mode = UART_MODE_TX_RX;                 /* 收发模式 */
-    HAL_UART_Init(& uartInfo.UsartList[uart]);
-    HAL_UART_Receive_IT(&uartInfo.UsartList[uart], &BufferArray, 1);
+
+    if (openDMATransmit){
+        uart_dma_init(uart);
+        HAL_UART_Init(& uartInfo.UsartList[uart]);
+        HAL_UART_Receive_DMA(&uartInfo.UsartList[uart], &BufferArray, 1);
+    }else{
+        HAL_UART_Init(& uartInfo.UsartList[uart]);
+        HAL_UART_Receive_IT(&uartInfo.UsartList[uart], &BufferArray, 1);
+    }
+
+
 }
 
 void MyUsart::uart_deinit(UART_enum uart) {
@@ -140,11 +153,18 @@ uint8_t MyUsart::uart_read_byte(UART_enum uart) {
 }
 
 void MyUsart::uart_dma_init(UART_enum uart) {
-// todo 未来增添
+    myDma.DMAInitIN(&uartInfo.UsartList[uart], uart,
+                     (DMA_Stream_TypeDef *) DmaHandle[uart],
+                     DMA_Channel[uart], DMA_IQRNNum[uart]);
+    myDma.DMAInitOut(&uartInfo.UsartList[uart], uart,
+                     (DMA_Stream_TypeDef *) DmaHandle[uart+1],
+                     DMA_Channel[uart+1], DMA_IQRNNum[uart+1]);
+
+
 }
 
 void MyUsart::uart_dma_write_buffer(UART_enum uart, const uint8_t *buf, int len) {
-//    HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],buf,len);
+    HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],buf,len);
 }
 
 __rec_buf *MyUsart::selectBuff(UART_enum uart) {
@@ -177,6 +197,8 @@ __rec_buf *MyUsart::selectBuff(UART_enum uart) {
             return nullptr;
     }
 }
+
+
 /*******************************************串口中断*****************************************************/
 #ifdef HAVE_SERIAL1
 __rec_buf UART1_recbuf;
@@ -229,7 +251,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
         if (UART1_recbuf.data_size>256) return;
         UART1_recbuf.buf[UART1_recbuf.write_index++]=BufferArray;
         UART1_recbuf.data_size++;
-        HAL_UART_Receive_IT(&uartInfo.UsartList[0],&BufferArray,1);
+        if (openDMATransmit){
+            HAL_UART_Receive_DMA(&uartInfo.UsartList[0],&BufferArray,1);
+        } else{
+            HAL_UART_Receive_IT(&uartInfo.UsartList[0],&BufferArray,1);
+        }
     }
     if (huart->Instance==USART2){
         if (UART2_recbuf.data_size>256) return;
@@ -241,6 +267,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
         if (UART3_recbuf.data_size>256) return;
             UART3_recbuf.buf[UART3_recbuf.write_index++]=BufferArray;
             UART3_recbuf.data_size++;
+
             HAL_UART_Receive_IT(&uartInfo.UsartList[2],&BufferArray,1);
     }
     if (huart->Instance==UART4){
@@ -263,5 +290,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
     }
 
 }
+
+
 /*****************************************************************************************************************************/
 

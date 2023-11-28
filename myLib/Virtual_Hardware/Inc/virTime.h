@@ -14,7 +14,7 @@
 #ifndef CAR0_VIRTIME_H
 #define CAR0_VIRTIME_H
 #define   MAXTIMNUM 14
-#include "Resources.h"
+#include "TimeResources.h"
 
 typedef void (*callback_t)(void);
 typedef void (*callback_with_arg_t)(void*);

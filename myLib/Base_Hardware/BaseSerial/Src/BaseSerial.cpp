@@ -13,7 +13,6 @@
 //
 
 #include "Base_Hardware/BaseSerial/Inc/BaseSerial.h"
-virUsart *virUsart= nullptr;
 BaseSerial Baseserial(UART_1);
 void BaseSerial::set_buf_ptr() {
     switch (uart_x)
@@ -57,27 +56,32 @@ void BaseSerial::set_buf_ptr() {
 BaseSerial::BaseSerial(UART_enum uart) {
     this->uart_x = uart;
     set_buf_ptr();
-    if (!virUsart)virUsart=new MyUsart();
 }
 
 int BaseSerial::begin(int baudrate) {
     this->baudrate = baudrate;
-    virUsart->uart_init(uart_x,baudrate);
+    uart_init(uart_x,baudrate);
     return 1;
 }
 
 size_t BaseSerial::write(uint8_t data) {
-   virUsart->uart_write_byte(uart_x,data);
+    uart_write_byte(uart_x,data);
     return 1;
 }
 
 size_t BaseSerial::write(const uint8_t *buffer, size_t size) {
-    virUsart->uart_write_buffer(uart_x,buffer,size);
+    uart_write_buffer(uart_x,buffer,size);
     return 1;
 }
 
 int BaseSerial::end() {
-    virUsart->uart_deinit(uart_x);
+    uart_deinit(uart_x);
+    return 1;
+}
+
+int BaseSerial::beginDMA(int baudrate) {
+    openDMATransmit=1;
+    begin(baudrate);
     return 1;
 }
 

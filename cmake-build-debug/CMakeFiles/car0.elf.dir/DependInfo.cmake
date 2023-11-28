@@ -38,6 +38,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"
   "D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"
+  "D:/CODE/STM32/car0/myLib/otherResources"
   )
 
 # The set of dependency files which are needed:
@@ -157,6 +158,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/CODE/STM32/car0/myLib/DataStream/outputStream.cpp" "CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp" "CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyDMA.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MySystic.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj.d"
@@ -164,13 +166,16 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virADC.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virDMA.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.cpp" "CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj.d"
   "D:/CODE/STM32/car0/myLib/otherLib/WString.cpp" "CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj.d"
+  "D:/CODE/STM32/car0/myLib/otherResources/DMAResources.cpp" "CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.obj" "gcc" "CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

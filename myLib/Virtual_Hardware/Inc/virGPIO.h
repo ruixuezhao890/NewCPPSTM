@@ -16,7 +16,7 @@
 #define CAR0_VIRGPIO_H
 
 
-#include "Resources.h"
+#include "GPIOResources.h"
 
 /**
  * @brief GPIO抽象类，用于定义通用的GPIO操作接口。

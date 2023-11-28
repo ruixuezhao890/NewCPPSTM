@@ -17,15 +17,15 @@
 #include "headfile.h"
 #include "inputStream.h"
 #include "outputStream.h"
-class BaseSerial:public outputStream,public inputStream{
+class BaseSerial:public MyUsart,public outputStream,public inputStream{
 private:
     UART_enum uart_x;
     int baudrate;
     void set_buf_ptr();
 public:
-
     BaseSerial(UART_enum uart);
     int begin(int baudrate);
+    int beginDMA(int baudrate);
     int end() ;
 
     virtual size_t write(uint8_t);

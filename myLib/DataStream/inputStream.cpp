@@ -1,5 +1,5 @@
 #include "inputStream.h"
-#include "math.h"
+
 int inputStream::available()
 {
     return buf->data_size;
