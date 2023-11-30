@@ -28,13 +28,7 @@ protected:
        virtual void
        ADCContinuousGetResultAverage(ADC_enum adcEnum, uint8_t *GetNum, uint8_t GetNumLenth, uint8_t times) =0;    /* 得到某个通道给定次数采样的平均值 */
 
-    virtual void ADCDMAInit(ADC_enum adcEnum, uint32_t mar) = 0;            /* ADC DMA采集初始化 */
-    virtual void ADCDMAEnable(ADC_enum adcEnum, uint16_t ndtr) = 0;         /* 使能一次ADC DMA采集传输 */
-
-    virtual void ADCNCHDMAInit(ADC_enum adcEnum, uint32_t tmr) = 0;         /* ADC多通道 DMA采集初始化 */
-    virtual void ADCNCHDMAGPIOInit(ADC_enum adcEnum) = 0;                   /* ADC多通道 GPIO初始化 */
-    virtual void ADCNCHDMAEnable(ADC_enum adcEnum, uint16_t ndtr) = 0;      /* 使能一次ADC DMA多通道采集传输 */
-
+    virtual void ADCDMAInit(ADC_enum adcEnum) = 0;            /* ADC DMA采集初始化 */
 
     virGPIO *ADCGPIO;
 };

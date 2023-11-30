@@ -34,20 +34,19 @@ protected:
 
     ~MyADC() ;
 
-    void ADCDMAInit(ADC_enum adcEnum, uint32_t mar) override;
+    void ADCDMAInit(ADC_enum adcEnum) override;
 
-    void ADCDMAEnable(ADC_enum adcEnum, uint16_t ndtr) override;
+    void ADCDMAStart(ADC_enum adcEnum ,uint32_t* pData, uint32_t Length);
 
-    void ADCNCHDMAInit(ADC_enum adcEnum, uint32_t tmr) override;
+    void ADCDMAStop(ADC_enum adcEnum);
 
-    void ADCNCHDMAGPIOInit(ADC_enum adcEnum) override;
-
-    void ADCNCHDMAEnable(ADC_enum adcEnum, uint16_t ndtr) override;
 
 private:
     MyDMA ADCDMA;
     uint8_t RankNum;
 };
-
+extern "C"{
+void ADC_IRQHandler(void);
+}
 
 #endif //CAR0_MYADC_H

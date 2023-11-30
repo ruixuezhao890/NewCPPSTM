@@ -40,6 +40,18 @@ uint8_t BaseADC::BaseADCChannelSet(ADC_CH *ch, uint32_t rank, uint32_t stime) {
     return 1;
 }
 
+uint8_t BaseADC::beginDMA(Pin_enum *ADCPin, uint8_t ADCPinLenth) {
+    MyADC::ADCDMAInit(x_ADCEnum);
+    ADCInit(x_ADCEnum,ADCPin,ADCPinLenth);
+    ADCManagementInfo.ADCList[x_ADCEnum].Init.ContinuousConvMode = ENABLE;
+    ADCManagementInfo.ADCList[x_ADCEnum].Init.DMAContinuousRequests = ENABLE;
+    return 1;
+}
+
+void BaseADC::BaseADCDMAGetValue(uint32_t *pData, uint32_t Length) {
+    ADCDMAStart(x_ADCEnum,pData,Length);
+}
+
 template<typename TArg>
 void BaseADC::attach(void (*callback)(TArg), TArg arg) {
    adcExitValue.arg[x_ADCEnum]=reinterpret_cast<void*>(arg);

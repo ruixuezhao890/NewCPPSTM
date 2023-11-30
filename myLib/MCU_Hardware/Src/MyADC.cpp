@@ -50,7 +50,7 @@ void MyADC::ADCInit(ADC_enum adcEnum, Pin_enum *ADCPin, uint8_t ADCPinLenth) {
 void MyADC::ADCChannelSet(ADC_enum adcEnum, ADC_CH *ch, uint32_t rank, uint32_t stime) {
     uint8_t Rank = 0;
     if (rank)Rank = rank;
-    else {
+    else {//零的话自动增加序列
         Rank=++RankNum;
         ADCManagementInfo.ADCList[adcEnum].Init.ScanConvMode=ENABLE;
         ADCManagementInfo.ADCList[adcEnum].Init.ContinuousConvMode=ENABLE;
@@ -72,11 +72,7 @@ void MyADC::ADCChannelSet(ADC_enum adcEnum, ADC_CH *ch, uint32_t rank, uint32_t 
 
 uint32_t MyADC::ADCGetResult(ADC_enum adcEnum) {
     uint32_t temp_val=0;
-    if (ADCManagementInfo.ADCx_IRQn){
-        HAL_ADC_Start_IT(&ADCManagementInfo.ADCList[adcEnum]);
-    }else{
         HAL_ADC_Start(&ADCManagementInfo.ADCList[adcEnum]);
-    }
     temp_val=HAL_ADC_GetValue(&ADCManagementInfo.ADCList[adcEnum]);
     return temp_val;
 }
@@ -84,11 +80,9 @@ uint32_t MyADC::ADCGetResult(ADC_enum adcEnum) {
 uint32_t MyADC::ADCGetResultAverage(ADC_enum adcEnum, uint8_t times) {
     uint32_t temp_val = 0;
     uint8_t t;
-    if (ADCManagementInfo.ADCx_IRQn){
-        HAL_ADC_Start_IT(&ADCManagementInfo.ADCList[adcEnum]);
-    }else{
+
         HAL_ADC_Start(&ADCManagementInfo.ADCList[adcEnum]);
-    }
+
     HAL_ADC_GetValue(&ADCManagementInfo.ADCList[adcEnum]);
     for (t = 0; t < times; t++)     /* 获取times次数据 */
     {
@@ -108,29 +102,23 @@ void MyADC::ADCContinuousGetResultAverage(ADC_enum adcEnum, uint8_t *GetNum, uin
     }
 }
 
-void MyADC::ADCDMAInit(ADC_enum adcEnum, uint32_t mar) {
-//    ADCDMA.DMAInitIN()
+void MyADC::ADCDMAInit(ADC_enum adcEnum) {
+    ADCDMA.DMAInitADCIN(adcEnum,&ADCManagementInfo);
 }
 
-void MyADC::ADCDMAEnable(ADC_enum adcEnum, uint16_t ndtr) {
-
-}
-
-void MyADC::ADCNCHDMAInit(ADC_enum adcEnum, uint32_t tmr) {
-
-}
-
-void MyADC::ADCNCHDMAGPIOInit(ADC_enum adcEnum) {
-
-}
-
-void MyADC::ADCNCHDMAEnable(ADC_enum adcEnum, uint16_t ndtr) {
-
-}
 
 MyADC::~MyADC() {
     delete ADCGPIO;
 }
+
+void MyADC::ADCDMAStart(ADC_enum adcEnum, uint32_t* pData, uint32_t Length) {
+    HAL_ADC_Start_DMA(&ADCManagementInfo.ADCList[adcEnum],pData,Length);
+}
+
+void MyADC::ADCDMAStop(ADC_enum adcEnum) {
+    HAL_ADC_Stop_DMA(&ADCManagementInfo.ADCList[adcEnum]);
+}
+
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
     if (hadc->Instance==ADC1){
         if (adcExitValue.TimeExit[0])
@@ -144,6 +132,13 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
     }
 }
 
+void ADC_IRQHandler(void)
+{
 
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_1]);
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_2]);
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_3]);
+
+}
 
 

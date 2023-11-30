@@ -4676,6 +4676,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: D:/CODE/STM32/ca
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
   D:/CODE/STM32/car0/Core/Inc/main.h \
   D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
@@ -4686,6 +4687,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj: D:/C
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -4736,6 +4738,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj: D:/CODE
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -4783,6 +4786,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj: D
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -4873,11 +4877,13 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj: D:/CODE/STM
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
-  D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h
+  D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virADC.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h \
   D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -5056,6 +5062,7 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: D:/CODE/ST
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -5146,6 +5153,7 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: D:/CODE/STM
 CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj: D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.cpp \
   D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \

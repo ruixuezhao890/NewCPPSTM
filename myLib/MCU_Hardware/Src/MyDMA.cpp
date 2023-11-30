@@ -96,16 +96,6 @@ void DMA2_Stream7_IRQHandler(void){
         HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_1 + 1]);
     }
 }
-void ADC_IRQHandler(void)
-{
-
-    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_1]);
-    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_2]);
-    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_3]);
-
-}
-
-
 void DMA2_Stream4_IRQHandler(void)
 {
 
@@ -137,14 +127,14 @@ template<class T>
 void MyDMA::DMAInitIN(uint8_t select,T *config) {
     __HAL_RCC_DMA2_CLK_ENABLE();                        /* DMA2时钟使能 */
     __HAL_RCC_DMA1_CLK_ENABLE();                        /* DMA1时钟使能 */
-      config->DmaHandleTypeDef[select].Instance = (DMA_Stream_TypeDef*)config->DmaHandleInstance[select+1];
-      config->DmaHandleTypeDef[select].Init.Channel = config->DMA_Channel[select+1];
+      config->DmaHandleTypeDef[select].Instance = (DMA_Stream_TypeDef*)config->DmaHandleInstance[select];
+      config->DmaHandleTypeDef[select].Init.Channel = config->DMA_Channel[select];
       config->DmaHandleTypeDef[select].Init.Direction = DMA_PERIPH_TO_MEMORY;
       config->DmaHandleTypeDef[select].Init.PeriphInc = DMA_PINC_DISABLE;
       config->DmaHandleTypeDef[select].Init.MemInc = DMA_MINC_ENABLE;
-      config->DmaHandleTypeDef[select].Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-      config->DmaHandleTypeDef[select].Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
-      config->DmaHandleTypeDef[select].Init.Mode = DMA_CIRCULAR;
+      config->DmaHandleTypeDef[select].Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+      config->DmaHandleTypeDef[select].Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+      config->DmaHandleTypeDef[select].Init.Mode = DMA_NORMAL;
       config->DmaHandleTypeDef[select].Init.Priority = DMA_PRIORITY_LOW;
       config->DmaHandleTypeDef[select].Init.FIFOMode = DMA_FIFOMODE_DISABLE;
     if (HAL_DMA_Init(&config->DmaHandleTypeDef[select]) != HAL_OK)
