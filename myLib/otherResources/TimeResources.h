@@ -14,7 +14,8 @@
 
 #ifndef CAR0_TIMERESOURCES_H
 #define CAR0_TIMERESOURCES_H
-#include "stm32f4xx.h"
+#include "Resources.h"
+#define   MAXTIMNUM 14
 #define HAVE_TIMER1
 #define HAVE_TIMER2
 #define HAVE_TIMER3
@@ -87,4 +88,20 @@ enum class AdvancedMode{
     TIME_DeadZoneControl,
     TIME_InputMode
 };
+
+
+struct TimeExitValue{
+    callback_with_arg_t TimeExit[MAXTIMNUM];
+    callback_with_arg_t TimeCaptureExit[MAXTIMNUM];
+    void* arg[MAXTIMNUM];
+};
+struct virTimeValue{
+    TIM_HandleTypeDef TIMEList[MAXTIMNUM];//全局定时器句柄
+    uint8_t TIMEx_Channel[MAXTIMNUM];
+    uint8_t TIMEx_IRQn[MAXTIMNUM];
+    //下面可以添加DMA一般定时器不需要 所以没写
+};
+extern uint8_t OnceFlag[MAXTIMNUM];
+extern TimeExitValue ExitValue;
+extern virTimeValue BaseTimeValue;
 #endif //CAR0_TIMERESOURCES_H

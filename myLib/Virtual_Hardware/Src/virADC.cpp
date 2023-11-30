@@ -13,3 +13,5 @@
 //
 
 #include "virADC.h"
+#include "ADCResources.h"
+ADCExitValue adcExitValue;

@@ -55,6 +55,7 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
         myLib/Base_Hardware/BaseSerial
         myLib/Base_Hardware/BaseTimer
         myLib/Base_Hardware/BaseSys
+        myLib/Base_Hardware/BaseADC
         myLib/otherResources
 )
 
@@ -64,6 +65,7 @@ file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "myLib/Virtual_Hardware/Src/*
   "myLib/MCU_Hardware/Timer/Src/*.*"      "Bridge/*.*" "myLib/Factory/Src/*.*"  "myLib/otherLib/*.*" "myLib/DataStream/*.*"
         "myLib/Base_Hardware/BaseSerial/Src/*.*"
         "myLib/Base_Hardware/BaseTime/Src/*.*"
+        "myLib/Base_Hardware/BaseADC/*.*"
         "myLib/Base_Hardware/BaseSys/Src/*.*"
         "myLib/otherResources/*.*"
 )

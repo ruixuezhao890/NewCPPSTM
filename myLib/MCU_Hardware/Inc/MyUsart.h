@@ -15,7 +15,10 @@
 #ifndef CAR0_MYUSART_H
 #define CAR0_MYUSART_H
 #include "virUsart.h"
+#include "MyDMA.h"
+#include "MyGPIO.h"
 extern uint8_t openDMATransmit;
+
 class MyUsart :public virUsart{
 public:
     void uart_init(UART_enum uart, uint32_t baudrate) override;
@@ -36,8 +39,12 @@ public:
 
     void uart_dma_write_buffer(UART_enum uart, const uint8_t *buf, int len) override;
 
+    void uart_dma_write_byte(UART_enum uart, uint8_t data) override;
+
 protected:
     __rec_buf* selectBuff(UART_enum uart);
+    MyGPIO myGpio;
+    MyDMA myDma;
 
 };
 extern "C"{

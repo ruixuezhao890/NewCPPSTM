@@ -20,46 +20,42 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加高级定时器所有功能！只是完成未进行验证">
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyDMA.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virADC.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virDMA.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virADC.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virDMA.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/ADCResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/DMAResources.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/DMAResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/GPIOResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/Resources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/TimeResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/otherResources/UsartResources.h" afterDir="false" />
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加dma功能为串口">
+      <change afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyADC.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/inputStream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/DataStream/inputStream.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/inputStream.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/DataStream/inputStream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/DataStream/outputStream.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/DataStream/outputStream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyDMA.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyDMA.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyUsart.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyUsart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/Resources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/User.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virADC.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virADC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virDMA.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseADC/BaseADC.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virUsart.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virUsart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virDMA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyADC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherConfig/PinConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherConfig/USARTPinConfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherResources/ADCResources.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherResources/ADCResources.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherResources/DMAResources.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherResources/DMAResources.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Base_Hardware/BaseADC/BaseADC.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherResources/TimeResources.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherResources/TimeResources.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/otherResources/UsartResources.h" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/otherResources/UsartResources.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
     &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -138,9 +134,9 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
@@ -220,7 +216,13 @@
       <workItem from="1700977463211" duration="1333000" />
       <workItem from="1701051037351" duration="11825000" />
       <workItem from="1701155443447" duration="6118000" />
-      <workItem from="1701187831625" duration="3169000" />
+      <workItem from="1701187831625" duration="3502000" />
+      <workItem from="1701193416388" duration="3000000" />
+      <workItem from="1701196458271" duration="380000" />
+      <workItem from="1701221875946" duration="7075000" />
+      <workItem from="1701237417537" duration="10201000" />
+      <workItem from="1701315087553" duration="941000" />
+      <workItem from="1701316045364" duration="6288000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -350,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700919870030</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="增加dma功能为串口">
+      <option name="closed" value="true" />
+      <created>1701191189104</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701191189104</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +399,8 @@
     <MESSAGE value="重构通用定时器增加输出指定数目的PWM的类，优化目录结构" />
     <MESSAGE value="增加高级定时相关类" />
     <MESSAGE value="增加高级定时器所有功能！只是完成未进行验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加高级定时器所有功能！只是完成未进行验证" />
+    <MESSAGE value="增加dma功能为串口" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加dma功能为串口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -410,19 +421,14 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h</url>
-          <line>25</line>
-          <option name="timeStamp" value="111" />
+          <url>file://$PROJECT_DIR$/myLib/DataStream/outputStream.cpp</url>
+          <line>144</line>
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp</url>
-          <line>71</line>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp</url>
-          <line>86</line>
-          <option name="timeStamp" value="121" />
+          <url>file://$PROJECT_DIR$/myLib/DataStream/outputStream.cpp</url>
+          <line>159</line>
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

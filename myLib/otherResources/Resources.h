@@ -18,7 +18,8 @@
 //#define Cubemx //代表使用了cubemx配置时钟没有这个宏代表使用VirSystic函数配置时钟
 #define STM32 1
 #define ENABLE_FERRRTOS 0
-
+typedef void (*callback_t)(void);
+typedef void (*callback_with_arg_t)(void*);
 #define HAVE_I2C1
 #define HAVE_I2C2
 #define HAVE_SPI1

@@ -2512,6 +2512,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
 
+myLib/Base_Hardware/BaseADC/BaseADC.obj: myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.obj
+
+# target to build an object file
+myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
+
+myLib/Base_Hardware/BaseADC/BaseADC.i: myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.i
+
+# target to preprocess a source file
+myLib/Base_Hardware/BaseADC/BaseADC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
+
+myLib/Base_Hardware/BaseADC/BaseADC.s: myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.s
+
+# target to generate assembly for a file
+myLib/Base_Hardware/BaseADC/BaseADC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
+.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
+
 myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
 .PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
 
@@ -2824,6 +2848,30 @@ myLib/Factory/Src/Factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.s
 .PHONY : myLib/Factory/Src/Factory.cpp.s
 
+myLib/MCU_Hardware/Src/MyADC.obj: myLib/MCU_Hardware/Src/MyADC.cpp.obj
+.PHONY : myLib/MCU_Hardware/Src/MyADC.obj
+
+# target to build an object file
+myLib/MCU_Hardware/Src/MyADC.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.obj
+.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.obj
+
+myLib/MCU_Hardware/Src/MyADC.i: myLib/MCU_Hardware/Src/MyADC.cpp.i
+.PHONY : myLib/MCU_Hardware/Src/MyADC.i
+
+# target to preprocess a source file
+myLib/MCU_Hardware/Src/MyADC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.i
+.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.i
+
+myLib/MCU_Hardware/Src/MyADC.s: myLib/MCU_Hardware/Src/MyADC.cpp.s
+.PHONY : myLib/MCU_Hardware/Src/MyADC.s
+
+# target to generate assembly for a file
+myLib/MCU_Hardware/Src/MyADC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.s
+.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.s
+
 myLib/MCU_Hardware/Src/MyAFIO.obj: myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
 .PHONY : myLib/MCU_Hardware/Src/MyAFIO.obj
 
@@ -3088,30 +3136,6 @@ myLib/Virtual_Hardware/Src/virAFIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.s
 .PHONY : myLib/Virtual_Hardware/Src/virAFIO.cpp.s
 
-myLib/Virtual_Hardware/Src/virDMA.obj: myLib/Virtual_Hardware/Src/virDMA.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virDMA.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.cpp.obj
-
-myLib/Virtual_Hardware/Src/virDMA.i: myLib/Virtual_Hardware/Src/virDMA.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virDMA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.cpp.i
-
-myLib/Virtual_Hardware/Src/virDMA.s: myLib/Virtual_Hardware/Src/virDMA.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virDMA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virDMA.cpp.s
-
 myLib/Virtual_Hardware/Src/virGPIO.obj: myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
 .PHONY : myLib/Virtual_Hardware/Src/virGPIO.obj
 
@@ -3303,30 +3327,6 @@ myLib/otherLib/stdlib_noniso.s: myLib/otherLib/stdlib_noniso.c.s
 myLib/otherLib/stdlib_noniso.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.s
 .PHONY : myLib/otherLib/stdlib_noniso.c.s
-
-myLib/otherResources/DMAResources.obj: myLib/otherResources/DMAResources.cpp.obj
-.PHONY : myLib/otherResources/DMAResources.obj
-
-# target to build an object file
-myLib/otherResources/DMAResources.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.obj
-.PHONY : myLib/otherResources/DMAResources.cpp.obj
-
-myLib/otherResources/DMAResources.i: myLib/otherResources/DMAResources.cpp.i
-.PHONY : myLib/otherResources/DMAResources.i
-
-# target to preprocess a source file
-myLib/otherResources/DMAResources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.i
-.PHONY : myLib/otherResources/DMAResources.cpp.i
-
-myLib/otherResources/DMAResources.s: myLib/otherResources/DMAResources.cpp.s
-.PHONY : myLib/otherResources/DMAResources.s
-
-# target to generate assembly for a file
-myLib/otherResources/DMAResources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.s
-.PHONY : myLib/otherResources/DMAResources.cpp.s
 
 # Help Target
 help:
@@ -3635,6 +3635,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s
+	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.obj
+	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.i
+	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.s
 	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
 	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i
 	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s
@@ -3674,6 +3677,9 @@ help:
 	@echo ... myLib/Factory/Src/Factory.obj
 	@echo ... myLib/Factory/Src/Factory.i
 	@echo ... myLib/Factory/Src/Factory.s
+	@echo ... myLib/MCU_Hardware/Src/MyADC.obj
+	@echo ... myLib/MCU_Hardware/Src/MyADC.i
+	@echo ... myLib/MCU_Hardware/Src/MyADC.s
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.obj
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.i
 	@echo ... myLib/MCU_Hardware/Src/MyAFIO.s
@@ -3707,9 +3713,6 @@ help:
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.obj
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.i
 	@echo ... myLib/Virtual_Hardware/Src/virAFIO.s
-	@echo ... myLib/Virtual_Hardware/Src/virDMA.obj
-	@echo ... myLib/Virtual_Hardware/Src/virDMA.i
-	@echo ... myLib/Virtual_Hardware/Src/virDMA.s
 	@echo ... myLib/Virtual_Hardware/Src/virGPIO.obj
 	@echo ... myLib/Virtual_Hardware/Src/virGPIO.i
 	@echo ... myLib/Virtual_Hardware/Src/virGPIO.s
@@ -3734,9 +3737,6 @@ help:
 	@echo ... myLib/otherLib/stdlib_noniso.obj
 	@echo ... myLib/otherLib/stdlib_noniso.i
 	@echo ... myLib/otherLib/stdlib_noniso.s
-	@echo ... myLib/otherResources/DMAResources.obj
-	@echo ... myLib/otherResources/DMAResources.i
-	@echo ... myLib/otherResources/DMAResources.s
 .PHONY : help
 
 

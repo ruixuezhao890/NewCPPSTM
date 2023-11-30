@@ -14,22 +14,11 @@
 
 #include "WString.h"
 #include "MyUsart.h"
-#include "MyGPIO.h"
-#include "PinConfig.h"
-#include "MyDMA.h"
-#define MAXWait 0xffff
-#define MAXUart 6
 uint8_t BufferArray;
 uint8_t openDMATransmit;
-MyDMA myDma;
 
-struct uartInfo{
-    UART_HandleTypeDef UsartList[MAXUart]={0};//全局串口句柄
-    uint8_t USARTx_IRQn[MAXUart]={0};
-};
-uartInfo  uartInfo;
+uartInfoMation  uartInfo;
 void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
-    MyGPIO myGpio;
     Pin_enum uart_tx, uart_rx;
     uint8_t USARTx_IRQn;uint8_t Alternate=0;
     switch (uart)
@@ -121,6 +110,8 @@ void MyUsart::uart_init(UART_enum uart, uint32_t baudrate) {
 }
 
 void MyUsart::uart_deinit(UART_enum uart) {
+    HAL_DMA_DeInit(&uartInfo.DmaHandleTypeDef[uart]);
+    HAL_DMA_DeInit(&uartInfo.DmaHandleTypeDef[uart+1]);
     HAL_UART_DeInit(&uartInfo.UsartList[uart]);
     HAL_NVIC_DisableIRQ( (IRQn_Type)uartInfo.USARTx_IRQn[uart]);
 }
@@ -135,7 +126,12 @@ void MyUsart::uart_write_buffer(UART_enum uart, const uint8_t *buf, int len) {
 
 void MyUsart::uart_write_string(UART_enum uart, const char *str) {
     int len= strlen(str);
-    HAL_UART_Transmit(&uartInfo.UsartList[uart], (uint8_t *)str, len, MAXWait);
+//    if (openDMATransmit){
+//        HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart], (uint8_t *)str, len);
+//    }else{
+        HAL_UART_Transmit(&uartInfo.UsartList[uart], (uint8_t *)str, len, MAXWait);
+//    }
+
 }
 
 uint16_t MyUsart::uart_rec_size(UART_enum uart) {
@@ -153,19 +149,16 @@ uint8_t MyUsart::uart_read_byte(UART_enum uart) {
 }
 
 void MyUsart::uart_dma_init(UART_enum uart) {
-    myDma.DMAInitIN(&uartInfo.UsartList[uart], uart,
-                     (DMA_Stream_TypeDef *) DmaHandle[uart],
-                     DMA_Channel[uart], DMA_IQRNNum[uart]);
-    myDma.DMAInitOut(&uartInfo.UsartList[uart], uart,
-                     (DMA_Stream_TypeDef *) DmaHandle[uart+1],
-                     DMA_Channel[uart+1], DMA_IQRNNum[uart+1]);
-
-
+    myDma.DMAInitUsartIN(uart,&uartInfo);
+    myDma.DMAInitUsartOUT(uart,&uartInfo);
 }
-
+void MyUsart::uart_dma_write_byte(UART_enum uart, uint8_t data) {
+    HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],&data,1);
+}
 void MyUsart::uart_dma_write_buffer(UART_enum uart, const uint8_t *buf, int len) {
     HAL_UART_Transmit_DMA(&uartInfo.UsartList[uart],buf,len);
 }
+
 
 __rec_buf *MyUsart::selectBuff(UART_enum uart) {
     switch (uart) {
@@ -197,7 +190,6 @@ __rec_buf *MyUsart::selectBuff(UART_enum uart) {
             return nullptr;
     }
 }
-
 
 /*******************************************串口中断*****************************************************/
 #ifdef HAVE_SERIAL1

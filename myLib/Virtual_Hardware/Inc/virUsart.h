@@ -15,7 +15,7 @@
 #ifndef CAR0_VIRUSART_H
 #define CAR0_VIRUSART_H
 #include "UsartResources.h"
-
+#include "USARTPinConfig.h"
 class virUsart {
 protected:
     virtual void uart_init(UART_enum uart, uint32_t baudrate)=0;
@@ -28,6 +28,7 @@ protected:
 
 
     virtual void uart_dma_init(UART_enum uart)=0;
+    virtual void uart_dma_write_byte(UART_enum uart, uint8_t data)=0;
     virtual void uart_dma_write_buffer(UART_enum uart, const uint8_t *buf, int len)=0;
 };
 

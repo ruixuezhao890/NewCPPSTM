@@ -14,12 +14,29 @@
 
 #ifndef CAR0_VIRADC_H
 #define CAR0_VIRADC_H
-#include "Resources.h"
-
+#include "ADCResources.h"
+#include "virGPIO.h"
 class virADC {
 protected:
 
+       virtual void ADCInit()=0;    /* ADC初始化 */
+       virtual void ADCInit(ADC_enum adcEnum, Pin_enum *ADCPin, uint8_t ADCPinLenth) =0;    /* ADC初始化 */
+       virtual void ADCChannelSet(ADC_enum adcEnum, ADC_CH *ch, uint32_t rank, uint32_t stime) =0;    /* ADC通道设置 */
+       virtual uint32_t ADCGetResult(ADC_enum adcEnum) =0;       /* 获得某个通道值 */
+       virtual uint32_t ADCGetResultAverage(ADC_enum adcEnum, uint8_t times) =0;    /* 得到某个通道给定次数采样的平均值 */
+       virtual uint32_t ADCContinuousGetResult(ADC_enum adcEnum) =0;       /* 获得某个通道值 */
+       virtual void
+       ADCContinuousGetResultAverage(ADC_enum adcEnum, uint8_t *GetNum, uint8_t GetNumLenth, uint8_t times) =0;    /* 得到某个通道给定次数采样的平均值 */
 
+    virtual void ADCDMAInit(ADC_enum adcEnum, uint32_t mar) = 0;            /* ADC DMA采集初始化 */
+    virtual void ADCDMAEnable(ADC_enum adcEnum, uint16_t ndtr) = 0;         /* 使能一次ADC DMA采集传输 */
+
+    virtual void ADCNCHDMAInit(ADC_enum adcEnum, uint32_t tmr) = 0;         /* ADC多通道 DMA采集初始化 */
+    virtual void ADCNCHDMAGPIOInit(ADC_enum adcEnum) = 0;                   /* ADC多通道 GPIO初始化 */
+    virtual void ADCNCHDMAEnable(ADC_enum adcEnum, uint16_t ndtr) = 0;      /* 使能一次ADC DMA多通道采集传输 */
+
+
+    virGPIO *ADCGPIO;
 };
 
 

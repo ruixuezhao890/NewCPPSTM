@@ -12,8 +12,9 @@
 */
 //
 
-#ifndef CAR0_PINCONFIG_H
-#define CAR0_PINCONFIG_H
+#ifndef CAR0_USARTPINCONFIG_H
+#define CAR0_USARTPINCONFIG_H
+#include "GPIOResources.h"
 typedef enum
 {
 #ifdef HAVE_SERIAL1
@@ -42,4 +43,4 @@ typedef enum
 #endif
     UARTn_Pin_End //占位，没用
 } UART_pin;
-#endif //CAR0_PINCONFIG_H
+#endif //CAR0_USARTPINCONFIG_H

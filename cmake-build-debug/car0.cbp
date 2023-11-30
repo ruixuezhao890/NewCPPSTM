@@ -44,6 +44,7 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherResources"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -86,6 +87,7 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/otherResources"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -818,6 +820,12 @@
 		<Unit filename="D:/CODE/STM32/car0/STM32F407ZGTX_FLASH.ld">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.h">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -863,6 +871,9 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyADC.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -896,9 +907,6 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virDMA.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -911,13 +919,13 @@
 		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/PinConfig.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/WString.cpp">
@@ -939,12 +947,6 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/DMAResources.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/DMAResources.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h">

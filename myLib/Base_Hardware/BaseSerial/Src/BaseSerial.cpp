@@ -57,7 +57,11 @@ BaseSerial::BaseSerial(UART_enum uart) {
     this->uart_x = uart;
     set_buf_ptr();
 }
-
+int BaseSerial::beginDMA(int baudrate) {
+    openDMATransmit=1;
+    begin(baudrate);
+    return 1;
+}
 int BaseSerial::begin(int baudrate) {
     this->baudrate = baudrate;
     uart_init(uart_x,baudrate);
@@ -65,12 +69,17 @@ int BaseSerial::begin(int baudrate) {
 }
 
 size_t BaseSerial::write(uint8_t data) {
-    uart_write_byte(uart_x,data);
+
+        uart_write_byte(uart_x,data);
+
     return 1;
 }
 
 size_t BaseSerial::write(const uint8_t *buffer, size_t size) {
-    uart_write_buffer(uart_x,buffer,size);
+
+        uart_write_buffer(uart_x,buffer,size);
+
+
     return 1;
 }
 
@@ -79,10 +88,6 @@ int BaseSerial::end() {
     return 1;
 }
 
-int BaseSerial::beginDMA(int baudrate) {
-    openDMATransmit=1;
-    begin(baudrate);
-    return 1;
-}
+
 
 

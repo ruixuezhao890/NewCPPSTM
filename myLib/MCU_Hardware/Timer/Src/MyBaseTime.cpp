@@ -52,7 +52,6 @@ void MyBaseTime::timerStartOnce(Timer_enum timer) {
 }
 
 void MyBaseTime::timerStartPeriodic(Timer_enum timer) {
-
    HAL_TIM_Base_Start_IT(&timeValue->TIMEList[timer]);
     OnceFlag[timer]=0;
 
@@ -66,7 +65,6 @@ MyBaseTime::timerGreatPscNoInit(Timer_enum timer, uint32_t psc, uint32_t arr, ui
     timeValue->TIMEList[timer].Init.Prescaler=psc-1;
     timeValue->TIMEList[timer].Init.CounterMode=TIM_COUNTERMODE_UP;
     timeValue->TIMEList[timer].Init.Period=arr-1;
-   // HAL_TIM_Base_Init(&timeValue->TIMEList[timer]);
     HAL_NVIC_SetPriority((IRQn_Type)timeValue->TIMEx_IRQn[timer], PreemptPriority, SubPriority);
     HAL_NVIC_EnableIRQ((IRQn_Type)timeValue->TIMEx_IRQn[timer]);
     return &timeValue->TIMEList[timer];

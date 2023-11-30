@@ -20,4 +20,5 @@
 #include "Base_Hardware/BaseTime/Inc/BaseTime.h"
 #include "Base_Hardware/BaseTime/Inc/BasePWMTimer.h"
 #include "Base_Hardware/BaseTime/Inc/BaseCaptureTimer.h"
+#include "Base_Hardware/BaseADC/BaseADC.h"
 #endif //CAR0_USER_H

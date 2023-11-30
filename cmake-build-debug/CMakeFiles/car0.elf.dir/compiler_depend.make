@@ -36,6 +36,9 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: D:/CODE/STM32/car0/Bridge/Bridge.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -44,9 +47,21 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: D:/CODE/STM32/car0/Bridge/Bridge.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyUsart.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h \
   D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/Core/Inc/gpio.h \
+  D:/CODE/STM32/car0/Core/Inc/main.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
@@ -57,10 +72,6 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: D:/CODE/STM32/car0/Bridge/Bridge.
   D:/CODE/STM32/car0/myLib/otherLib/WString.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/stdlib.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/cstdlib \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdlib.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
@@ -102,7 +113,11 @@ CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.obj: D:/CODE/STM32/car0/Bridge/Bridge.
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Inc/BaseCaptureTimer.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/timeIT.h \
-  D:/CODE/STM32/car0/myLib/otherResources/Resources.h
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyADC.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
 
 CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj: D:/CODE/STM32/car0/Core/Src/gpio.c \
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
@@ -135,6 +150,9 @@ CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj: D:/CODE/STM32/car0/Core/Src/gpio.c 
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -142,7 +160,8 @@ CMakeFiles/car0.elf.dir/Core/Src/gpio.c.obj: D:/CODE/STM32/car0/Core/Src/gpio.c 
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Core/Src/main.c.obj: D:/CODE/STM32/car0/Core/Src/main.c \
   D:/CODE/STM32/car0/Core/Inc/main.h \
@@ -174,6 +193,9 @@ CMakeFiles/car0.elf.dir/Core/Src/main.c.obj: D:/CODE/STM32/car0/Core/Src/main.c 
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -182,6 +204,7 @@ CMakeFiles/car0.elf.dir/Core/Src/main.c.obj: D:/CODE/STM32/car0/Core/Src/main.c 
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/Core/Inc/usart.h \
   D:/CODE/STM32/car0/Core/Inc/main.h \
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
@@ -217,6 +240,9 @@ CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/CODE/STM32/car0/Cor
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -224,7 +250,8 @@ CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/CODE/STM32/car0/Cor
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/CODE/STM32/car0/Core/Src/stm32f4xx_it.c \
   D:/CODE/STM32/car0/Core/Inc/main.h \
@@ -256,6 +283,9 @@ CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/CODE/STM32/car0/Core/Src
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -264,6 +294,7 @@ CMakeFiles/car0.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/CODE/STM32/car0/Core/Src
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/Core/Inc/stm32f4xx_it.h
 
 CMakeFiles/car0.elf.dir/Core/Src/syscalls.c.obj: D:/CODE/STM32/car0/Core/Src/syscalls.c \
@@ -360,6 +391,9 @@ CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/CODE/STM32/car0/Core
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -367,7 +401,8 @@ CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/CODE/STM32/car0/Core
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj: D:/CODE/STM32/car0/Core/Src/usart.c \
   D:/CODE/STM32/car0/Core/Inc/usart.h \
@@ -400,6 +435,9 @@ CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj: D:/CODE/STM32/car0/Core/Src/usart.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -407,7 +445,8 @@ CMakeFiles/car0.elf.dir/Core/Src/usart.c.obj: D:/CODE/STM32/car0/Core/Src/usart.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -438,6 +477,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -445,7 +487,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -476,6 +519,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -483,7 +529,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -514,6 +561,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -521,7 +571,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -552,6 +603,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -559,7 +613,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -590,6 +645,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -597,7 +655,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -628,6 +687,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -635,7 +697,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -666,6 +729,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -673,7 +739,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -704,6 +771,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -711,7 +781,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -742,6 +813,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -749,7 +823,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -780,6 +855,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -787,7 +865,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -818,6 +897,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -825,7 +907,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -856,6 +939,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -863,7 +949,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -894,6 +981,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -901,7 +991,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -932,6 +1023,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -939,7 +1033,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -970,6 +1065,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -977,7 +1075,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1008,6 +1107,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1015,7 +1117,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1046,6 +1149,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1053,7 +1159,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1084,6 +1191,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1091,7 +1201,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1122,6 +1233,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1129,7 +1243,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1160,6 +1275,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1167,7 +1285,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1198,6 +1317,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1205,7 +1327,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1236,6 +1359,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1243,7 +1369,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1274,6 +1401,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ram
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1281,7 +1411,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ram
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1312,6 +1443,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1319,7 +1453,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1350,6 +1485,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1357,7 +1495,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1388,6 +1527,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1395,7 +1537,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1426,6 +1569,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1433,7 +1579,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1464,6 +1611,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1471,7 +1621,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1502,6 +1653,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1509,7 +1663,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1540,6 +1695,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1547,7 +1705,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1578,6 +1737,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1585,7 +1747,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1616,6 +1779,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1623,7 +1789,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1654,6 +1821,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1661,7 +1831,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1692,6 +1863,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1699,7 +1873,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1730,6 +1905,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1737,7 +1915,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1768,6 +1947,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1775,7 +1957,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1806,6 +1989,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1813,7 +1999,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1844,6 +2031,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1851,7 +2041,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1882,6 +2073,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1889,7 +2083,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1920,6 +2115,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1927,7 +2125,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1958,6 +2157,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -1965,7 +2167,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -1996,6 +2199,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2003,7 +2209,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2034,6 +2241,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2041,7 +2251,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2072,6 +2283,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2079,7 +2293,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2110,6 +2325,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2117,7 +2335,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2148,6 +2367,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2155,7 +2377,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2186,6 +2409,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2193,7 +2419,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2224,6 +2451,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2231,7 +2461,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2262,6 +2493,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2269,7 +2503,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2300,6 +2535,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2307,7 +2545,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2338,6 +2577,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2345,7 +2587,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2376,6 +2619,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2383,7 +2629,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2414,6 +2661,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2421,7 +2671,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2452,6 +2703,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2459,7 +2713,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2490,6 +2745,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2497,7 +2755,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2528,6 +2787,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2535,7 +2797,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2566,6 +2829,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2573,7 +2839,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2604,6 +2871,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2611,7 +2881,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2642,6 +2913,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2649,7 +2923,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2680,6 +2955,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2687,7 +2965,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2718,6 +2997,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2725,7 +3007,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2756,6 +3039,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2763,7 +3049,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2794,6 +3081,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2801,7 +3091,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2832,6 +3123,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2839,7 +3133,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2870,6 +3165,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2877,7 +3175,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2908,6 +3207,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2915,7 +3217,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2946,6 +3249,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2953,7 +3259,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -2984,6 +3291,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -2991,7 +3301,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c
 
@@ -3034,6 +3345,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3041,7 +3355,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c
 
@@ -3074,6 +3389,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3081,7 +3399,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c
 
@@ -3126,6 +3445,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3133,7 +3455,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c
 
@@ -3170,6 +3493,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3177,7 +3503,8 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj:
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj: D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h \
@@ -3209,6 +3536,9 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3217,9 +3547,68 @@ CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h
+
+CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.cpp \
+  D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyADC.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/CODE/STM32/car0/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
+  D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/Core/Inc/gpio.h \
+  D:/CODE/STM32/car0/Core/Inc/main.h \
+  D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h
 
 CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj: D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp \
   D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h \
@@ -3255,6 +3644,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3263,9 +3655,21 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyUsart.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h \
   D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/Core/Inc/gpio.h \
+  D:/CODE/STM32/car0/Core/Inc/main.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
@@ -3273,10 +3677,6 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj: D
   D:/CODE/STM32/car0/myLib/otherLib/WString.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/stdlib.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/cstdlib \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdlib.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
@@ -3346,6 +3746,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj: D:/COD
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3354,9 +3757,21 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj: D:/COD
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyUsart.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h \
   D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/Core/Inc/gpio.h \
+  D:/CODE/STM32/car0/Core/Inc/main.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
@@ -3370,6 +3785,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.ob
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3398,6 +3814,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3406,6 +3825,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.ob
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -3419,6 +3839,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3447,6 +3868,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3455,6 +3879,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -3513,6 +3938,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.o
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3541,6 +3967,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3549,6 +3978,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.o
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -3607,6 +4037,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cp
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3635,6 +4066,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cp
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3643,6 +4077,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cp
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -3655,6 +4090,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj: D
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3683,6 +4119,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3691,6 +4130,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h
@@ -3701,6 +4141,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.c
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3729,6 +4170,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3737,6 +4181,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -3748,6 +4193,7 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj: D:/CO
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3776,6 +4222,9 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj: D:/CO
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3783,7 +4232,8 @@ CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj: D:/CO
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp \
   D:/CODE/STM32/car0/myLib/DataStream/inputStream.h \
@@ -3842,6 +4292,9 @@ CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: D:/CODE/STM32/car0
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3849,7 +4302,8 @@ CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj: D:/CODE/STM32/car0
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj: D:/CODE/STM32/car0/myLib/DataStream/outputStream.cpp \
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/stdlib.h \
@@ -3935,11 +4389,11 @@ CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj: D:/CODE/STM32/car
 
 CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj: D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp
 
-CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp
-
-CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyDMA.cpp \
-  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virDMA.h \
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyADC.cpp \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyADC.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -3968,6 +4422,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj: D:/CODE/STM32/car0
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -3976,11 +4433,82 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj: D:/CODE/STM32/car0
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
+  D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
   D:/CODE/STM32/car0/Core/Inc/main.h \
-  D:/CODE/STM32/car0/myLib/otherResources/DMAResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
+
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp
+
+CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyDMA.cpp \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/CODE/STM32/car0/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/Core/Inc/gpio.h \
+  D:/CODE/STM32/car0/Core/Inc/main.h \
+  D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
   D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
-  D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/os_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/cpu_defines.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyUsart.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
+  D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
@@ -4014,6 +4542,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: D:/CODE/STM32/car
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4021,7 +4552,8 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj: D:/CODE/STM32/car
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MySystic.cpp \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MySystic.h \
@@ -4055,6 +4587,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: D:/CODE/STM32/c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4062,7 +4597,8 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj: D:/CODE/STM32/c
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp \
   D:/CODE/STM32/car0/myLib/otherLib/WString.h \
@@ -4122,6 +4658,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: D:/CODE/STM32/ca
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4130,16 +4669,16 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj: D:/CODE/STM32/ca
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
-  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
-  D:/CODE/STM32/car0/myLib/otherConfig/PinConfig.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virDMA.h \
   D:/CODE/STM32/car0/Core/Inc/gpio.h \
   D:/CODE/STM32/car0/Core/Inc/main.h \
-  D:/CODE/STM32/car0/myLib/otherResources/DMAResources.h \
-  D:/CODE/STM32/car0/myLib/otherResources/Resources.h
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
+  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits \
+  D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h \
@@ -4175,6 +4714,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj: D:/C
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4183,6 +4725,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj: D:/C
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -4221,6 +4764,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj: D:/CODE
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4229,6 +4775,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj: D:/CODE
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h
 
 CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj: D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp \
@@ -4264,6 +4811,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4272,6 +4822,7 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj: D
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyGPIO.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
   D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h \
@@ -4309,6 +4860,9 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj: D:/CODE/STM
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4317,12 +4871,13 @@ CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj: D:/CODE/STM
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
   D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virADC.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h \
-  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
+  D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
   D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
@@ -4351,6 +4906,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj: D:/CODE/STM32
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4358,7 +4916,10 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj: D:/CODE/STM32
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
+  D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virAFIO.h \
@@ -4391,6 +4952,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4398,10 +4962,8 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-
-CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virDMA.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virDMA.cpp \
-  D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virDMA.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h \
@@ -4434,6 +4996,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4441,7 +5006,8 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virSystic.h \
@@ -4474,6 +5040,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: D:/CODE/ST
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4481,7 +5050,8 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj: D:/CODE/ST
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h \
@@ -4514,6 +5084,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4521,7 +5094,8 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj: D:/CODE/STM3
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp \
   D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h \
@@ -4554,6 +5128,9 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: D:/CODE/STM
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4561,7 +5138,10 @@ CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj: D:/CODE/STM
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+  D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h \
+  D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h
 
 CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj: D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.cpp \
   D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h \
@@ -4594,6 +5174,9 @@ CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj: D:/CODE
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -4601,7 +5184,8 @@ CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj: D:/CODE
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h
 
 CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj: D:/CODE/STM32/car0/myLib/otherLib/WString.cpp \
   D:/CODE/STM32/car0/myLib/otherLib/WString.h \
@@ -4670,46 +5254,6 @@ CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj: D:/CODE/STM32/car0/m
   D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/math.h \
   D:/CODE/STM32/car0/myLib/otherLib/stdlib_noniso.h
 
-CMakeFiles/car0.elf.dir/myLib/otherResources/DMAResources.cpp.obj: D:/CODE/STM32/car0/myLib/otherResources/DMAResources.cpp \
-  D:/CODE/STM32/car0/myLib/otherResources/DMAResources.h \
-  D:/CODE/STM32/car0/myLib/otherResources/Resources.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/core_cm4.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_version.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_gcc.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h \
-  D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  D:/CODE/STM32/car0/Core/Inc/stm32f4xx_hal_conf.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-
 
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/headfile.h:
 
@@ -4735,15 +5279,15 @@ D:/CODE/STM32/car0/myLib/otherLib/stdlib_noniso.c:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virGPIO.h:
 
+D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h:
+
+D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits:
+
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_bvector.h:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h:
-
-D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/type_traits:
-
-D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h:
 
 D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 
@@ -4773,19 +5317,15 @@ D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virTime.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h:
 
-D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virDMA.h:
-
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c:
 
-D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h:
-
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Inc/BaseGPIO.h:
+
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h:
 
 D:/CODE/STM32/car0/Drivers/CMSIS/Include/mpu_armv7.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h:
-
-D:/CODE/STM32/car0/myLib/DataStream/inputStream.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h:
 
@@ -4798,6 +5338,8 @@ D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h:
+
+D:/CODE/STM32/car0/Core/Inc/gpio.h:
 
 D:/CODE/STM32/car0/Drivers/CMSIS/Include/cmsis_compiler.h:
 
@@ -4839,13 +5381,19 @@ D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:
 
-D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h:
-
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdlib.h:
 
-D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/limits:
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h:
 
-D:/CODE/STM32/car0/myLib/otherLib/WString.h:
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:
+
+D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.cpp:
+
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h:
+
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h:
+
+D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyADC.cpp:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h:
 
@@ -4863,15 +5411,31 @@ D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h:
 
 D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 
+D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h:
+
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyUsart.h:
 
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/timeIT.h:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virUsart.h:
 
-D:/CODE/STM32/car0/myLib/Factory/Inc/Factory.h:
+D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h:
+
+D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h:
+
+D:/CODE/STM32/car0/Core/Inc/main.h:
+
+D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h:
+
+D:/CODE/STM32/car0/myLib/otherResources/Resources.h:
+
+D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h:
+
+D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h:
+
+D:/CODE/STM32/car0/myLib/Factory/Inc/Factory.h:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Inc/BaseDeadZoneTimer.h:
 
@@ -4881,13 +5445,15 @@ D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h:
 
+D:/CODE/STM32/car0/myLib/DataStream/inputStream.h:
+
+D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/limits:
+
+D:/CODE/STM32/car0/myLib/otherLib/WString.h:
+
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/stdlib.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/cstdlib:
-
-D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m/nofp/bits/c++config.h:
-
-D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h:
 
@@ -4987,13 +5553,17 @@ D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Inc/BaseCaptureTimer.h:
 
-D:/CODE/STM32/car0/myLib/otherResources/Resources.h:
+D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp:
+
+D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.h:
+
+D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyADC.h:
+
+D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h:
+
+D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h:
 
 D:/CODE/STM32/car0/Core/Src/gpio.c:
-
-D:/CODE/STM32/car0/Core/Inc/gpio.h:
-
-D:/CODE/STM32/car0/Core/Inc/main.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/range_access.h:
 
@@ -5225,8 +5795,6 @@ D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp:
 
-D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp:
-
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp:
 
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h:
@@ -5249,8 +5817,6 @@ D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator_base_funcs.h:
 
-D:/CODE/STM32/car0/myLib/otherConfig/PinConfig.h:
-
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/concept_check.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/debug/assertions.h:
@@ -5270,10 +5836,6 @@ D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/exception.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h:
-
-D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virADC.h:
-
-D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/hash_bytes.h:
 
 D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_uninitialized.h:
 
@@ -5302,8 +5864,6 @@ D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp:
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Inc/BasePulseCounterTimer.h:
-
-D:/CODE/STM32/car0/myLib/otherResources/DMAResources.cpp:
 
 D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp:
 
@@ -5339,10 +5899,6 @@ D:/ProgramFiles/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/
 
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp:
 
-D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc/MyDMA.h:
-
-D:/CODE/STM32/car0/myLib/otherResources/DMAResources.h:
-
 D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc/virSystic.h:
@@ -5354,8 +5910,6 @@ D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp:
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virADC.cpp:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp:
-
-D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virDMA.cpp:
 
 D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp:
 

@@ -12,79 +12,145 @@
 */
 //
 #include "MyDMA.h"
-DMA_HandleTypeDef DMAHandle[12];
+#include "MyUsart.h"
+void DMA2_Stream1_IRQHandler(void) {
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_6]);
+
+
+}
+void DMA2_Stream6_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_6 + 1]);
+
+}
+void DMA1_Stream0_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_5 ]);
+
+}
+void DMA1_Stream7_IRQHandler(void)
+{
+    /* USER CODE BEGIN DMA1_Stream7_IRQn 0 */
+
+    /* USER CODE END DMA1_Stream7_IRQn 0 */
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_5 + 1]);
+
+}
+
+void DMA1_Stream1_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_3 ]);
+
+}
+
+
+void DMA1_Stream2_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_4 ]);
+
+}
+
+void DMA1_Stream3_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_3 + 1]);
+
+}
+
+
+void DMA1_Stream4_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_4 + 1]);
+
+}
+
+
+void DMA1_Stream5_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_2 ]);
+
+}
+
+
+void DMA1_Stream6_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_2 + 1]);
+
+}
 void DMA2_Stream2_IRQHandler(void){
     {
-        /* USER CODE BEGIN DMA2_Stream7_IRQn 0 */
-
-        /* USER CODE END DMA2_Stream7_IRQn 0 */
-
-        HAL_DMA_IRQHandler(&DMAHandle[UART_1]);
-        /* USER CODE BEGIN DMA2_Stream7_IRQn 1 */
-
-        /* USER CODE END DMA2_Stream7_IRQn 1 */
+        HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_1]);
+        HAL_DMA_IRQHandler(&ADCManagementInfo.DmaHandleTypeDef[ADC_2]);
     }
 }
 void DMA2_Stream7_IRQHandler(void){
     {
-        /* USER CODE BEGIN DMA2_Stream7_IRQn 0 */
-
-        /* USER CODE END DMA2_Stream7_IRQn 0 */
-
-        HAL_DMA_IRQHandler(&DMAHandle[UART_1+1]);
-        /* USER CODE BEGIN DMA2_Stream7_IRQn 1 */
-
-        /* USER CODE END DMA2_Stream7_IRQn 1 */
+        HAL_DMA_IRQHandler(&uartInfo.DmaHandleTypeDef[UART_1 + 1]);
     }
 }
+void ADC_IRQHandler(void)
+{
 
-void MyDMA::DMAInitOut(UART_HandleTypeDef *controlEquipment, UART_enum select, DMA_Stream_TypeDef *dmaStreamHandle,
-                       uint32_t ch, uint32_t IQRN) {
-
-        __HAL_RCC_DMA2_CLK_ENABLE();                        /* DMA2时钟使能 */
-        __HAL_RCC_DMA1_CLK_ENABLE();                        /* DMA1时钟使能 */
-
-
-        DMAHandle[select+1].Instance = dmaStreamHandle;
-        DMAHandle[select+1].Init.Channel = ch;
-        DMAHandle[select+1].Init.Direction = DMA_MEMORY_TO_PERIPH;
-        DMAHandle[select+1].Init.PeriphInc = DMA_PINC_DISABLE;
-        DMAHandle[select+1].Init.MemInc = DMA_MINC_ENABLE;
-        DMAHandle[select+1].Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-        DMAHandle[select+1].Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
-        DMAHandle[select+1].Init.Mode = DMA_NORMAL;
-        DMAHandle[select+1].Init.Priority = DMA_PRIORITY_LOW;
-        DMAHandle[select+1].Init.FIFOMode = DMA_FIFOMODE_DISABLE;
-        if (HAL_DMA_Init(& DMAHandle[select+1]) != HAL_OK)
-        {
-            Error_Handler();
-        }
-
-        __HAL_LINKDMA(controlEquipment,hdmatx, DMAHandle[select+1]);
-        HAL_NVIC_SetPriority((IRQn_Type)IQRN, 0, 0);
-        HAL_NVIC_EnableIRQ((IRQn_Type)IQRN);
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_1]);
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_2]);
+    HAL_ADC_IRQHandler(&ADCManagementInfo.ADCList[ADC_enum::ADC_3]);
 
 }
 
-void MyDMA::DMAInitIN(UART_HandleTypeDef *controlEquipment, UART_enum select, DMA_Stream_TypeDef *dmaStreamHandle,
-                      uint32_t ch, uint32_t IQRN) {
+
+void DMA2_Stream4_IRQHandler(void)
+{
+
+    HAL_DMA_IRQHandler(&ADCManagementInfo.DmaHandleTypeDef[ADC_1]);
+
+}
+void DMA2_Stream0_IRQHandler(void)
+{
+    HAL_DMA_IRQHandler(&ADCManagementInfo.DmaHandleTypeDef[ADC_3]);
+
+}
+void MyDMA::DMAInitUsartIN(UART_enum select, uartInfoMation *config) {
+    DMAInitIN(select,config);
+    __HAL_LINKDMA(&config->UsartList[select], hdmarx,  config->DmaHandleTypeDef[select]);
+
+}
+
+void MyDMA::DMAInitUsartOUT(UART_enum select, uartInfoMation *config) {
+    DMAInitIN(select+1,config);
+    __HAL_LINKDMA(&config->UsartList[select+1], hdmatx,  config->DmaHandleTypeDef[select+1]);
+}
+
+void MyDMA::DMAInitADCIN(ADC_enum select, ADCManagement *config) {
+    DMAInitIN(select,config);
+    __HAL_LINKDMA(&config->ADCList[select],DMA_Handle,config->DmaHandleTypeDef[select]);
+}
+
+template<class T>
+void MyDMA::DMAInitIN(uint8_t select,T *config) {
     __HAL_RCC_DMA2_CLK_ENABLE();                        /* DMA2时钟使能 */
     __HAL_RCC_DMA1_CLK_ENABLE();                        /* DMA1时钟使能 */
-    DMAHandle[select].Instance = dmaStreamHandle;
-    DMAHandle[select].Init.Channel = ch;
-    DMAHandle[select].Init.Direction = DMA_PERIPH_TO_MEMORY;
-    DMAHandle[select].Init.PeriphInc = DMA_PINC_DISABLE;
-    DMAHandle[select].Init.MemInc = DMA_MINC_ENABLE;
-    DMAHandle[select].Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-    DMAHandle[select].Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
-    DMAHandle[select].Init.Mode = DMA_CIRCULAR;
-    DMAHandle[select].Init.Priority = DMA_PRIORITY_LOW;
-    DMAHandle[select].Init.FIFOMode = DMA_FIFOMODE_DISABLE;
-    if (HAL_DMA_Init(& DMAHandle[select]) != HAL_OK)
+      config->DmaHandleTypeDef[select].Instance = (DMA_Stream_TypeDef*)config->DmaHandleInstance[select+1];
+      config->DmaHandleTypeDef[select].Init.Channel = config->DMA_Channel[select+1];
+      config->DmaHandleTypeDef[select].Init.Direction = DMA_PERIPH_TO_MEMORY;
+      config->DmaHandleTypeDef[select].Init.PeriphInc = DMA_PINC_DISABLE;
+      config->DmaHandleTypeDef[select].Init.MemInc = DMA_MINC_ENABLE;
+      config->DmaHandleTypeDef[select].Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+      config->DmaHandleTypeDef[select].Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+      config->DmaHandleTypeDef[select].Init.Mode = DMA_CIRCULAR;
+      config->DmaHandleTypeDef[select].Init.Priority = DMA_PRIORITY_LOW;
+      config->DmaHandleTypeDef[select].Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&config->DmaHandleTypeDef[select]) != HAL_OK)
     {
         Error_Handler();
     }
-    __HAL_LINKDMA(controlEquipment, hdmarx,  DMAHandle[select]);   /* 将DMA与USART1联系起来(发送DMA) */
-    HAL_NVIC_SetPriority((IRQn_Type)IQRN, 0, 0);
-    HAL_NVIC_EnableIRQ((IRQn_Type)IQRN);
+    HAL_NVIC_SetPriority((IRQn_Type)config->DMA_IQRNNum[select], 0, 0);
+    HAL_NVIC_EnableIRQ((IRQn_Type)config->DMA_IQRNNum[select]);
 }

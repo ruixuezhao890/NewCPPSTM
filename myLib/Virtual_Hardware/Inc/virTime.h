@@ -13,24 +13,7 @@
 
 #ifndef CAR0_VIRTIME_H
 #define CAR0_VIRTIME_H
-#define   MAXTIMNUM 14
 #include "TimeResources.h"
-
-typedef void (*callback_t)(void);
-typedef void (*callback_with_arg_t)(void*);
-struct TimeExitValue{
-    callback_with_arg_t TimeExit[MAXTIMNUM];
-    callback_with_arg_t TimeCaptureExit[MAXTIMNUM];
-    void* arg[MAXTIMNUM];
-};
-struct virTimeValue{
-    TIM_HandleTypeDef TIMEList[MAXTIMNUM];//全局定时器句柄
-    uint8_t TIMEx_Channel[MAXTIMNUM];
-    uint8_t TIMEx_IRQn[MAXTIMNUM];
-};
-extern uint8_t OnceFlag[MAXTIMNUM];
-extern TimeExitValue ExitValue;
-extern virTimeValue BaseTimeValue;
 class virTime {
 public:
     virtual uint32_t timerGreatPsc(Timer_enum timer, uint32_t arr,
