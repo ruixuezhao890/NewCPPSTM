@@ -152,6 +152,30 @@ Bridge/Bridge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Bridge/Bridge.cpp.s
 .PHONY : Bridge/Bridge.cpp.s
 
+Core/Src/dma.obj: Core/Src/dma.c.obj
+.PHONY : Core/Src/dma.obj
+
+# target to build an object file
+Core/Src/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/dma.c.obj
+.PHONY : Core/Src/dma.c.obj
+
+Core/Src/dma.i: Core/Src/dma.c.i
+.PHONY : Core/Src/dma.i
+
+# target to preprocess a source file
+Core/Src/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/dma.c.i
+.PHONY : Core/Src/dma.c.i
+
+Core/Src/dma.s: Core/Src/dma.c.s
+.PHONY : Core/Src/dma.s
+
+# target to generate assembly for a file
+Core/Src/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/dma.c.s
+.PHONY : Core/Src/dma.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -376,102 +400,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c.s
-
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.obj
 
@@ -495,198 +423,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.s: Drivers/STM32F4xx_HAL_D
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.obj
@@ -712,30 +448,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c.s
-
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.obj
 
@@ -759,54 +471,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.s: Drivers/STM32F4xx_HAL_D
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.obj
@@ -904,102 +568,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c.s
-
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.obj
 
@@ -1023,438 +591,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.s: Drivers/STM32F4xx_HAL_Dri
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.obj
@@ -1504,30 +640,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c.s
-
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.obj
 
@@ -1575,294 +687,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s: Drivers/STM32F4xx_HAL_D
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
@@ -1936,1397 +760,245 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.obj
+myLib/BSP/delay.obj: myLib/BSP/delay.c.obj
+.PHONY : myLib/BSP/delay.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.obj
+myLib/BSP/delay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/BSP/delay.c.obj
+.PHONY : myLib/BSP/delay.c.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.i
+myLib/BSP/delay.i: myLib/BSP/delay.c.i
+.PHONY : myLib/BSP/delay.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.i
+myLib/BSP/delay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/BSP/delay.c.i
+.PHONY : myLib/BSP/delay.c.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.s
+myLib/BSP/delay.s: myLib/BSP/delay.c.s
+.PHONY : myLib/BSP/delay.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c.s
+myLib/BSP/delay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/BSP/delay.c.s
+.PHONY : myLib/BSP/delay.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.obj
+myLib/GPIO/MyGPIO.obj: myLib/GPIO/MyGPIO.cpp.obj
+.PHONY : myLib/GPIO/MyGPIO.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.obj
+myLib/GPIO/MyGPIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/GPIO/MyGPIO.cpp.obj
+.PHONY : myLib/GPIO/MyGPIO.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.i
+myLib/GPIO/MyGPIO.i: myLib/GPIO/MyGPIO.cpp.i
+.PHONY : myLib/GPIO/MyGPIO.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.i
+myLib/GPIO/MyGPIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/GPIO/MyGPIO.cpp.i
+.PHONY : myLib/GPIO/MyGPIO.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.s
+myLib/GPIO/MyGPIO.s: myLib/GPIO/MyGPIO.cpp.s
+.PHONY : myLib/GPIO/MyGPIO.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c.s
+myLib/GPIO/MyGPIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/GPIO/MyGPIO.cpp.s
+.PHONY : myLib/GPIO/MyGPIO.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj
+myLib/Serial/BaseLib/MyUsart.obj: myLib/Serial/BaseLib/MyUsart.cpp.obj
+.PHONY : myLib/Serial/BaseLib/MyUsart.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
+myLib/Serial/BaseLib/MyUsart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/BaseLib/MyUsart.cpp.obj
+.PHONY : myLib/Serial/BaseLib/MyUsart.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i
+myLib/Serial/BaseLib/MyUsart.i: myLib/Serial/BaseLib/MyUsart.cpp.i
+.PHONY : myLib/Serial/BaseLib/MyUsart.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.i
+myLib/Serial/BaseLib/MyUsart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/BaseLib/MyUsart.cpp.i
+.PHONY : myLib/Serial/BaseLib/MyUsart.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s
+myLib/Serial/BaseLib/MyUsart.s: myLib/Serial/BaseLib/MyUsart.cpp.s
+.PHONY : myLib/Serial/BaseLib/MyUsart.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.s
+myLib/Serial/BaseLib/MyUsart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/BaseLib/MyUsart.cpp.s
+.PHONY : myLib/Serial/BaseLib/MyUsart.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.obj
+myLib/Serial/DataStream/inputStream.obj: myLib/Serial/DataStream/inputStream.cpp.obj
+.PHONY : myLib/Serial/DataStream/inputStream.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.obj
+myLib/Serial/DataStream/inputStream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/inputStream.cpp.obj
+.PHONY : myLib/Serial/DataStream/inputStream.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.i
+myLib/Serial/DataStream/inputStream.i: myLib/Serial/DataStream/inputStream.cpp.i
+.PHONY : myLib/Serial/DataStream/inputStream.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.i
+myLib/Serial/DataStream/inputStream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/inputStream.cpp.i
+.PHONY : myLib/Serial/DataStream/inputStream.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.s
+myLib/Serial/DataStream/inputStream.s: myLib/Serial/DataStream/inputStream.cpp.s
+.PHONY : myLib/Serial/DataStream/inputStream.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c.s
+myLib/Serial/DataStream/inputStream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/inputStream.cpp.s
+.PHONY : myLib/Serial/DataStream/inputStream.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.obj
+myLib/Serial/DataStream/outputStream.obj: myLib/Serial/DataStream/outputStream.cpp.obj
+.PHONY : myLib/Serial/DataStream/outputStream.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.obj
+myLib/Serial/DataStream/outputStream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/outputStream.cpp.obj
+.PHONY : myLib/Serial/DataStream/outputStream.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.i
+myLib/Serial/DataStream/outputStream.i: myLib/Serial/DataStream/outputStream.cpp.i
+.PHONY : myLib/Serial/DataStream/outputStream.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.i
+myLib/Serial/DataStream/outputStream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/outputStream.cpp.i
+.PHONY : myLib/Serial/DataStream/outputStream.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.s
+myLib/Serial/DataStream/outputStream.s: myLib/Serial/DataStream/outputStream.cpp.s
+.PHONY : myLib/Serial/DataStream/outputStream.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c.s
+myLib/Serial/DataStream/outputStream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/DataStream/outputStream.cpp.s
+.PHONY : myLib/Serial/DataStream/outputStream.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj
+myLib/Serial/OtherLib/WString.obj: myLib/Serial/OtherLib/WString.cpp.obj
+.PHONY : myLib/Serial/OtherLib/WString.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.obj
+myLib/Serial/OtherLib/WString.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/WString.cpp.obj
+.PHONY : myLib/Serial/OtherLib/WString.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i
+myLib/Serial/OtherLib/WString.i: myLib/Serial/OtherLib/WString.cpp.i
+.PHONY : myLib/Serial/OtherLib/WString.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.i
+myLib/Serial/OtherLib/WString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/WString.cpp.i
+.PHONY : myLib/Serial/OtherLib/WString.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s
+myLib/Serial/OtherLib/WString.s: myLib/Serial/OtherLib/WString.cpp.s
+.PHONY : myLib/Serial/OtherLib/WString.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c.s
+myLib/Serial/OtherLib/WString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/WString.cpp.s
+.PHONY : myLib/Serial/OtherLib/WString.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.obj
+myLib/Serial/OtherLib/bswap.obj: myLib/Serial/OtherLib/bswap.c.obj
+.PHONY : myLib/Serial/OtherLib/bswap.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.obj
+myLib/Serial/OtherLib/bswap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/bswap.c.obj
+.PHONY : myLib/Serial/OtherLib/bswap.c.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.i
+myLib/Serial/OtherLib/bswap.i: myLib/Serial/OtherLib/bswap.c.i
+.PHONY : myLib/Serial/OtherLib/bswap.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.i
+myLib/Serial/OtherLib/bswap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/bswap.c.i
+.PHONY : myLib/Serial/OtherLib/bswap.c.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.s
+myLib/Serial/OtherLib/bswap.s: myLib/Serial/OtherLib/bswap.c.s
+.PHONY : myLib/Serial/OtherLib/bswap.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c.s
+myLib/Serial/OtherLib/bswap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/bswap.c.s
+.PHONY : myLib/Serial/OtherLib/bswap.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.obj
+myLib/Serial/OtherLib/stdlib_noniso.obj: myLib/Serial/OtherLib/stdlib_noniso.c.obj
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.obj
+myLib/Serial/OtherLib/stdlib_noniso.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/stdlib_noniso.c.obj
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.c.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.i
+myLib/Serial/OtherLib/stdlib_noniso.i: myLib/Serial/OtherLib/stdlib_noniso.c.i
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.i
+myLib/Serial/OtherLib/stdlib_noniso.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/stdlib_noniso.c.i
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.c.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.s
+myLib/Serial/OtherLib/stdlib_noniso.s: myLib/Serial/OtherLib/stdlib_noniso.c.s
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.s
+myLib/Serial/OtherLib/stdlib_noniso.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Serial/OtherLib/stdlib_noniso.c.s
+.PHONY : myLib/Serial/OtherLib/stdlib_noniso.c.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.obj
+myLib/SoftWire/SoftWire.obj: myLib/SoftWire/SoftWire.cpp.obj
+.PHONY : myLib/SoftWire/SoftWire.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.obj
+myLib/SoftWire/SoftWire.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/SoftWire/SoftWire.cpp.obj
+.PHONY : myLib/SoftWire/SoftWire.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.i
+myLib/SoftWire/SoftWire.i: myLib/SoftWire/SoftWire.cpp.i
+.PHONY : myLib/SoftWire/SoftWire.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.i
+myLib/SoftWire/SoftWire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/SoftWire/SoftWire.cpp.i
+.PHONY : myLib/SoftWire/SoftWire.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.s
+myLib/SoftWire/SoftWire.s: myLib/SoftWire/SoftWire.cpp.s
+.PHONY : myLib/SoftWire/SoftWire.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c.s
+myLib/SoftWire/SoftWire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/SoftWire/SoftWire.cpp.s
+.PHONY : myLib/SoftWire/SoftWire.cpp.s
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.obj
+myLib/cmathpp/cmathpp.obj: myLib/cmathpp/cmathpp.cpp.obj
+.PHONY : myLib/cmathpp/cmathpp.obj
 
 # target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.obj
+myLib/cmathpp/cmathpp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/cmathpp/cmathpp.cpp.obj
+.PHONY : myLib/cmathpp/cmathpp.cpp.obj
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.i
+myLib/cmathpp/cmathpp.i: myLib/cmathpp/cmathpp.cpp.i
+.PHONY : myLib/cmathpp/cmathpp.i
 
 # target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.i
+myLib/cmathpp/cmathpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/cmathpp/cmathpp.cpp.i
+.PHONY : myLib/cmathpp/cmathpp.cpp.i
 
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.s
+myLib/cmathpp/cmathpp.s: myLib/cmathpp/cmathpp.cpp.s
+.PHONY : myLib/cmathpp/cmathpp.s
 
 # target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.s
-
-myLib/Base_Hardware/BaseADC/BaseADC.obj: myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.obj
-
-myLib/Base_Hardware/BaseADC/BaseADC.i: myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseADC/BaseADC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.i
-
-myLib/Base_Hardware/BaseADC/BaseADC.s: myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseADC/BaseADC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
-.PHONY : myLib/Base_Hardware/BaseADC/BaseADC.cpp.s
-
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.obj
-
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.i
-
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s: myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp.s
-
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.obj
-
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.i
-
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s: myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp.s
-
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.obj
-
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.i: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.i
-
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.s: myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
-.PHONY : myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s: myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s: myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s: myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp.s
-
-myLib/Base_Hardware/BaseTime/Src/BaseTime.obj: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.obj
-
-# target to build an object file
-myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.obj
-
-myLib/Base_Hardware/BaseTime/Src/BaseTime.i: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.i
-
-# target to preprocess a source file
-myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.i
-
-myLib/Base_Hardware/BaseTime/Src/BaseTime.s: myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.s
-
-# target to generate assembly for a file
-myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
-.PHONY : myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp.s
-
-myLib/DataStream/inputStream.obj: myLib/DataStream/inputStream.cpp.obj
-.PHONY : myLib/DataStream/inputStream.obj
-
-# target to build an object file
-myLib/DataStream/inputStream.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.obj
-.PHONY : myLib/DataStream/inputStream.cpp.obj
-
-myLib/DataStream/inputStream.i: myLib/DataStream/inputStream.cpp.i
-.PHONY : myLib/DataStream/inputStream.i
-
-# target to preprocess a source file
-myLib/DataStream/inputStream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.i
-.PHONY : myLib/DataStream/inputStream.cpp.i
-
-myLib/DataStream/inputStream.s: myLib/DataStream/inputStream.cpp.s
-.PHONY : myLib/DataStream/inputStream.s
-
-# target to generate assembly for a file
-myLib/DataStream/inputStream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/inputStream.cpp.s
-.PHONY : myLib/DataStream/inputStream.cpp.s
-
-myLib/DataStream/outputStream.obj: myLib/DataStream/outputStream.cpp.obj
-.PHONY : myLib/DataStream/outputStream.obj
-
-# target to build an object file
-myLib/DataStream/outputStream.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.obj
-.PHONY : myLib/DataStream/outputStream.cpp.obj
-
-myLib/DataStream/outputStream.i: myLib/DataStream/outputStream.cpp.i
-.PHONY : myLib/DataStream/outputStream.i
-
-# target to preprocess a source file
-myLib/DataStream/outputStream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.i
-.PHONY : myLib/DataStream/outputStream.cpp.i
-
-myLib/DataStream/outputStream.s: myLib/DataStream/outputStream.cpp.s
-.PHONY : myLib/DataStream/outputStream.s
-
-# target to generate assembly for a file
-myLib/DataStream/outputStream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/DataStream/outputStream.cpp.s
-.PHONY : myLib/DataStream/outputStream.cpp.s
-
-myLib/Factory/Src/Factory.obj: myLib/Factory/Src/Factory.cpp.obj
-.PHONY : myLib/Factory/Src/Factory.obj
-
-# target to build an object file
-myLib/Factory/Src/Factory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.obj
-.PHONY : myLib/Factory/Src/Factory.cpp.obj
-
-myLib/Factory/Src/Factory.i: myLib/Factory/Src/Factory.cpp.i
-.PHONY : myLib/Factory/Src/Factory.i
-
-# target to preprocess a source file
-myLib/Factory/Src/Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.i
-.PHONY : myLib/Factory/Src/Factory.cpp.i
-
-myLib/Factory/Src/Factory.s: myLib/Factory/Src/Factory.cpp.s
-.PHONY : myLib/Factory/Src/Factory.s
-
-# target to generate assembly for a file
-myLib/Factory/Src/Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Factory/Src/Factory.cpp.s
-.PHONY : myLib/Factory/Src/Factory.cpp.s
-
-myLib/MCU_Hardware/Src/MyADC.obj: myLib/MCU_Hardware/Src/MyADC.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyADC.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyADC.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.obj
-
-myLib/MCU_Hardware/Src/MyADC.i: myLib/MCU_Hardware/Src/MyADC.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyADC.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyADC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.i
-
-myLib/MCU_Hardware/Src/MyADC.s: myLib/MCU_Hardware/Src/MyADC.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyADC.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyADC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyADC.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyADC.cpp.s
-
-myLib/MCU_Hardware/Src/MyAFIO.obj: myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyAFIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.cpp.obj
-
-myLib/MCU_Hardware/Src/MyAFIO.i: myLib/MCU_Hardware/Src/MyAFIO.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyAFIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.cpp.i
-
-myLib/MCU_Hardware/Src/MyAFIO.s: myLib/MCU_Hardware/Src/MyAFIO.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyAFIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyAFIO.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyAFIO.cpp.s
-
-myLib/MCU_Hardware/Src/MyDMA.obj: myLib/MCU_Hardware/Src/MyDMA.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyDMA.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.cpp.obj
-
-myLib/MCU_Hardware/Src/MyDMA.i: myLib/MCU_Hardware/Src/MyDMA.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyDMA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.cpp.i
-
-myLib/MCU_Hardware/Src/MyDMA.s: myLib/MCU_Hardware/Src/MyDMA.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyDMA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyDMA.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyDMA.cpp.s
-
-myLib/MCU_Hardware/Src/MyGPIO.obj: myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyGPIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.cpp.obj
-
-myLib/MCU_Hardware/Src/MyGPIO.i: myLib/MCU_Hardware/Src/MyGPIO.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyGPIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.cpp.i
-
-myLib/MCU_Hardware/Src/MyGPIO.s: myLib/MCU_Hardware/Src/MyGPIO.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyGPIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyGPIO.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyGPIO.cpp.s
-
-myLib/MCU_Hardware/Src/MySystic.obj: myLib/MCU_Hardware/Src/MySystic.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MySystic.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MySystic.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MySystic.cpp.obj
-
-myLib/MCU_Hardware/Src/MySystic.i: myLib/MCU_Hardware/Src/MySystic.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MySystic.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MySystic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MySystic.cpp.i
-
-myLib/MCU_Hardware/Src/MySystic.s: myLib/MCU_Hardware/Src/MySystic.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MySystic.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MySystic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MySystic.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MySystic.cpp.s
-
-myLib/MCU_Hardware/Src/MyUsart.obj: myLib/MCU_Hardware/Src/MyUsart.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Src/MyUsart.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.obj
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.obj
-
-myLib/MCU_Hardware/Src/MyUsart.i: myLib/MCU_Hardware/Src/MyUsart.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Src/MyUsart.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.i
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.i
-
-myLib/MCU_Hardware/Src/MyUsart.s: myLib/MCU_Hardware/Src/MyUsart.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Src/MyUsart.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Src/MyUsart.cpp.s
-.PHONY : myLib/MCU_Hardware/Src/MyUsart.cpp.s
-
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.obj
-
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.i
-
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s: myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp.s
-
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.obj
-
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.i: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.i
-
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.s: myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp.s
-
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.obj
-
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.i
-
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s: myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp.s
-
-myLib/MCU_Hardware/Timer/Src/timeIT.obj: myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.obj
-
-# target to build an object file
-myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.cpp.obj
-
-myLib/MCU_Hardware/Timer/Src/timeIT.i: myLib/MCU_Hardware/Timer/Src/timeIT.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.i
-
-# target to preprocess a source file
-myLib/MCU_Hardware/Timer/Src/timeIT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.i
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.cpp.i
-
-myLib/MCU_Hardware/Timer/Src/timeIT.s: myLib/MCU_Hardware/Timer/Src/timeIT.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.s
-
-# target to generate assembly for a file
-myLib/MCU_Hardware/Timer/Src/timeIT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/MCU_Hardware/Timer/Src/timeIT.cpp.s
-.PHONY : myLib/MCU_Hardware/Timer/Src/timeIT.cpp.s
-
-myLib/Virtual_Hardware/Src/virADC.obj: myLib/Virtual_Hardware/Src/virADC.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virADC.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virADC.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virADC.cpp.obj
-
-myLib/Virtual_Hardware/Src/virADC.i: myLib/Virtual_Hardware/Src/virADC.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virADC.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virADC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virADC.cpp.i
-
-myLib/Virtual_Hardware/Src/virADC.s: myLib/Virtual_Hardware/Src/virADC.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virADC.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virADC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virADC.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virADC.cpp.s
-
-myLib/Virtual_Hardware/Src/virAFIO.obj: myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virAFIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.cpp.obj
-
-myLib/Virtual_Hardware/Src/virAFIO.i: myLib/Virtual_Hardware/Src/virAFIO.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virAFIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.cpp.i
-
-myLib/Virtual_Hardware/Src/virAFIO.s: myLib/Virtual_Hardware/Src/virAFIO.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virAFIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virAFIO.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virAFIO.cpp.s
-
-myLib/Virtual_Hardware/Src/virGPIO.obj: myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virGPIO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.cpp.obj
-
-myLib/Virtual_Hardware/Src/virGPIO.i: myLib/Virtual_Hardware/Src/virGPIO.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virGPIO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.cpp.i
-
-myLib/Virtual_Hardware/Src/virGPIO.s: myLib/Virtual_Hardware/Src/virGPIO.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virGPIO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virGPIO.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virGPIO.cpp.s
-
-myLib/Virtual_Hardware/Src/virSystic.obj: myLib/Virtual_Hardware/Src/virSystic.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virSystic.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.cpp.obj
-
-myLib/Virtual_Hardware/Src/virSystic.i: myLib/Virtual_Hardware/Src/virSystic.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virSystic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.cpp.i
-
-myLib/Virtual_Hardware/Src/virSystic.s: myLib/Virtual_Hardware/Src/virSystic.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virSystic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virSystic.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virSystic.cpp.s
-
-myLib/Virtual_Hardware/Src/virTime.obj: myLib/Virtual_Hardware/Src/virTime.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virTime.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virTime.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.obj
-
-myLib/Virtual_Hardware/Src/virTime.i: myLib/Virtual_Hardware/Src/virTime.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virTime.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virTime.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.i
-
-myLib/Virtual_Hardware/Src/virTime.s: myLib/Virtual_Hardware/Src/virTime.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virTime.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virTime.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virTime.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virTime.cpp.s
-
-myLib/Virtual_Hardware/Src/virUsart.obj: myLib/Virtual_Hardware/Src/virUsart.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.obj
-
-# target to build an object file
-myLib/Virtual_Hardware/Src/virUsart.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.obj
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.obj
-
-myLib/Virtual_Hardware/Src/virUsart.i: myLib/Virtual_Hardware/Src/virUsart.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.i
-
-# target to preprocess a source file
-myLib/Virtual_Hardware/Src/virUsart.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.i
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.i
-
-myLib/Virtual_Hardware/Src/virUsart.s: myLib/Virtual_Hardware/Src/virUsart.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.s
-
-# target to generate assembly for a file
-myLib/Virtual_Hardware/Src/virUsart.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/Virtual_Hardware/Src/virUsart.cpp.s
-.PHONY : myLib/Virtual_Hardware/Src/virUsart.cpp.s
-
-myLib/otherConfig/TimeAuxiliaryfunction.obj: myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.obj
-
-# target to build an object file
-myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.cpp.obj
-
-myLib/otherConfig/TimeAuxiliaryfunction.i: myLib/otherConfig/TimeAuxiliaryfunction.cpp.i
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.i
-
-# target to preprocess a source file
-myLib/otherConfig/TimeAuxiliaryfunction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.i
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.cpp.i
-
-myLib/otherConfig/TimeAuxiliaryfunction.s: myLib/otherConfig/TimeAuxiliaryfunction.cpp.s
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.s
-
-# target to generate assembly for a file
-myLib/otherConfig/TimeAuxiliaryfunction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherConfig/TimeAuxiliaryfunction.cpp.s
-.PHONY : myLib/otherConfig/TimeAuxiliaryfunction.cpp.s
-
-myLib/otherLib/WString.obj: myLib/otherLib/WString.cpp.obj
-.PHONY : myLib/otherLib/WString.obj
-
-# target to build an object file
-myLib/otherLib/WString.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.obj
-.PHONY : myLib/otherLib/WString.cpp.obj
-
-myLib/otherLib/WString.i: myLib/otherLib/WString.cpp.i
-.PHONY : myLib/otherLib/WString.i
-
-# target to preprocess a source file
-myLib/otherLib/WString.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.i
-.PHONY : myLib/otherLib/WString.cpp.i
-
-myLib/otherLib/WString.s: myLib/otherLib/WString.cpp.s
-.PHONY : myLib/otherLib/WString.s
-
-# target to generate assembly for a file
-myLib/otherLib/WString.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/WString.cpp.s
-.PHONY : myLib/otherLib/WString.cpp.s
-
-myLib/otherLib/bswap.obj: myLib/otherLib/bswap.c.obj
-.PHONY : myLib/otherLib/bswap.obj
-
-# target to build an object file
-myLib/otherLib/bswap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.obj
-.PHONY : myLib/otherLib/bswap.c.obj
-
-myLib/otherLib/bswap.i: myLib/otherLib/bswap.c.i
-.PHONY : myLib/otherLib/bswap.i
-
-# target to preprocess a source file
-myLib/otherLib/bswap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.i
-.PHONY : myLib/otherLib/bswap.c.i
-
-myLib/otherLib/bswap.s: myLib/otherLib/bswap.c.s
-.PHONY : myLib/otherLib/bswap.s
-
-# target to generate assembly for a file
-myLib/otherLib/bswap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/bswap.c.s
-.PHONY : myLib/otherLib/bswap.c.s
-
-myLib/otherLib/stdlib_noniso.obj: myLib/otherLib/stdlib_noniso.c.obj
-.PHONY : myLib/otherLib/stdlib_noniso.obj
-
-# target to build an object file
-myLib/otherLib/stdlib_noniso.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.obj
-.PHONY : myLib/otherLib/stdlib_noniso.c.obj
-
-myLib/otherLib/stdlib_noniso.i: myLib/otherLib/stdlib_noniso.c.i
-.PHONY : myLib/otherLib/stdlib_noniso.i
-
-# target to preprocess a source file
-myLib/otherLib/stdlib_noniso.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.i
-.PHONY : myLib/otherLib/stdlib_noniso.c.i
-
-myLib/otherLib/stdlib_noniso.s: myLib/otherLib/stdlib_noniso.c.s
-.PHONY : myLib/otherLib/stdlib_noniso.s
-
-# target to generate assembly for a file
-myLib/otherLib/stdlib_noniso.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/otherLib/stdlib_noniso.c.s
-.PHONY : myLib/otherLib/stdlib_noniso.c.s
+myLib/cmathpp/cmathpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/cmathpp/cmathpp.cpp.s
+.PHONY : myLib/cmathpp/cmathpp.cpp.s
 
 # Help Target
 help:
@@ -3340,6 +1012,9 @@ help:
 	@echo ... Bridge/Bridge.obj
 	@echo ... Bridge/Bridge.i
 	@echo ... Bridge/Bridge.s
+	@echo ... Core/Src/dma.obj
+	@echo ... Core/Src/dma.i
+	@echo ... Core/Src/dma.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
@@ -3368,60 +1043,15 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.s
@@ -3434,126 +1064,21 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s
@@ -3563,180 +1088,36 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.s
-	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.obj
-	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.i
-	@echo ... myLib/Base_Hardware/BaseADC/BaseADC.s
-	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.obj
-	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.i
-	@echo ... myLib/Base_Hardware/BaseSerial/Src/BaseSerial.s
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.obj
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.i
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseGPIO.s
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.obj
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.i
-	@echo ... myLib/Base_Hardware/BaseSys/Src/BaseSystic.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.s
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.obj
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.i
-	@echo ... myLib/Base_Hardware/BaseTime/Src/BaseTime.s
-	@echo ... myLib/DataStream/inputStream.obj
-	@echo ... myLib/DataStream/inputStream.i
-	@echo ... myLib/DataStream/inputStream.s
-	@echo ... myLib/DataStream/outputStream.obj
-	@echo ... myLib/DataStream/outputStream.i
-	@echo ... myLib/DataStream/outputStream.s
-	@echo ... myLib/Factory/Src/Factory.obj
-	@echo ... myLib/Factory/Src/Factory.i
-	@echo ... myLib/Factory/Src/Factory.s
-	@echo ... myLib/MCU_Hardware/Src/MyADC.obj
-	@echo ... myLib/MCU_Hardware/Src/MyADC.i
-	@echo ... myLib/MCU_Hardware/Src/MyADC.s
-	@echo ... myLib/MCU_Hardware/Src/MyAFIO.obj
-	@echo ... myLib/MCU_Hardware/Src/MyAFIO.i
-	@echo ... myLib/MCU_Hardware/Src/MyAFIO.s
-	@echo ... myLib/MCU_Hardware/Src/MyDMA.obj
-	@echo ... myLib/MCU_Hardware/Src/MyDMA.i
-	@echo ... myLib/MCU_Hardware/Src/MyDMA.s
-	@echo ... myLib/MCU_Hardware/Src/MyGPIO.obj
-	@echo ... myLib/MCU_Hardware/Src/MyGPIO.i
-	@echo ... myLib/MCU_Hardware/Src/MyGPIO.s
-	@echo ... myLib/MCU_Hardware/Src/MySystic.obj
-	@echo ... myLib/MCU_Hardware/Src/MySystic.i
-	@echo ... myLib/MCU_Hardware/Src/MySystic.s
-	@echo ... myLib/MCU_Hardware/Src/MyUsart.obj
-	@echo ... myLib/MCU_Hardware/Src/MyUsart.i
-	@echo ... myLib/MCU_Hardware/Src/MyUsart.s
-	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.obj
-	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.i
-	@echo ... myLib/MCU_Hardware/Timer/Src/AdvancedTimer.s
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.obj
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.i
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyBaseTime.s
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.obj
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.i
-	@echo ... myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.s
-	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.obj
-	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.i
-	@echo ... myLib/MCU_Hardware/Timer/Src/timeIT.s
-	@echo ... myLib/Virtual_Hardware/Src/virADC.obj
-	@echo ... myLib/Virtual_Hardware/Src/virADC.i
-	@echo ... myLib/Virtual_Hardware/Src/virADC.s
-	@echo ... myLib/Virtual_Hardware/Src/virAFIO.obj
-	@echo ... myLib/Virtual_Hardware/Src/virAFIO.i
-	@echo ... myLib/Virtual_Hardware/Src/virAFIO.s
-	@echo ... myLib/Virtual_Hardware/Src/virGPIO.obj
-	@echo ... myLib/Virtual_Hardware/Src/virGPIO.i
-	@echo ... myLib/Virtual_Hardware/Src/virGPIO.s
-	@echo ... myLib/Virtual_Hardware/Src/virSystic.obj
-	@echo ... myLib/Virtual_Hardware/Src/virSystic.i
-	@echo ... myLib/Virtual_Hardware/Src/virSystic.s
-	@echo ... myLib/Virtual_Hardware/Src/virTime.obj
-	@echo ... myLib/Virtual_Hardware/Src/virTime.i
-	@echo ... myLib/Virtual_Hardware/Src/virTime.s
-	@echo ... myLib/Virtual_Hardware/Src/virUsart.obj
-	@echo ... myLib/Virtual_Hardware/Src/virUsart.i
-	@echo ... myLib/Virtual_Hardware/Src/virUsart.s
-	@echo ... myLib/otherConfig/TimeAuxiliaryfunction.obj
-	@echo ... myLib/otherConfig/TimeAuxiliaryfunction.i
-	@echo ... myLib/otherConfig/TimeAuxiliaryfunction.s
-	@echo ... myLib/otherLib/WString.obj
-	@echo ... myLib/otherLib/WString.i
-	@echo ... myLib/otherLib/WString.s
-	@echo ... myLib/otherLib/bswap.obj
-	@echo ... myLib/otherLib/bswap.i
-	@echo ... myLib/otherLib/bswap.s
-	@echo ... myLib/otherLib/stdlib_noniso.obj
-	@echo ... myLib/otherLib/stdlib_noniso.i
-	@echo ... myLib/otherLib/stdlib_noniso.s
+	@echo ... myLib/BSP/delay.obj
+	@echo ... myLib/BSP/delay.i
+	@echo ... myLib/BSP/delay.s
+	@echo ... myLib/GPIO/MyGPIO.obj
+	@echo ... myLib/GPIO/MyGPIO.i
+	@echo ... myLib/GPIO/MyGPIO.s
+	@echo ... myLib/Serial/BaseLib/MyUsart.obj
+	@echo ... myLib/Serial/BaseLib/MyUsart.i
+	@echo ... myLib/Serial/BaseLib/MyUsart.s
+	@echo ... myLib/Serial/DataStream/inputStream.obj
+	@echo ... myLib/Serial/DataStream/inputStream.i
+	@echo ... myLib/Serial/DataStream/inputStream.s
+	@echo ... myLib/Serial/DataStream/outputStream.obj
+	@echo ... myLib/Serial/DataStream/outputStream.i
+	@echo ... myLib/Serial/DataStream/outputStream.s
+	@echo ... myLib/Serial/OtherLib/WString.obj
+	@echo ... myLib/Serial/OtherLib/WString.i
+	@echo ... myLib/Serial/OtherLib/WString.s
+	@echo ... myLib/Serial/OtherLib/bswap.obj
+	@echo ... myLib/Serial/OtherLib/bswap.i
+	@echo ... myLib/Serial/OtherLib/bswap.s
+	@echo ... myLib/Serial/OtherLib/stdlib_noniso.obj
+	@echo ... myLib/Serial/OtherLib/stdlib_noniso.i
+	@echo ... myLib/Serial/OtherLib/stdlib_noniso.s
+	@echo ... myLib/SoftWire/SoftWire.obj
+	@echo ... myLib/SoftWire/SoftWire.i
+	@echo ... myLib/SoftWire/SoftWire.s
+	@echo ... myLib/cmathpp/cmathpp.obj
+	@echo ... myLib/cmathpp/cmathpp.i
+	@echo ... myLib/cmathpp/cmathpp.s
 .PHONY : help
 
 

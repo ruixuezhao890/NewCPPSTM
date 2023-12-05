@@ -33,19 +33,13 @@
 					<Add directory="D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="D:/CODE/STM32/car0/Drivers/CMSIS/Include"/>
 					<Add directory="D:/CODE/STM32/car0/Bridge"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherConfig"/>
-					<Add directory="D:/CODE/STM32/car0/myLib"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherResources"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/BSP"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/cmathpp"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/GPIO"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/BaseLib"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/DataStream"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/OtherLib"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/SoftWire"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -76,19 +70,13 @@
 					<Add directory="D:/CODE/STM32/car0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="D:/CODE/STM32/car0/Drivers/CMSIS/Include"/>
 					<Add directory="D:/CODE/STM32/car0/Bridge"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Factory/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherConfig"/>
-					<Add directory="D:/CODE/STM32/car0/myLib"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherLib"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/DataStream"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Inc"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTimer"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC"/>
-					<Add directory="D:/CODE/STM32/car0/myLib/otherResources"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/BSP"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/cmathpp"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/GPIO"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/BaseLib"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/DataStream"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/Serial/OtherLib"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/SoftWire"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\programfiles\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -130,6 +118,12 @@
 		<Unit filename="D:/CODE/STM32/car0/Bridge/Bridge.h">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Bridge/User.h">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Core/Inc/dma.h">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Inc/gpio.h">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -143,6 +137,9 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Inc/usart.h">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Core/Src/dma.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Src/gpio.c">
@@ -256,61 +253,16 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cec.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dfsdm.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma2d.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
@@ -325,76 +277,10 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpsmbus.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpsmbus_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_irda.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_lptim.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_mmc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nand.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nor.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pccard.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
@@ -403,49 +289,10 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai_ex.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sdram.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_smartcard.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_smbus.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spdifrx.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
@@ -457,55 +304,19 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_wwdg.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_crc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dac.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma2d.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmpi2c.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_iwdg.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_lptim.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h">
@@ -514,34 +325,13 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rng.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rtc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_wwdg.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
@@ -550,58 +340,13 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
@@ -616,73 +361,7 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
@@ -691,49 +370,10 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
@@ -745,220 +385,76 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmpi2c.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c">
-			<Option target="car0.elf"/>
-		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/STM32F407ZGTX_FLASH.ld">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/BSP/delay.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseADC/BaseADC.h">
+		<Unit filename="D:/CODE/STM32/car0/myLib/BSP/delay.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/GPIO/GPIOResources.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/GPIO/MyGPIO.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/GPIO/MyGPIO.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/BaseLib/MyUsart.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/BaseLib/MyUsart.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/BaseLib/UsartResources.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/DataStream/inputStream.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/DataStream/inputStream.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/DataStream/outputStream.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/DataStream/outputStream.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/inputStream.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/WString.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/inputStream.h">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/WString.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/outputStream.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/bswap.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/DataStream/outputStream.h">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/bswap.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Factory/Src/Factory.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/stdlib_noniso.c">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyADC.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/OtherLib/stdlib_noniso.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyAFIO.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/SoftWire/AsyncDelay.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyDMA.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/SoftWire/SoftWire.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyGPIO.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/SoftWire/SoftWire.h">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MySystic.cpp">
+		<Unit filename="D:/CODE/STM32/car0/myLib/cmathpp/cmathpp.cpp">
 			<Option target="car0.elf"/>
 		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Src/MyUsart.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/MCU_Hardware/Timer/Src/timeIT.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virADC.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virAFIO.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virGPIO.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virSystic.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virTime.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/Virtual_Hardware/Src/virUsart.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/TimeAuxiliaryfunction.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherConfig/USARTPinConfig.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/WString.cpp">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/WString.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/bswap.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/bswap.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/stdlib_noniso.c">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherLib/stdlib_noniso.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/ADCResources.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/GPIOResources.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/Resources.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/TimeResources.h">
-			<Option target="car0.elf"/>
-		</Unit>
-		<Unit filename="D:/CODE/STM32/car0/myLib/otherResources/UsartResources.h">
+		<Unit filename="D:/CODE/STM32/car0/myLib/cmathpp/cmathpp.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/CMakeLists.txt">
