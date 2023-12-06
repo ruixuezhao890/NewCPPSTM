@@ -54,6 +54,7 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
         myLib/BSP
         myLib/cmathpp
         myLib/GPIO
+        myLib/HardwareTimer
         myLib/Serial/BaseLib
         myLib/Serial/DataStream
         myLib/Serial/OtherLib
@@ -67,6 +68,7 @@ file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*"
         "myLib/BSP/*.*"
         "myLib/cmathpp/*.*"
         "myLib/GPIO/*.*"
+        "myLib/HardwareTimer/*.*"
         "myLib/Serial/BaseLib/*.*"
         "myLib/Serial/DataStream/*.*"
         "myLib/Serial/OtherLib/*.*"

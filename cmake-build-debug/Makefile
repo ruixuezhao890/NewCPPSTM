@@ -344,6 +344,30 @@ Core/Src/system_stm32f4xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/system_stm32f4xx.c.s
 .PHONY : Core/Src/system_stm32f4xx.c.s
 
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
+
 Core/Src/usart.obj: Core/Src/usart.c.obj
 .PHONY : Core/Src/usart.obj
 
@@ -808,6 +832,30 @@ myLib/GPIO/MyGPIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/GPIO/MyGPIO.cpp.s
 .PHONY : myLib/GPIO/MyGPIO.cpp.s
 
+myLib/HardwareTimer/HardwareTimer.obj: myLib/HardwareTimer/HardwareTimer.cpp.obj
+.PHONY : myLib/HardwareTimer/HardwareTimer.obj
+
+# target to build an object file
+myLib/HardwareTimer/HardwareTimer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/HardwareTimer/HardwareTimer.cpp.obj
+.PHONY : myLib/HardwareTimer/HardwareTimer.cpp.obj
+
+myLib/HardwareTimer/HardwareTimer.i: myLib/HardwareTimer/HardwareTimer.cpp.i
+.PHONY : myLib/HardwareTimer/HardwareTimer.i
+
+# target to preprocess a source file
+myLib/HardwareTimer/HardwareTimer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/HardwareTimer/HardwareTimer.cpp.i
+.PHONY : myLib/HardwareTimer/HardwareTimer.cpp.i
+
+myLib/HardwareTimer/HardwareTimer.s: myLib/HardwareTimer/HardwareTimer.cpp.s
+.PHONY : myLib/HardwareTimer/HardwareTimer.s
+
+# target to generate assembly for a file
+myLib/HardwareTimer/HardwareTimer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car0.elf.dir\build.make CMakeFiles/car0.elf.dir/myLib/HardwareTimer/HardwareTimer.cpp.s
+.PHONY : myLib/HardwareTimer/HardwareTimer.cpp.s
+
 myLib/Serial/BaseLib/MyUsart.obj: myLib/Serial/BaseLib/MyUsart.cpp.obj
 .PHONY : myLib/Serial/BaseLib/MyUsart.obj
 
@@ -1036,6 +1084,9 @@ help:
 	@echo ... Core/Src/system_stm32f4xx.obj
 	@echo ... Core/Src/system_stm32f4xx.i
 	@echo ... Core/Src/system_stm32f4xx.s
+	@echo ... Core/Src/tim.obj
+	@echo ... Core/Src/tim.i
+	@echo ... Core/Src/tim.s
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
@@ -1094,6 +1145,9 @@ help:
 	@echo ... myLib/GPIO/MyGPIO.obj
 	@echo ... myLib/GPIO/MyGPIO.i
 	@echo ... myLib/GPIO/MyGPIO.s
+	@echo ... myLib/HardwareTimer/HardwareTimer.obj
+	@echo ... myLib/HardwareTimer/HardwareTimer.i
+	@echo ... myLib/HardwareTimer/HardwareTimer.s
 	@echo ... myLib/Serial/BaseLib/MyUsart.obj
 	@echo ... myLib/Serial/BaseLib/MyUsart.i
 	@echo ... myLib/Serial/BaseLib/MyUsart.s

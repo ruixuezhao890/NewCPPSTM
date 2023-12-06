@@ -36,6 +36,7 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/BSP"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/cmathpp"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/GPIO"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/HardwareTimer"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/BaseLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/DataStream"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/OtherLib"/>
@@ -73,6 +74,7 @@
 					<Add directory="D:/CODE/STM32/car0/myLib/BSP"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/cmathpp"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/GPIO"/>
+					<Add directory="D:/CODE/STM32/car0/myLib/HardwareTimer"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/BaseLib"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/DataStream"/>
 					<Add directory="D:/CODE/STM32/car0/myLib/Serial/OtherLib"/>
@@ -136,6 +138,9 @@
 		<Unit filename="D:/CODE/STM32/car0/Core/Inc/stm32f4xx_it.h">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Core/Inc/tim.h">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Inc/usart.h">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -161,6 +166,9 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Src/system_stm32f4xx.c">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Core/Src/tim.c">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Core/Src/usart.c">
@@ -328,6 +336,9 @@
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
 			<Option target="car0.elf"/>
 		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h">
+			<Option target="car0.elf"/>
+		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
 			<Option target="car0.elf"/>
 		</Unit>
@@ -401,6 +412,15 @@
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/GPIO/MyGPIO.h">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/HardwareTimer/HardwareTimer.cpp">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/HardwareTimer/HardwareTimer.h">
+			<Option target="car0.elf"/>
+		</Unit>
+		<Unit filename="D:/CODE/STM32/car0/myLib/HardwareTimer/TimerRes.h">
 			<Option target="car0.elf"/>
 		</Unit>
 		<Unit filename="D:/CODE/STM32/car0/myLib/Serial/BaseLib/MyUsart.cpp">

@@ -20,46 +20,27 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="增加dma功能为adc">
-      <change afterPath="$PROJECT_DIR$/Bridge/User.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/dma.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/dma.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/BSP/delay.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/BSP/delay.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/GPIO/GPIOResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/GPIO/MyGPIO.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/GPIO/MyGPIO.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/BaseLib/MyUsart.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/BaseLib/MyUsart.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/BaseLib/UsartResources.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/DataStream/inputStream.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/DataStream/inputStream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/DataStream/outputStream.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/DataStream/outputStream.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/WString.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/WString.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/bswap.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/bswap.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/stdlib_noniso.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/Serial/OtherLib/stdlib_noniso.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/SoftWire/AsyncDelay.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/SoftWire/SoftWire.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/SoftWire/SoftWire.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/cmathpp/cmathpp.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myLib/cmathpp/cmathpp.h" afterDir="false" />
+    <list default="true" id="c4b3dcc5-8821-4848-a8c8-2d2a8710e7eb" name="更改" comment="库大改 为了配合cubemx使用 从今天大改，USART已经改好下一个是定时器">
+      <change afterPath="$PROJECT_DIR$/myLib/HardwareTimer/HardwareTimer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/HardwareTimer/HardwareTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myLib/HardwareTimer/TimerRes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bridge/Bridge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/Bridge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bridge/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bridge/User.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car0.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/car0.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/car0.elf.dir/build.make" afterDir="false" />
@@ -76,82 +57,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/car0.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/car0.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseADC/BaseADC.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseADC/BaseADC.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Inc/BaseSerial.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSerial/Src/BaseSerial.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Inc/BaseGPIO.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Inc/BaseSystic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Src/BaseGPIO.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseSys/Src/BaseSystic.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCaptureTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseCompareOutTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseDeadZoneTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseOutputCountTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BasePWMTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BasePulseCounterTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Inc/BaseTime.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCaptureTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseCompareOutTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseDeadZoneTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseOutputCountTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePWMTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BasePulseCounterTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Base_Hardware/BaseTime/Src/BaseTime.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/inputStream.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/inputStream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/outputStream.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/DataStream/outputStream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Factory/Inc/Factory.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Factory/Src/Factory.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyADC.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyAFIO.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyDMA.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyGPIO.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MySystic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/MyUsart.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Inc/headfile.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyADC.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyAFIO.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyDMA.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyGPIO.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MySystic.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Src/MyUsart.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/AdvancedTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyBaseTime.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/MyUniversalTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Inc/timeIT.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/AdvancedTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyBaseTime.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/MyUniversalTimer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/MCU_Hardware/Timer/Src/timeIT.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/User.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virADC.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virAFIO.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virGPIO.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virSystic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virTime.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Inc/virUsart.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virADC.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virAFIO.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virGPIO.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virSystic.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virTime.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/Virtual_Hardware/Src/virUsart.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherConfig/TimeAuxiliaryfunction.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherConfig/USARTPinConfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/WString.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/WString.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/bswap.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/bswap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/stdlib_noniso.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherLib/stdlib_noniso.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherResources/ADCResources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherResources/GPIOResources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherResources/Resources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherResources/TimeResources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myLib/otherResources/UsartResources.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Serial/BaseLib/MyUsart.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Serial/BaseLib/MyUsart.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLib/Serial/DataStream/inputStream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/myLib/Serial/DataStream/inputStream.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +110,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CODE/STM32/car0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CODE/STM32/car0/myLib/HardwareTimer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -216,6 +123,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\STM32\car0\myLib\HardwareTimer" />
       <recent name="D:\CODE\STM32\car0\myLib\DataStream" />
       <recent name="D:\CODE\STM32\car0\myLib\otherLib" />
       <recent name="D:\CODE\STM32\car0\Drivers\STM32F4xx_HAL_Driver\Inc" />
@@ -230,9 +138,9 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD car0">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="car0.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="car0" TARGET_NAME="car0.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="car0" RUN_TARGET_NAME="car0.elf">
@@ -321,7 +229,10 @@
       <workItem from="1701316045364" duration="13649000" />
       <workItem from="1701344471732" duration="486000" />
       <workItem from="1701657117951" duration="63000" />
-      <workItem from="1701763483474" duration="3904000" />
+      <workItem from="1701763483474" duration="4241000" />
+      <workItem from="1701787468033" duration="603000" />
+      <workItem from="1701788975296" duration="4821000" />
+      <workItem from="1701828094035" duration="8377000" />
     </task>
     <task id="LOCAL-00001" summary="对自己所想的C++有大更改">
       <option name="closed" value="true" />
@@ -475,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701344492119</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="库大改 为了配合cubemx使用 从今天大改，USART已经改好下一个是定时器">
+      <option name="closed" value="true" />
+      <created>1701767750867</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701767750867</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,14 +435,15 @@
     <MESSAGE value="增加高级定时器所有功能！只是完成未进行验证" />
     <MESSAGE value="增加dma功能为串口" />
     <MESSAGE value="增加dma功能为adc" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加dma功能为adc" />
+    <MESSAGE value="库大改 为了配合cubemx使用 从今天大改，USART已经改好下一个是定时器" />
+    <option name="LAST_COMMIT_MESSAGE" value="库大改 为了配合cubemx使用 从今天大改，USART已经改好下一个是定时器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Core/Src/gpio.c</url>
-          <line>48</line>
+          <line>62</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -533,8 +453,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/myLib/Serial/DataStream/inputStream.cpp</url>
-          <line>36</line>
-          <option name="timeStamp" value="149" />
+          <line>27</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
+          <line>31</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/myLib/HardwareTimer/HardwareTimer.cpp</url>
+          <line>636</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Bridge/Bridge.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

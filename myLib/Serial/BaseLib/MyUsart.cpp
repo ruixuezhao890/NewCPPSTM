@@ -24,6 +24,7 @@ void MyUsart::uart_init() {
     buf=selectBuff(m_uartEnum);
     HAL_UART_Receive_IT(m_uart,&BufferArray,1);
 }
+//DAM初始化之后不知道为什么在中断中自动换行失效
 void MyUsart::uart_DMAInit() {
     selectUART_enum(m_uart);
     buf=selectBuff(m_uartEnum);

@@ -14,5 +14,7 @@
 
 #ifndef CAR0_USER_H
 #define CAR0_USER_H
+#include "MyGPIO.h"
 #include "MyUsart.h"
+#include "HardwareTimer.h"
 #endif //CAR0_USER_H

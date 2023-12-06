@@ -15,24 +15,19 @@ int inputStream::read()
     buf->data_size--;
     return buf->buf[buf->read_index++];
 }
+//阻塞式读取
 String inputStream::readString()
 {
-//    String ret;
-//    while (available()){
-//        ret+=(char)read();
-//    }
-//    return ret;
     String ret;
     char receive;
     while (1){
-        while (available()) {
+        if (available()) {
              receive = read();
             ret += receive;
             if (receive == '\n') {
                 return ret;
             }
         }
-
     }
 
 //    int c = read();
